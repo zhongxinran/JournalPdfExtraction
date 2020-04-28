@@ -1,0 +1,722 @@
+[
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/kaufman16a.html",
+    "header": "On the Complexity of Best-Arm Identification in Multi-Armed Bandit Models",
+    "author": "Emilie Kaufmann, Olivier CappÃ©, AurÃ©lien Garivier",
+    "time": "17(1):1−42, 2016.",
+    "abstract": "The stochastic multi-armed bandit model is a simple abstraction that has proven useful in many different contexts in statistics and machine learning. Whereas the achievable limit in terms of regret minimization is now well known, our aim is to contribute to a better understanding of the performance in terms of identifying the $m$ best arms. We introduce generic notions of complexity for the two dominant frameworks considered in the literature: fixed-budget and fixed-confidence settings. In the fixed-confidence setting, we provide the first known distribution-dependent lower bound on the complexity that involves information-theoretic quantities and holds when $m\\geq 1$ under general assumptions. In the specific case of two armed- bandits, we derive refined lower bounds in both the fixed- confidence and fixed-budget settings, along with matching algorithms for Gaussian and Bernoulli bandit models. These results show in particular that the complexity of the fixed- budget setting may be smaller than the complexity of the fixed- confidence setting, contradicting the familiar behavior observed when testing fully specified alternatives. In addition, we also provide improved sequential stopping rules that have guaranteed error probabilities and shorter average running times. The proofs rely on two technical results that are of independent interest : a deviation lemma for self-normalized sums (Lemma 7) and a novel change of measure inequality for bandit models (Lemma 1).",
+    "pdf_url": "http://jmlr.org/papers/volume17/kaufman16a/kaufman16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/khaleghi16a.html",
+    "header": "Consistent Algorithms for Clustering Time Series",
+    "author": "Azadeh Khaleghi, Daniil Ryabko, JÃ©rÃ©mie Mary, Philippe Preux",
+    "time": "17(3):1−32, 2016.",
+    "abstract": "The problem of clustering is considered for the case where every point is a time series. The time series are either given in one batch (offline setting), or they are allowed to grow with time and new time series can be added along the way (online setting). We propose a natural notion of consistency for this problem, and show that there are simple, computationally efficient algorithms that are asymptotically consistent under extremely weak assumptions on the distributions that generate the data. The notion of consistency is as follows. A clustering algorithm is called consistent if it places two time series into the same cluster if and only if the distribution that generates them is the same. In the considered framework the time series are allowed to be highly dependent, and the dependence can have arbitrary form. If the number of clusters is known, the only assumption we make is that the (marginal) distribution of each time series is stationary ergodic. No parametric, memory or mixing assumptions are made. When the number of clusters is unknown, stronger assumptions are provably necessary, but it is still possible to devise nonparametric algorithms that are consistent under very general conditions. The theoretical findings of this work are illustrated with experiments on both synthetic and real data.",
+    "pdf_url": "http://jmlr.org/papers/volume17/khaleghi16a/khaleghi16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/blaser16a.html",
+    "header": "Random Rotation Ensembles",
+    "author": "Rico Blaser, Piotr Fryzlewicz",
+    "time": "17(4):1−26, 2016.",
+    "abstract": "In machine learning, ensemble methods combine the predictions of multiple base learners to construct more accurate aggregate predictions. Established supervised learning algorithms inject randomness into the construction of the individual base learners in an effort to promote diversity within the resulting ensembles. An undesirable side effect of this approach is that it generally also reduces the accuracy of the base learners. In this paper, we introduce a method that is simple to implement yet general and effective in improving ensemble diversity with only modest impact on the accuracy of the individual base learners. By randomly rotating the feature space prior to inducing the base learners, we achieve favorable aggregate predictions on standard data sets compared to state of the art ensemble methods, most notably for tree-based ensembles, which are particularly sensitive to rotation.",
+    "pdf_url": "http://jmlr.org/papers/volume17/blaser16a/blaser16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/benavoli16a.html",
+    "header": "Should We Really Use Post-Hoc Tests Based on Mean-Ranks?",
+    "author": "Alessio Benavoli, Giorgio Corani, Francesca Mangili",
+    "time": "17(5):1−10, 2016.",
+    "abstract": "The statistical comparison of multiple algorithms over multiple data sets is fundamental in machine learning. This is typically carried out by the Friedman test. When the Friedman test rejects the null hypothesis, multiple comparisons are carried out to establish which are the significant differences among algorithms. The multiple comparisons are usually performed using the mean-ranks test. The aim of this technical note is to discuss the inconsistencies of the mean-ranks post-hoc test with the goal of discouraging its use in machine learning as well as in medicine, psychology, etc.. We show that the outcome of the mean-ranks test depends on the pool of algorithms originally included in the experiment. In other words, the outcome of the comparison between algorithms $A$ and $B$ depends also on the performance of the other algorithms included in the original experiment. This can lead to paradoxical situations. For instance the difference between $A$ and $B$ could be declared significant if the pool comprises algorithms $C,D,E$ and not significant if the pool comprises algorithms $F,G,H$. To overcome these issues, we suggest instead to perform the multiple comparison using a test whose outcome only depends on the two algorithms being compared, such as the sign-test or the Wilcoxon signed-rank test.",
+    "pdf_url": "http://jmlr.org/papers/volume17/benavoli16a/benavoli16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/collier16a.html",
+    "header": "Minimax Rates in Permutation Estimation for Feature Matching",
+    "author": "Olivier Collier, Arnak S. Dalalyan",
+    "time": "17(6):1−31, 2016.",
+    "abstract": "The problem of matching two sets of features appears in various tasks of computer vision and can be often formalized as a problem of permutation estimation. We address this problem from a statistical point of view and provide a theoretical analysis of the accuracy of several natural estimators. To this end, the minimax rate of separation is investigated and its expression is obtained as a function of the sample size, noise level and dimension of the features. We consider the cases of homoscedastic and heteroscedastic noise and establish, in each case, tight upper bounds on the separation distance of several estimators. These upper bounds are shown to be unimprovable both in the homoscedastic and heteroscedastic settings. Interestingly, these bounds demonstrate that a phase transition occurs when the dimension $d$ of the features is of the order of the logarithm of the number of features $n$. For $d=O(\\log n)$, the rate is dimension free and equals $\\sigma (\\log n)^{1/2}$, where $\\sigma$ is the noise level. In contrast, when $d$ is larger than $c\\log n$ for some constant $c>0$, the minimax rate increases with $d$ and is of the order of $\\sigma(d\\log n)^{1/4}$. We also discuss the computational aspects of the estimators and provide empirical evidence of their consistency on synthetic data. Finally, we show that our results extend to more general matching criteria.",
+    "pdf_url": "http://jmlr.org/papers/volume17/collier16a/collier16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/teh16a.html",
+    "header": "Consistency and Fluctuations For Stochastic Gradient Langevin Dynamics",
+    "author": "Yee Whye Teh, Alexandre H. Thiery, Sebastian J. Vollmer",
+    "time": "17(7):1−33, 2016.",
+    "abstract": "Applying standard Markov chain Monte Carlo (MCMC) algorithms to large data sets is computationally expensive. Both the calculation of the acceptance probability and the creation of informed proposals usually require an iteration through the whole data set. The recently proposed stochastic gradient Lange",
+    "pdf_url": "http://jmlr.org/papers/volume17/teh16a/teh16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/gulchere16a.html",
+    "header": "Knowledge Matters: Importance of Prior Information for Optimization",
+    "author": "ÃaÄlar GÃ¼lÃ§ehre, Yoshua Bengio",
+    "time": "17(8):1−32, 2016.",
+    "abstract": "We explored the effect of introducing prior knowledge into the intermediate level of deep supervised neural networks on two tasks. On a task we designed, all black-box state-of-the-art machine learning algorithms which we tested, failed to generalize well. We motivate our work from the hypothesis that, there is a training barrier involved in the nature of such tasks, and that humans learn useful intermediate concepts from other individuals by using a form of supervision or guidance using a curriculum. Our results provide a positive evidence in favor of this hypothesis. In our experiments, we trained a two- tiered MLP architecture on a dataset for which each input image contains three sprites, and the binary target class is $1$ if all of three shapes belong to the same category and otherwise the class is $0$. In terms of generalization, black-box machine learning algorithms could not perform better than chance on this task. Standard deep supervised neural networks also failed to generalize. However, using a particular structure and guiding the learner by providing intermediate targets in the form of intermediate concepts (the presence of each object) allowed us to solve the task efficiently. We obtained much better than chance, but imperfect results by exploring different architectures and optimization variants. This observation might be an indication of optimization difficulty when the neural network trained without hints on this task. We hypothesize that the learning difficulty is due to the  composition  of two highly non-linear tasks. Our findings are also consistent with the hypotheses on cultural learning inspired by the observations of training of neural networks sometimes getting stuck, even though good solutions exist, both in terms of training and generalization error.",
+    "pdf_url": "http://jmlr.org/papers/volume17/gulchere16a/gulchere16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/chen16a.html",
+    "header": "Herded Gibbs Sampling",
+    "author": "Yutian Chen, Luke Bornn, Nando de Freitas, Mareija Eskelin, Jing Fang, Max Welling",
+    "time": "17(10):1−29, 2016.",
+    "abstract": "The Gibbs sampler is one of the most popular algorithms for inference in statistical models. In this paper, we introduce a herding variant of this algorithm, called herded Gibbs, that is entirely deterministic. We prove that herded Gibbs has an $O(1/T)$ convergence rate for models with independent variables and for fully connected probabilistic graphical models. Herded Gibbs is shown to outperform Gibbs in the tasks of image denoising with MRFs and named entity recognition with CRFs. However, the convergence for herded Gibbs for sparsely connected probabilistic graphical models is still an open problem.",
+    "pdf_url": "http://jmlr.org/papers/volume17/chen16a/chen16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/yuille16a.html",
+    "header": "Complexity of Representation and Inference in Compositional Models with Part Sharing",
+    "author": "Alan Yuille, Roozbeh Mottaghi",
+    "time": "17(11):1−28, 2016.",
+    "abstract": "This paper performs a complexity analysis of a class of serial and parallel compositional models of multiple objects and shows that they enable efficient representation and rapid inference. Compositional models are generative and represent objects in a hierarchically distributed manner in terms of parts and subparts, which are constructed recursively by part-subpart compositions. Parts are represented more coarsely at higher level of the hierarchy, so that the upper levels give coarse summary descriptions (e.g., there is a horse in the image) while the lower levels represents the details (e.g., the positions of the legs of the horse). This hierarchically distributed representation obeys the  executive summary  principle, meaning that a high level executive only requires a coarse summary description and can, if necessary, get more details by consulting lower level executives. The parts and subparts are organized in terms of hierarchical dictionaries which enables  part sharing  between different objects allowing efficient representation of many objects. The first main contribution of this paper is to show that compositional models can be mapped onto a parallel visual architecture similar to that used by bio- inspired visual models such as deep convolutional networks but more explicit in terms of representation, hence enabling part detection as well as object detection, and suitable for complexity analysis. Inference algorithms can be run on this architecture to exploit the gains caused by part sharing and executive summary. Effectively, this compositional architecture enables us to perform exact inference simultaneously over a large class of generative models of objects. The second contribution is an analysis of the complexity of compositional models in terms of computation time (for serial computers) and numbers of nodes (e.g., \"neurons\") for parallel computers. In particular, we compute the complexity gains by part sharing and executive summary and their dependence on how the dictionary scales with the level of the hierarchy. We explore three regimes of scaling behavior where the dictionary size (i) increases exponentially with the level of the hierarchy, (ii) is determined by an unsupervised compositional learning algorithm applied to real data, (iii) decreases exponentially with scale. This analysis shows that in some regimes the use of shared parts enables algorithms which can perform inference in time linear in the number of levels for an exponential number of objects. In other regimes part sharing has little advantage for serial computers but can enable linear processing on parallel computers.",
+    "pdf_url": "http://jmlr.org/papers/volume17/yuille16a/yuille16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/13-354.html",
+    "header": "Noisy Sparse Subspace Clustering",
+    "author": "Yu-Xiang Wang, Huan Xu",
+    "time": "17(12):1−41, 2016.",
+    "abstract": "This paper considers the problem of subspace clustering under noise. Specifically, we study the behavior of Sparse Subspace Clustering (SSC) when either adversarial or random noise is added to the unlabeled input data points, which are assumed to be in a union of low-dimensional subspaces. We show that a modified version of SSC is  provably effective  in correctly identifying the underlying subspaces, even with noisy data. This extends theoretical guarantee of this algorithm to more practical settings and provides justification to the success of SSC in a class of real applications.",
+    "pdf_url": "http://jmlr.org/papers/volume17/13-354/13-354.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-335.html",
+    "header": "Learning the Variance of the Reward-To-Go",
+    "author": "Aviv Tamar, Dotan Di Castro, Shie Mannor",
+    "time": "17(13):1−36, 2016.",
+    "abstract": "In Markov decision processes (MDPs), the variance of the reward- to-go is a natural measure of uncertainty about the long term performance of a policy, and is important in domains such as finance, resource allocation, and process control. Currently however, there is no tractable procedure for calculating it in large scale MDPs. This is in contrast to the case of the expected reward-to-go, also known as the value function, for which effective simulation-based algorithms are known, and have been used successfully in various domains. In this paper we extend temporal difference (TD) learning algorithms to estimating the variance of the reward-to- go for a fixed policy. We propose variants of both TD(0) and LSTD($\\lambda$) with linear function approximation, prove their convergence, and demonstrate their utility in an option pricing problem. Our results show a dramatic improvement in terms of sample efficiency over standard Monte-Carlo methods, which are currently the state-of-the-art.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-335/14-335.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-316.html",
+    "header": "Convex Calibration Dimension for Multiclass Loss Matrices",
+    "author": "Harish G. Ramaswamy, Shivani Agarwal",
+    "time": "17(14):1−45, 2016.",
+    "abstract": "We study consistency properties of surrogate loss functions for general multiclass learning problems, defined by a general multiclass loss matrix. We extend the notion of classification calibration, which has been studied for binary and multiclass 0-1 classification problems (and for certain other specific learning problems), to the general multiclass setting, and derive necessary and sufficient conditions for a surrogate loss to be calibrated with respect to a loss matrix in this setting. We then introduce the notion of convex calibration dimension of a multiclass loss matrix, which measures the smallest \"size\" of a prediction space in which it is possible to design a convex surrogate that is calibrated with respect to the loss matrix. We derive both upper and lower bounds on this quantity, and use these results to analyze various loss matrices. In particular, we apply our framework to study various subset ranking losses, and use the convex calibration dimension as a tool to show both the existence and non-existence of various types of convex calibrated surrogates for these losses. Our results strengthen recent results of Duchi et al. (2010) and CalauzÃÂ¨nes et al. (2012) on the non-existence of certain types of convex calibrated surrogates in subset ranking. We anticipate the convex calibration dimension may prove to be a useful tool in the study and design of surrogate losses for general multiclass learning problems.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-316/14-316.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-231.html",
+    "header": "A Consistent Information Criterion for Support Vector Machines in Diverging Model Spaces",
+    "author": "Xiang Zhang, Yichao Wu, Lan Wang, Runze Li",
+    "time": "17(16):1−26, 2016.",
+    "abstract": "Information criteria have been popularly used in model selection and proved to possess nice theoretical properties. For classification, Claeskens et al. (2880) proposed support vector machine information criterion for feature selection and provided encouraging numerical evidence. Yet no theoretical justification was given there. This work aims to fill the gap and to provide some theoretical justifications for support vector machine information criterion in both fixed and diverging model spaces. We first derive a uniform convergence rate for the support vector machine solution and then show that a modification of the support vector machine information criterion achieves model selection consistency even when the number of features diverges at an exponential rate of the sample size. This consistency result can be further applied to selecting the optimal tuning parameter for various penalized support vector machine methods. Finite-sample performance of the proposed information criterion is investigated using Monte Carlo studies and one real-world gene selection problem.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-231/14-231.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-135.html",
+    "header": "Extremal Mechanisms for Local Differential Privacy",
+    "author": "Peter Kairouz, Sewoong Oh, Pramod Viswanath",
+    "time": "17(17):1−51, 2016.",
+    "abstract": "Local differential privacy has recently surfaced as a strong measure of privacy in contexts where personal information remains private even from data analysts. Working in a setting where both the data providers and data analysts want to maximize the utility of statistical analyses performed on the released data, we study the fundamental trade-off between local differential privacy and utility. This trade-off is formulated as a constrained optimization problem: maximize utility subject to local differential privacy constraints. We introduce a combinatorial family of extremal privatization mechanisms, which we call staircase mechanisms, and show that it contains the optimal privatization mechanisms for a broad class of information theoretic utilities such as mutual information and $f$-divergences. We further prove that for any utility function and any privacy level, solving the privacy-utility maximization problem is equivalent to solving a finite-dimensional linear program, the outcome of which is the optimal staircase mechanism. However, solving this linear program can be computationally expensive since it has a number of variables that is exponential in the size of the alphabet the data lives in. To account for this, we show that two simple privatization mechanisms, the binary and randomized response mechanisms, are universally optimal in the low and high privacy regimes, and well approximate the intermediate regime.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-135/15-135.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-273.html",
+    "header": "Loss Minimization and Parameter Estimation with Heavy Tails",
+    "author": "Daniel Hsu, Sivan Sabato",
+    "time": "17(18):1−40, 2016.",
+    "abstract": "This work studies applications and generalizations of a simple estimation technique that provides exponential concentration under heavy-tailed distributions, assuming only bounded low- order moments. We show that the technique can be used for approximate minimization of smooth and strongly convex losses, and specifically for least squares linear regression. For instance, our $d$-dimensional estimator requires just $\\tilde{O}(d\\log(1/\\delta))$ random samples to obtain a constant factor approximation to the optimal least squares loss with probability $1-\\delta$, without requiring the covariates or noise to be bounded or subgaussian. We provide further applications to sparse linear regression and low-rank covariance matrix estimation with similar allowances on the noise and covariate distributions. The core technique is a generalization of the median-of-means estimator to arbitrary metric spaces.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-273/14-273.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/10-364.html",
+    "header": "Analysis of Classification-based Policy Iteration Algorithms",
+    "author": "Alessandro Lazaric, Mohammad Ghavamzadeh, R{\\'e}mi Munos",
+    "time": "17(19):1−30, 2016.",
+    "abstract": "We introduce a variant of the classification-based approach to policy iteration which uses a cost-sensitive loss function weighting each classification mistake by its actual  regret , that is, the difference between the action- value of the greedy action and of the action chosen by the classifier. For this algorithm, we provide a full finite-sample analysis. Our results state a performance bound in terms of the number of policy improvement steps, the number of rollouts used in each iteration, the capacity of the considered policy space (classifier), and a capacity measure which indicates how well the policy space can approximate policies that are greedy with respect to any of its members. The analysis reveals a tradeoff between the estimation and approximation errors in this classification-based policy iteration setting. Furthermore it confirms the intuition that classification-based policy iteration algorithms could be favorably compared to value-based approaches when the policies can be approximated more easily than their corresponding value functions. We also study the consistency of the algorithm when there exists a sequence of policy spaces with increasing capacity.",
+    "pdf_url": "http://jmlr.org/papers/volume17/10-364/10-364.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/11-315.html",
+    "header": "Operator-valued Kernels for Learning from Functional Response Data",
+    "author": "Hachem Kadri, Emmanuel Duflos, Philippe Preux, StÃ©phane Canu, Alain Rakotomamonjy, Julien Audiffren",
+    "time": "17(20):1−54, 2016.",
+    "abstract": "In this paper (This is a combined and expanded version of previous conference papers Kadri et al., 2010, 2011c) we consider the problems of supervised classification and regression in the case where attributes and labels are functions: a data is represented by a set of functions, and the label is also a function. We focus on the use of reproducing kernel Hilbert space theory to learn from such functional data. Basic concepts and properties of kernel-based learning are extended to include the estimation of function-valued functions. In this setting, the representer theorem is restated, a set of rigorously defined infinite-dimensional operator-valued kernels that can be valuably applied when the data are functions is described, and a learning algorithm for nonlinear functional data analysis is introduced. The methodology is illustrated through speech and audio signal processing experiments.",
+    "pdf_url": "http://jmlr.org/papers/volume17/11-315/11-315.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/13-351.html",
+    "header": "Gradients Weights improve Regression and Classification",
+    "author": "Samory Kpotufe, Abdeslam Boularias, Thomas Schultz, Kyoungok Kim",
+    "time": "17(22):1−34, 2016.",
+    "abstract": "In regression problems over $\\mathbb{R}^d$, the unknown function $f$ often varies more in some coordinates than in others. We show that weighting each coordinate $i$ according to an estimate of the variation of $f$ along coordinate $i$ -- e.g. the $L_1$ norm of the $i$th-directional deriva",
+    "pdf_url": "http://jmlr.org/papers/volume17/13-351/13-351.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/13-589.html",
+    "header": "Learning Using Anti-Training with Sacrificial Data",
+    "author": "Michael L. Valenzuela, Jerzy W. Rozenblit",
+    "time": "17(24):1−42, 2016.",
+    "abstract": "Traditionally the machine-learning community has viewed the No Free Lunch (NFL) theorems for search and optimization as a limitation. We review, analyze, and unify the NFL theorem with the perspectives of \"blind\" search and meta-learning to arrive at necessary conditions for improving black-box optimization. We survey meta-learning literature to determine when and how meta- learning can benefit machine learning. Then, we generalize meta- learning in the context of the NFL theorems, to arrive at a novel technique called  anti-training with sacrificial data  (ATSD). Our technique applies at the meta level to arrive at domain specific algorithms. We also show how to generate sacrificial data. An extensive case study is presented along with simulated annealing results to demonstrate the efficacy of the ATSD method.",
+    "pdf_url": "http://jmlr.org/papers/volume17/13-589/13-589.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-036.html",
+    "header": "A Unifying Framework in Vector-valued Reproducing Kernel Hilbert Spaces for Manifold Regularization and Co-Regularized Multi-view Learning",
+    "author": "HÃ  Quang Minh, Loris Bazzani, Vittorio Murino",
+    "time": "17(25):1−72, 2016.",
+    "abstract": "This paper presents a general vector-valued reproducing kernel Hilbert spaces (RKHS) framework for the problem of le",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-036/14-036.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-168.html",
+    "header": "Quantifying Uncertainty in Random Forests via Confidence Intervals and Hypothesis Tests",
+    "author": "Lucas Mentch, Giles Hooker",
+    "time": "17(26):1−41, 2016.",
+    "abstract": "This work develops formal statistical inference procedures for predictions generated by supervised learning ensembles. Ensemble methods based on bootstrapping, such as bagging and random forests, have improved the predictive accuracy of individual trees, but fail to provide a framework in which distributional results can be easily determined. Instead of aggregating full bootstrap samples, we consider predicting by averaging over trees built on subsamples of the training set and demonstrate that the resulting estimator takes the form of a U-statistic. As such, predictions for individual feature vectors are asymptotically normal, allowing for confidence intervals to accompany predictions. In practice, a subset of subsamples is used for computational speed; here our estimators take the form of incomplete U-statistics and equivalent results are derived. We further demonstrate that this setup provides a framework for testing the significance of features. Moreover, the internal estimation method we develop allows us to estimate the variance parameters and perform these inference procedures at no additional computational cost. Simulations and illustrations on a real data set are provided.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-168/14-168.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-330.html",
+    "header": "Statistical-Computational Tradeoffs in Planted Problems and Submatrix Localization with a Growing Number of Clusters and Submatrices",
+    "author": "Yudong Chen, Jiaming Xu",
+    "time": "17(27):1−57, 2016.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-330/14-330.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-375.html",
+    "header": "Non-linear Causal Inference using Gaussianity Measures",
+    "author": "Daniel Hern{\\'a}ndez-Lobato, Pablo Morales-Mombiela, David Lopez-Paz, Alberto Su{\\'a}rez",
+    "time": "17(28):1−39, 2016.",
+    "abstract": "We provide theoretical and empirical evidence for a type of asymmetry between causes and effects that is present when these are related via linear models contaminated with additive non- Gaussian noise. Assuming that the causes and the effects have the same distribution, we show that the distribution of the residuals of a linear fit in the anti-causal direction is closer to a Gaussian than the distribution of the residuals in the causal direction. This Gaussianization effect is characterized by reduction of the magnitude of the high-order cumulants and by an increment of the differential entropy of the residuals. The problem of non-linear causal inference is addressed by performing an embedding in an expanded feature space, in which the relation between causes and effects can be assumed to be linear. The effectiveness of a method to discriminate between causes and effects based on this type of asymmetry is illustrated in a variety of experiments using different measures of Gaussianity. The proposed method is shown to be competitive with state-of-the-art techniques for causal inference.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-375/14-375.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-441.html",
+    "header": "Consistent Distribution-Free $K$-Sample and Independence Tests for Univariate Random Variables",
+    "author": "Ruth Heller, Yair Heller, Shachar Kaufman, Barak Brill, Malka Gorfine",
+    "time": "17(29):1−54, 2016.",
+    "abstract": "A popular approach for testing if two univariate random variables are statistically independent consists of partitioning the sample space into bins, and evaluating a test statistic on the binned data. The partition size matters, and the optimal partition size is data dependent. While for detecting simple relationships coarse partitions may be best, for detecting complex relationships a great gain in power can be achieved by considering finer partitions. We suggest novel consistent distribution-free tests that are based on summation or maximization aggregation of scores over all partitions of a fixed size. We show that our test statistics based on summation can serve as good estimators of the mutual information. Moreover, we suggest regularized tests that aggregate over all partition sizes, and prove those are consistent too. We provide polynomial-time algorithms, which are critical for computing the suggested test statistics efficiently. We show that the power of the regularized tests is excellent compared to existing tests, and almost as powerful as the tests based on the optimal (yet unknown in practice) partition size, in simulations as well as on a real data example.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-441/14-441.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-486.html",
+    "header": "A Gibbs Sampler for Learning DAGs",
+    "author": "Robert J. B. Goudie, Sach Mukherjee",
+    "time": "17(30):1−39, 2016.",
+    "abstract": "We propose a Gibbs sampler for structure learning in directed acyclic graph (DAG) models. The standard Markov chain Monte Carlo algorithms used for learning DAGs are random-walk Metropolis-Hastings samplers. These samplers are guaranteed to converge asymptotically but often mix slowly when exploring the large graph spaces that arise in structure learning. In each step, the sampler we propose draws entire sets of parents for multiple nodes from the appropriate conditional distribution. This provides an efficient way to make large moves in graph space, permitting faster mixing whilst retaining asymptotic guarantees of convergence. The conditional distribution is related to variable selection with candidate parents playing the role of covariates or inputs. We empirically examine the performance of the sampler using several simulated and real data examples. The proposed method gives robust results in diverse settings, outperforming several existing Bayesian and frequentist methods. In addition, our empirical results shed some light on the relative merits of Bayesian and constraint- based methods for structure learning.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-486/14-486.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-501.html",
+    "header": "Dimension-free Concentration Bounds on Hankel Matrices for Spectral Learning",
+    "author": "FranÃ§ois Denis, Mattias Gybels, Amaury Habrard",
+    "time": "17(31):1−32, 2016.",
+    "abstract": "Learning probabilistic models over strings is an important issue for many applications. Spectral methods propose elegant solutions to the problem of inferring weighted automata from finite samples of variable-length strings drawn from an unknown target distribution $p$. These methods rely on a singular value decomposition of a matrix $\\v{H}_S$, called the empirical Hankel matrix, that records the frequencies of (some of) the observed strings $S$. The accuracy of the learned distribution depends both on the quantity of information embedded in $\\v{H}_S$ and on the distance between $\\v{H}_S$ and its mean $\\v{H}_p$. Existing concentration bounds seem to indicate that the concentration over $\\v{H}_p$ gets looser with its dimensions, suggesting that it might be necessary to bound the dimensions of $\\v{H}_S$ for learning. We prove new  dimension-free  concentration bounds for classical Hankel matrices and several variants, based on prefixes or factors of strings, that are useful for learning. Experiments demonstrate that these bounds are tight and that they significantly improve existing (dimension-dependent) bounds. One consequence of these results is that the spectral learning approach remains consistent even if all the observations are recorded within the empirical matrix.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-501/14-501.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-518.html",
+    "header": "Distinguishing Cause from Effect Using Observational Data: Methods and Benchmarks",
+    "author": "Joris M. Mooij, Jonas Peters, Dominik Janzing, Jakob Zscheischler, Bernhard SchÃ¶lkopf",
+    "time": "17(32):1−102, 2016.",
+    "abstract": "The discovery of causal relationships from purely observational data is a fundamental problem in science. The most elementary form of such a causal discovery problem is to decide whether $X$ causes $Y$ or, alternatively, $Y$ causes $X$, given joint observations of two variables $X,Y$. An example is to decide whether altitude causes temperature, or vice versa, given only joint measurements of both variables. Even under the simplifying assumptions of no confounding, no feedback loops, and no selection bias, such bivariate causal discovery problems are challenging. Nevertheless, several approaches for addressing those problems have been proposed in recent years. We review two families of such methods: methods based on Additive Noise Models (ANMs) and Information Geometric Causal Inference (IGCI). We present the benchmark  CauseEffectPairs  that consists of data for 100 different cause-effect pairs selected from 37 data sets from various domains (e.g., meteorology, biology, medicine, engineering, economy, etc.) and motivate our decisions regarding the ground truth causal directions of all pairs. We evaluate the performance of several bivariate causal discovery methods on these real-world benchmark data and in addition on artificially simulated data. Our empirical results on real-world data indicate that certain methods are indeed able to distinguish cause from effect using only purely observational data, although more benchmark data would be needed to obtain statistically significant conclusions. One of the best performing methods overall is the method based on Additive Noise Models that has originally been proposed by Hoyer et al. (2009), which obtains an accuracy of 63 $\\pm$ 10 % and an AUC of 0.74 $\\pm$ 0.05 on the real-world benchmark. As the main theoretical contribution of this work we prove the consistency of that method.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-518/14-518.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-317.html",
+    "header": "OLPS: A Toolbox for On-Line Portfolio Selection",
+    "author": "Bin Li, Doyen Sahoo, Steven C.H. Hoi",
+    "time": "17(35):1−5, 2016.",
+    "abstract": "On-line portfolio selection is a practical financial engineering problem, which aims to sequentially allocate capital among a set of assets in order to maximize long-term return. In recent years, a variety of machine learning algorithms have been proposed to address this challenging problem, but no comprehensive open-source toolbox has been released for various reasons. This article presents the first open-source toolbox for \"On-Line Portfolio Selection\" (OLPS), which implements a collection of classical and state-of-the-art strategies powered by machine learning algorithms. We hope that OLPS can facilitate the development of new learning methods and enable the performance benchmarking and comparisons of different strategies. OLPS is an open-source project released under Apache License (version 2.0), which is available at  github.com/OLPS/OLPS  or  OLPS.stevenhoi.org .",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-317/15-317.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-319.html",
+    "header": "A Bounded p-norm Approximation of Max-Convolution for Sub-Quadratic Bayesian Inference on Additive Factors",
+    "author": "Julianus Pfeuffer, Oliver Serang",
+    "time": "17(36):1−39, 2016.",
+    "abstract": "Max-convolution is an important problem closely resembling standard convolution; as such, max-convolution occurs frequently across many fields. Here we extend the method with fastest known worst-case runtime, which can be applied to nonnegative vectors by numerically approximating the Chebyshev norm $\\| \\cdot \\|_\\infty$, and use this approach to derive two numerically stable methods based on the idea of computing $p$-norms via fast convolution: The first method proposed, with runtime in $O( k \\log(k) \\log(\\log(k)) )$ (which is less than $18 k \\log(k)$ for any vectors that can be practically realized), uses the $p$-norm as a direct approximation of the Chebyshev norm. The second approach proposed, with runtime in $O( k \\log(k) )$ (although in practice both perform similarly), uses a novel null space projection method, which extracts information from a sequence of $p$-norms to estimate the maximum value in the vector (this is equivalent to querying a small number of moments from a distribution of bounded support in order to estimate the maximum). The $p$-norm approaches are compared to one another and are shown to compute an approximation of the Viterbi path in a hidden Markov model where the transition matrix is a Toeplitz matrix; the runtime of approximating the Viterbi path is thus reduced from $O( n k^2 )$ steps to $O( n k \\log(k))$ steps in practice, and is demonstrated by inferring the U.S. unemployment rate from the S&P 500 stock index.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-319/15-319.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-335.html",
+    "header": "Hybrid Orthogonal Projection and Estimation (HOPE): A New Framework to Learn Neural Networks",
+    "author": "Shiliang Zhang, Hui Jiang, Lirong Dai",
+    "time": "17(37):1−33, 2016.",
+    "abstract": "In this paper, we propose a novel model for high-dimensional data, called the  Hybrid Orthogonal Projection and Estimation (HOPE)  model, which combines a linear orthogonal projection and a finite mixture model under a unified generative modeling framework. The HOPE",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-335/15-335.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-389.html",
+    "header": "The Optimal Sample Complexity of PAC Learning",
+    "author": "Steve Hanneke",
+    "time": "17(38):1−15, 2016.",
+    "abstract": "This work establishes a new upper bound on the number of samples sufficient for PAC learning in the realizable case. The bound matches known lower bounds up to numerical constant factors. This solves a long-standing open problem on the sample complexity of PAC learning. The technique and analysis build on a recent breakthrough by Hans Simon.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-389/15-389.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-522.html",
+    "header": "End-to-End Training of Deep Visuomotor Policies",
+    "author": "Sergey Levine, Chelsea Finn, Trevor Darrell, Pieter Abbeel",
+    "time": "17(39):1−40, 2016.",
+    "abstract": "Policy search methods can allow robots to learn control policies for a wide range of tasks, but practical applications of policy search often require hand-engineered components for perception, state estimation, and low-level control. In this paper, we aim to answer the following question: does training the perception and control systems jointly end-to-end provide better performance than training each component separately? To this end, we develop a method that can be used to learn policies that map raw image observations directly to torques at the robot's motors. The policies are represented by deep convolutional neural networks (CNNs) with 92,000 parameters, and are trained using a guided policy search method, which transforms policy search into supervised learning, with supervision provided by a simple trajectory-centric reinforcement learning method. We evaluate our method on a range of real-world manipulation tasks that require close coordination between vision and control, such as screwing a cap onto a bottle, and present simulated comparisons to a range of prior policy search methods.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-522/15-522.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/zhang16a.html",
+    "header": "On Quantile Regression in Reproducing Kernel Hilbert Spaces with the Data Sparsity Constraint",
+    "author": "Chong Zhang, Yufeng Liu, Yichao Wu",
+    "time": "17(40):1−45, 2016.",
+    "abstract": "For spline regressions, it is well known that the choice of knots is crucial for the performance of the estimator. As a general learning framework covering the smoothing splines, learning in a Reproducing Kernel Hilbert Space (RKHS) has a similar issue. However, the selection of training data points for kernel functions in the RKHS representation has not been carefully studied in the literature. In this paper we study quantile regression as an example of learning in a RKHS. In this case, the regular squared norm penalty does not perform training data selection. We propose a data sparsity constraint that imposes thresholding on the kernel function coefficients to achieve a sparse kernel function representation. We demonstrate that the proposed data sparsity method can have competitive prediction performance for certain situations, and have comparable performance in other cases compared to that of the traditional squared norm penalty. Therefore, the data sparsity method can serve as a competitive alternative to the squared norm penalty method. Some theoretical properties of our proposed method using the data sparsity constraint are obtained. Both simulated and real data sets are used to demonstrate the usefulness of our data sparsity constraint.",
+    "pdf_url": "http://jmlr.org/papers/volume17/zhang16a/zhang16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/luttinen16a.html",
+    "header": "BayesPy: Variational Bayesian Inference in Python",
+    "author": "Jaakko Luttinen",
+    "time": "17(41):1−6, 2016.",
+    "abstract": "BayesPy is an open-source Python software package for performing variational Bayesian inference. It is based on the variational message passing framework and supports conjugate exponential family models. By removing the tedious task of implementing the variational Bayesian update equations, the user can construct models faster and in a less error-prone way. Simple syntax, flexible model construction and efficient inference make BayesPy suitable for both average and expert Bayesian users. It also supp",
+    "pdf_url": "http://jmlr.org/papers/volume17/luttinen16a/luttinen16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/ariascastro16a.html",
+    "header": "On the Estimation of the Gradient Lines of a Density and the Consistency of the Mean-Shift Algorithm",
+    "author": "Ery Arias-Castro, David Mason, Bruno Pelletier",
+    "time": "17(43):1−28, 2016.",
+    "abstract": "We consider the problem of estimating the gradient lines of a density, which can be used to cluster points sampled from that density, for example via the mean-shift algorithm of Fukunaga and Hostetler (1975). We prove general convergence bounds that we then specialize to kernel density estimation.",
+    "pdf_url": "http://jmlr.org/papers/volume17/ariascastro16a/ariascastro16a.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/11-229.html",
+    "header": "A Unified View on Multi-class Support Vector Classification",
+    "author": "{\\\"U}rÃ¼n Do\\u{g}an, Tobias Glasmachers, Christian Igel",
+    "time": "17(45):1−32, 2016.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume17/11-229/11-229.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-037.html",
+    "header": "Addressing Environment Non-Stationarity by Repeating Q-learning Updates",
+    "author": "Sherief Abdallah, Michael Kaisers",
+    "time": "17(46):1−31, 2016.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-037/14-037.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-148.html",
+    "header": "Large Scale Online Kernel Learning",
+    "author": "Jing Lu, Steven C.H. Hoi, Jialei Wang, Peilin Zhao, Zhi-Yong Liu",
+    "time": "17(47):1−43, 2016.",
+    "abstract": "In this paper, we present a new framework for large scale online kernel learning, making kernel methods efficient and scalable for large-scale online learning applications. Unlike the regular budget online kernel learning scheme that usually uses some budget maintenance strategies to bound the number of support vectors, our framework explores a completely different approach of kernel functional approximation techniques to make the subsequent online learning task efficient and scalable. Specifically, we present two different online kernel machine learning algorithms: (i) Fourier Online Gradient Descent (FOGD) algorithm that applies the random Fourier features for approximating kernel functions; and (ii) NystrÃÂ¶m Online Gradient Descent (NOGD) algorithm that applies the NystrÃÂ¶m method to approximate large kernel matrices. We explore these two approaches to tackle three online learning tasks: binary classification, multi-class classification, and regression. The encouraging results of our experiments on large-scale datasets validate the effectiveness and efficiency of the proposed algorithms, making them potentially more practical than the family of existing budget online kernel learning approaches.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-148/14-148.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-195.html",
+    "header": "Kernel Mean Shrinkage Estimators",
+    "author": "Krikamol Mu, et, Bharath Sriperumbudur, Kenji Fukumizu, Arthur Gretton, Bernhard SchÃ¶lkopf",
+    "time": "17(48):1−41, 2016.",
+    "abstract": "A mean function in a reproducing kernel Hilbert space (RKHS), or a kernel mean, is central to kernel methods in that it is used by many classical algorithms such as kernel principal component analysis, and it also forms the core inference step of modern kernel methods that rely on embedding probability distributions in RKHSs. Given a finite sample, an empirical average has been used commonly as a standard estimator of the true kernel mean. Despite a widespread use of this estimator, we show that it can be improved thanks to the well-known Stein phenomenon. We propose a new family of estimators called kernel mean shrinkage estimators (KMSEs), which benefit from both theoretical justifications and good empirical performance. The results demonstrate that the proposed estimators outperform the standard one, especially in a \"large $d$, small $n$\" paradigm.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-195/14-195.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-199.html",
+    "header": "SPSD Matrix Approximation vis Column Selection: Theories, Algorithms, and Extensions",
+    "author": "Shusen Wang, Luo Luo, Zhihua Zhang",
+    "time": "17(49):1−49, 2016.",
+    "abstract": "Symmetric positive semidefinite (SPSD) matrix approximation is an important problem with applications in kernel methods. However, existing SPSD matrix approximation methods such as the NystrÃÂ¶m method only have weak error bounds. In this paper we conduct in-depth studies of an SPSD matrix approximation model and establish strong relative-error bounds. We call it the prototype model for it has more efficient and effective extensions, and some of its extensions have high scalability. Though the prototype model itself is not suitable for large- scale data, it is still useful to study its properties, on which the analysis of its extensions relies. This paper offers novel theoretical analysis, efficient algorithms, and a highly accurate extension. First, we establish a lower error bound for the prototype model and improve the error bound of an existing column selection algorithm to match the lower bound. In this way, we obtain the first optimal column selection algorithm for the prototype model. We also prove that the prototype model is exact under certain conditions. Second, we develop a simple column selection algorithm with a provable error bound. Third, we propose a so-called spectral shifting model to make the approximation more accurate when the eigenvalues of the matrix decay slowly, and the improvement is theoretically quantified. The spectral shifting method can also be applied to improve other SPSD matrix approximation models.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-199/14-199.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-298.html",
+    "header": "Combinatorial Multi-Armed Bandit and Its Extension to Probabilistically Triggered Arms",
+    "author": "Wei Chen, Yajun Wang, Yang Yuan, Qinshi Wang",
+    "time": "17(50):1−33, 2016.",
+    "abstract": "We define a general framework for a large class of combinatorial multi-armed bandit (CMAB) problems, where subsets of base arms with unknown distributions form  super arms . In each round, a super arm is played and the base arms contained in the super arm are played and their outcomes are observed. We further consider the extension in which more base arms could be probabilistically triggered based on the outcomes of already triggered arms. The reward of the super arm depends on the outcomes of all played arms, and it only needs to satisfy two mild assumptions, which allow a large class of nonlinear reward instances. We assume the availability of an offline $(\\alpha,\\beta)$-approximation oracle that takes the means of the outcome distributions of arms and outputs a super arm that with probability $\\beta$ generates an $\\alpha$ fraction of the optimal expected reward. The objective of an online learning algorithm for CMAB is to minimize  $(\\alpha,\\beta)$-approximation regret , which is the difference in total expected reward between the $\\alpha\\beta$ fraction of expected reward when always playing the optimal super arm, and the expected reward of playing super arms according to the algorithm. We provide CUCB algorithm that achieves $O(\\log n)$ distribution-dependent regret, where $n$ is the number of rounds played, and we further provide distribution-independent bounds for a large class of reward functions. Our regret analysis is tight in that it matches the bound of UCB1 algorithm (up to a constant factor) for the classical MAB problem, and it significantly improves the regret bound in an earlier paper on combinatorial bandits with linear rewards. We apply our CMAB framework to two new applications, probabilistic maximum coverage (PMC) for online advertising and social influence maximization for viral marketing, both having nonlinear reward structures. In particular, application to social influence maximization requires our extension on probabilistically triggered arms.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-298/14-298.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-388.html",
+    "header": "Differentially Private Data Releasing for Smooth Queries",
+    "author": "Ziteng Wang, Chi Jin, Kai Fan, Jiaqi Zhang, Junliang Huang, Yiqiao Zhong, Liwei Wang",
+    "time": "17(51):1−42, 2016.",
+    "abstract": "In the past few years, differential privacy has become a standard concept in the area of privacy. One of the most important problems in this field is to answer queries while preserving differential privacy. In spite of extensive studies, most existing work on differentially private query answering assumes the data are  discrete  (i.e., in $\\{0,1\\}^d$) and focuses on queries induced by \\emph{Boolean} functions. In real applications however,  continuous  data are at least as common as binary data. Thus, in this work we explore a less studied topic, namely, differential privately query answering for continuous data with continuous function. As a first step towards the continuous case, we study a natural class of linear queries on continuous data which we refer to as  smooth  queries. A linear query is said to be $K$-smooth if it is specified by a function defined on $[-1,1]^d$ whose partial derivatives up to order $K$ are all bounded. We develop two $\\epsilon$-differentially private mechanisms which are able to answer  all  smooth queries. The first mechanism outputs a summary of the database and can then give answers to the queries. The second mechanism is an improvement of the first one and it outputs a synthetic database. The two mechanisms both achieve an accuracy of $O (n^{-\\frac{K}{2d+K}}/\\epsilon )$. Here we assume that the dimension $d$ is a constant. It turns out that even in this parameter setting (which is almost trivial in the discrete case), using existing discrete mechanisms to answer the smooth queries is difficult and requires more noise. Our mechanisms are based on $L_{\\infty}$-approximation of (transformed) smooth functions by low-degree even trigonometric polynomials with uniformly bounded coefficients. We also develop practically efficient variants of the mechanisms with promising experimental results.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-388/14-388.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-460.html",
+    "header": "Iterative Hessian Sketch: Fast and Accurate Solution Approximation for Constrained Least-Squares",
+    "author": "Mert Pilanci, Martin J. Wainwright",
+    "time": "17(53):1−38, 2016.",
+    "abstract": "We study randomized sketching methods for approximately solving least-squares problem with a general convex constraint. The quality of a least-squares approximation can be assessed in different ways: either in terms of the value of the quadratic objective function (cost approximation), or in terms of some distance measure between the approximate minimizer and the true minimizer (solution approximation). Focusing on the latter criterion, our first main result provides a general lower bound on any randomized method that sketches both the data matrix and vector in a least-squares problem; as a surprising consequence, the most widely used least-squares sketch is sub-optimal for solution approximation. We then present a new method known as the  iterative Hessian sketch , and show that it can be used to obtain approximations to the original least-squares problem using a projection dimension proportional to the statistical complexity of the least-squares minimizer, and a logarithmic number of iterations. We illustrate our general theory with simulations for both unconstrained and constrained versions of least-squares, including $\\ell_1$-regularization and nuclear norm constraints. We also numerically demonstrate the practicality of our approach in a real face expression classification experiment.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-460/14-460.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-479.html",
+    "header": "Estimating Causal Structure Using Conditional DAG Models",
+    "author": "Chris. J. Oates, Jim Q. Smith, Sach Mukherjee",
+    "time": "17(54):1−23, 2016.",
+    "abstract": "This paper considers inference of causal structure in a class of graphical models called conditional DAGs. These are directed acyclic graph (DAG) models with two kinds of variables, primary and secondary. The secondary variables are used to aid in the estimation of the structure of causal relationships between the primary variables. We prove that, under certain",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-479/14-479.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-130.html",
+    "header": "Causal Inference through a Witness Protection Program",
+    "author": "Ricardo Silva, Robin Evans",
+    "time": "17(56):1−53, 2016.",
+    "abstract": "One of the most fundamental problems in causal inference is the estimation of a causal effect when treatment and outcome are confounded. This is difficult in an observational study, because one has no direct evidence that all confounders have been adjusted for. We introduce a novel approach for estimating causal effects that exploits observational conditional independencies to suggest Ã¢ÂÂweakÃ¢ÂÂ paths in an unknown causal graph. The widely used faithfulness condition of Spirtes et al. is relaxed to allow for varying degrees of Ã¢ÂÂpath cancellationsÃ¢ÂÂ that imply conditional independencies but do not rule out the existence of confounding causal paths. The output is a posterior distribution over bounds on the average causal effect via a linear programming approach and Bayesian inference. We claim this approach should be used in regular practice as a complement to other tools in observational studies.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-130/15-130.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-140.html",
+    "header": "Structure Discovery in Bayesian Networks by Sampling Partial Orders",
+    "author": "Teppo Niinim\\\"{a}ki, Pekka Parviainen, Mikko Koivisto",
+    "time": "17(57):1−47, 2016.",
+    "abstract": "We present methods based on Metropolis-coupled Markov chain Monte Carlo (MC3) and annealed importance sampling (AIS) for estimating the posterior distribution of Bayesian networks. The methods draw samples from an appropriate distribution of partial orders on the nodes, continued by sampling directed acyclic graphs (DAGs) conditionally on the sampled partial orders. We show that the computations needed for the sampling algorithms are feasible as long as the encountered partial orders have relatively few down-sets. While the algorithms assume suitable modularity properties of the priors, arbitrary priors can be handled by dividing the importance weight of each sampled DAG by the number of topological sorts it has---we give a practical dynamic programming algorithm to compute these numbers. Our empirical results demonstrate that the presented partial-order- based samplers are superior to previous Markov chain Monte Carlo methods, which sample DAGs either directly or via linear orders on the nodes. The results also suggest that the convergence rate of the estimators based on AIS are competitive to those of MC3. Thus AIS is the preferred method, as it enables easier large- scale parallelization and, in addition, supplies good probabilistic lower bound guarantees for the marginal likelihood of the model.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-140/15-140.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-189.html",
+    "header": "Estimation from Pairwise Comparisons: Sharp Minimax Bounds with Topology Dependence",
+    "author": "Nihar B. Shah, Sivaraman Balakrishnan, Joseph Bradley, Abhay Parekh, Kannan Ramch, ran, Martin J. Wainwright",
+    "time": "17(58):1−47, 2016.",
+    "abstract": "Data in the form of pairwise comparisons arises in many domains, including preference elicitation, sporting competitions, and peer grading among others. We consider parametric ordinal models for such pairwise comparison data involving a latent vector $w^* \\in \\mathbb{R}^d$ that represents the Ã¢ÂÂqualitiesÃ¢ÂÂ of the $d$ items being compared; this class of models includes the two most widely used parametric models---the Bradley-Terry-Luce (BTL) and the Thurstone models. Working within a standard minimax framework, we provide tight upper and lower bounds on the optimal error in estimating the quality score vector $w^*$ under this class of models. The bounds depend on the topology of the comparison graph induced by the subset of pairs being compared, via the spectrum of the Laplacian of the comparison graph. Thus, in settings where the subset of pairs may be chosen, our results provide principled guidelines for making this choice. Finally, we compare these error rates to those under cardinal measurement models and show that the error rates in the ordinal and cardinal settings have identical scalings apart from constant pre- factors.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-189/15-189.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-239.html",
+    "header": "Domain-Adversarial Training of Neural Networks",
+    "author": "Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo Larochelle, FranÃ§ois Laviolette, Mario March, Victor Lempitsky",
+    "time": "17(59):1−35, 2016.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-239/15-239.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-273.html",
+    "header": "Probabilistic Low-Rank Matrix Completion from Quantized Measurements",
+    "author": "Sonia A. Bhaskar",
+    "time": "17(60):1−34, 2016.",
+    "abstract": "We consider the recovery of a low rank real-valued matrix $M$ given a subset of noisy discrete (or quantized) measurements. Such problems arise in several applications such as collaborative filtering, learning and content analytics, and sensor network localization. We consider constrained maximum likelihood estimation of $M$, under a constraint on the entry- wise infinity-norm of $M$ and an exact rank constraint. We provide upper bounds on the Frobenius norm of matrix estimation error under this model. Previous theoretical investigations have focused on binary (1-bit) quantizers, and been based on convex relaxation of the rank. Compared to the existing binary results, our performance upper bound has faster convergence rate with matrix dimensions when the fraction of revealed observations is fixed. We also propose a globally convergent optimization algorithm based on low rank factorization of $M$ and validate the method on synthetic and real data, with improved performance over previous methods.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-273/15-273.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-292.html",
+    "header": "DSA: Decentralized Double Stochastic Averaging Gradient Algorithm",
+    "author": "Aryan Mokhtari, Alejandro Ribeiro",
+    "time": "17(61):1−35, 2016.",
+    "abstract": "This paper considers optimization problems where nodes of a network have access to summands of a global objective. Each of these local objectives is further assumed to be an average of a finite set of functions. The motivation for this setup is to solve large scale machine learning problems where elements of the training set are distributed to multiple computational elements. The decentralized dou",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-292/15-292.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-346.html",
+    "header": "The Statistical Performance of Collaborative Inference",
+    "author": "GÃ©rard Biau, Kevin Bleakley, BenoÃ®t Cadre",
+    "time": "17(62):1−29, 2016.",
+    "abstract": "The statistical analysis of massive and complex data sets will require the development of algorithms that depend on distributed computing and collaborative inference. Inspired by this, we propose a collaborative framework that aims to estimate the unknown mean $\\theta$ of a random variable $X$. In the model we present, a certain number of calculation units, distributed across a communication network represented by a graph, participate in the estimation of $\\theta$ by sequentially receiving independent data from $X$ while exchanging messages via a stochastic matrix $A$ defined over the graph. We give precise conditions on the matrix $A$ under which the statistical precision of the individual units is comparable to that of a (gold standard) virtual centralized estimate, even though each unit does not have access to all of the data. We show in particular the fundamental role played by both the non-trivial eigenvalues of $A$ and the Ramanujan class of expander graphs, which provide remarkable performance for moderate algorithmic cost.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-346/15-346.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-392.html",
+    "header": "Convergence of an Alternating Maximization Procedure",
+    "author": "Andreas Andresen, Vladimir Spokoiny",
+    "time": "17(63):1−53, 2016.",
+    "abstract": "We derive two convergence results for a sequential alternating maximization procedure to approximate the maximizer of random functionals such as the realized log likelihood in MLE estimation. We manage to show that the sequence attains the same deviation properties as shown for the profile M-estimator by Andresen and Spokoiny (2013), that means a finite sample Wilks and Fisher theorem. Further under slightly stronger smoothness constraints on the random functional we can show nearly linear convergence to the global maximizer if the starting point for the procedure is well chosen.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-392/15-392.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-531.html",
+    "header": "StructED: Risk Minimization in Structured Prediction",
+    "author": "Yossi Adi, Joseph Keshet",
+    "time": "17(64):1−5, 2016.",
+    "abstract": "Structured tasks are distinctive: each task has its own measure of performance, such as the word error rate in speech recognition, the BLEU score in machine translation, the NDCG score in information retrieval, or the intersection-over-union score in visual object segmentation. This paper presents StructED, a software package for learning structured prediction models with training methods that aimed at optimizing the task measure of performance. The package was written in Java and released under the MIT license. It can be downloaded from   adiyoss.github.io/StructED .",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-531/15-531.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/10-245.html",
+    "header": "Bayesian Policy Gradient and Actor-Critic Algorithms",
+    "author": "Mohammad Ghavamzadeh, Yaakov Engel, Michal Valko",
+    "time": "17(66):1−53, 2016.",
+    "abstract": "Policy gradient methods are reinforcement learning algorithms that adapt a parameterized policy by following a performance gradient estimate. Many conventional policy gradient methods use Monte-Carlo techniques to estimate this gradient. The policy is improved by adjusting the parameters in the direction of the gradient estimate. Since Monte-Carlo methods tend to have high variance, a large number of samples is required to attain accurate estimates, resulting in slow convergence. In this paper, we first propose a Bayesian framework for policy gradient, based on modeling the policy gradient as a Gaussian process. This reduces the number of samples needed to obtain accurate gradient estimates. Moreover, estimates of the natural gradient as well as a measure of the uncertainty in the gradient estimates, namely, the gradient covariance, are provided at little extra cost. Since the proposed Bayesian framework considers system trajectories as its basic observable unit, it does not require the dynamics within trajectories to be of any particular form, and thus, can be easily extended to partially observable problems. On the downside, it cannot take advantage of the Markov property when the system is Markovian. To address this issue, we proceed to supplement our Bayesian policy gradient framework with a new actor-critic learning model in which a Bayesian class of non- parametric critics, based on Gaussian process temporal difference learning, is used. Such critics model the action- value function as a Gaussian process, allowing Bayes' rule to be used in computing the posterior distribution over action-value functions, conditioned on the observed data. Appropriate choices of the policy parameterization and of the prior covariance (kernel) between action-values allow us to obtain closed-form expressions for the posterior distribution of the gradient of the expected return with respect to the policy parameters. We perform detailed experimental comparisons of the proposed Bayesian policy gradient and actor-critic algorithms with classic Monte-Carlo based policy gradient methods, as well as with each other, on a number of reinforcement learning problems.",
+    "pdf_url": "http://jmlr.org/papers/volume17/10-245/10-245.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/13-134.html",
+    "header": "Practical Kernel-Based Reinforcement Learning",
+    "author": "AndrÃ© M.S. Barreto, Doina Precup, Joelle Pineau",
+    "time": "17(67):1−70, 2016.",
+    "abstract": "Kernel-based reinforcement learning  (KBRL) stands out among approximate reinforcement learning algorithms for its strong theoretical guarantees. By casting the learning problem as a local kernel approximation, KBRL provides a way of computing a decision policy which converges to a unique solution and is statistically consistent. Unfortunately, the model constructed by KBRL grows with the number of sample transitions, resulting in a computational cost that precludes its application to large-scale or on-line domains. In this paper we introduce an algorithm that turns KBRL into a practical reinforcement learning tool.  Kernel-based stochastic factorization  (KBSF) builds on a simple idea: when a transition probability matrix is represented as the product of two stochastic matrices, one can swap the factors of the multiplication to obtain another transition matrix, potentially much smaller than the original, which retains some fundamental properties of its precursor. KBSF exploits such an insight to compress the information contained in KBRL's model into an approximator of fixed size. This makes it possible to build an approximation considering both the difficulty of the problem and the associated computational cost. KBSF's computational complexity is linear in the number of sample transitions, which is the best one can do without discarding data. Moreover, the algorithm's simple mechanics allow for a fully incremental implementation that makes the amount of memory used independent of the number of sample transitions. The result is a kernel-based reinforcement learning algorithm that can be applied to large-scale problems in both off-line and on-line regimes. We derive upper bounds for the distance between the value functions computed by KBRL and KBSF using the same data. We also prove that it is possible to control the magnitude of the variables appearing in our bounds, which means that, given enough computational resources, we can make KBSF's value function as close as desired to the value function that would be computed by KBRL using the same set of sample transitions. The potential of our algorithm is demonstrated in an extensive empirical study in which KBSF is applied to difficult tasks based on real-world data. Not only does KBSF solve problems that had never been solved before, but it also significantly outperforms other state-of-the-art reinforcement learning algorithms on the tasks studied.",
+    "pdf_url": "http://jmlr.org/papers/volume17/13-134/13-134.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-087.html",
+    "header": "An Information-Theoretic Analysis of Thompson Sampling",
+    "author": "Daniel Russo, Benjamin Van Roy",
+    "time": "17(68):1−30, 2016.",
+    "abstract": "We provide an information-theoretic analysis of Thompson sampling that applies across a broad range of online optimization problems in which a decision-maker must learn from partial feedback. This analysis inherits the simplicity and elegance of information theory and leads to regret bounds that scale with the entropy of the optimal-action distribution. This strengthens preexisting results and yields new insight into how information improves performance.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-087/14-087.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-230.html",
+    "header": "Compressed Gaussian Process for Manifold Regression",
+    "author": "Rajarshi Guhaniyogi, David B. Dunson",
+    "time": "17(69):1−26, 2016.",
+    "abstract": "Nonparametric regression for large numbers of features ($p$) is an increasingly important problem. If the sample size $n$ is massive, a common strategy is to partition the feature space, and then separately apply simple models to each partition set. This is not ideal when $n$ is modest relative to $p$, and we propose an alternative approach relying on random compression of the feature vector combined with Gaussian process regression. The proposed approach is particularly motivated by the setting in which the response is conditionally independent of the features given the projection to a low dimensional manifold. Conditionally on the random compression matrix and a smoothness parameter, the posterior distribution for the regression surface and posterior predictive distributions are available analytically. Running the analysis in parallel for many random compression matrices and smoothness parameters, model averaging is used to combine the results. The algorithm can be implemented rapidly even in very large $p$ and moderately large $n$ nonparametric regression, has strong theoretical justification, and is found to yield state of the art predictive performance.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-230/14-230.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-306.html",
+    "header": "On the Characterization of a Class of Fisher-Consistent Loss Functions and its Application to Boosting",
+    "author": "Matey Neykov, Jun S. Liu, Tianxi Cai",
+    "time": "17(70):1−32, 2016.",
+    "abstract": "Accurate classification of categorical outcomes is essential in a wide range of applications. Due to computational issues with minimizing the empirical 0/1 loss, Fisher consistent losses have been proposed as viable proxies. However, even with smooth losses, direct minimization remains a daunting task. To approximate such a minimizer, various boosting algorithms have been suggested. For example, with exponential loss, the AdaBoost algorithm (Freund and Schapire, 1995) is widely used for two- class problems and has been extended to the multi-class setting (Zhu et al., 2009). Alternative loss functions, such as the logistic and the hinge losses, and their corresponding boosting algorithms have also been proposed (Zou et al., 2008; Wang, 2012).  In this paper we demonstrate that a broad class of losses, including non-convex functions, achieve Fisher consistency, and in addition can be used for explicit estimation of the conditional class probabilities. Furthermore, we provide a generic boosting algorithm that is not loss-specific. Extensive simulation results suggest that the proposed boosting algorithms could outperform existing methods with properly chosen losses and bags of weak learners.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-306/14-306.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-445.html",
+    "header": "Exact Inference on Gaussian Graphical Models of Arbitrary Topology using Path-Sums",
+    "author": "P.-L. Giscard, Z. Choo, S. J. Thwaite, D. Jaksch",
+    "time": "17(71):1−19, 2016.",
+    "abstract": "We present the path-sum formulation for exact statistical inference of marginals on Gaussian graphical models of arbitrary topology. The path-sum formulation gives the covariance between each pair of variables as a branched continued fraction of finite depth and breadth. Our method originates from the closed- form resummation of infinite families of terms of the walk-sum representation of the covariance matrix. We prove that the path- sum formulation always exists for models whose covariance matrix is positive definite: i.e. it is valid for both walk-summable and non-walk-summable graphical models of arbitrary topology. We show that for graphical models on trees the path-sum formulation is equivalent to Gaussian belief propagation. We also recover, as a corollary, an existing result that uses determinants to calculate the covariance matrix. We show that the path-sum formulation formulation is valid for arbitrary partitions of the inverse covariance matrix. We give detailed examples demonstrating our results.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-445/14-445.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-468.html",
+    "header": "Challenges in multimodal gesture recognition",
+    "author": "Sergio Escalera, Vassilis Athitsos, Isabelle Guyon",
+    "time": "17(72):1−54, 2016.",
+    "abstract": "This paper surveys the state of the art on multimodal gesture recognition and introduces the JMLR special topic on gesture recognition 2011-2015. We began right at the start of the \\kinect revolution when inexpensive infrared cameras providing image depth recordings became available. We published papers using this technology and other more conventional methods, including regular video cameras, to record data, thus providing a good overview of uses of machine learning and computer vision using multimodal data in this area of application. Notably, we organized a series of challenges and made available several datasets we recorded for that purpose, including tens of thousands of videos, which are available to conduct further research. We also overview recent state of the art works on gesture recognition based on a proposed taxonomy for gesture recognition, discussing challenges and future lines of research.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-468/14-468.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-488.html",
+    "header": "An Emphatic Approach to the Problem of Off-policy Temporal-Difference Learning",
+    "author": "Richard S. Sutton, A. Rupam Mahmood, Martha White",
+    "time": "17(73):1−29, 2016.",
+    "abstract": "In this paper we introduce the idea of improving the performance of parametric temporal-difference (TD) learning algorithms by selectively emphasizing or de-emphasizing their updates on different time steps. In particular, we show that varying the emphasis of linear TD($\\lambda$)'s updates in a particular way causes its expected update to become stable under off-policy training. The only prior model-free TD methods to achieve this with per- step computation linear in the number of function approximation parameters are the gradient-TD family of methods including TDC, GTD($\\lambda$), and GQ$\\lambda$). Compared to these methods, our  emphatic TD($\\lambda$)  is simpler and easier to use; it has only one learned parameter vector and one step-size parameter. Our treatment includes general state- dependent discounting and bootstrapping functions, and a way of specifying varying degrees of interest in accurately valuing different states.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-488/14-488.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-499.html",
+    "header": "Learning Algorithms for Second-Price Auctions with Reserve",
+    "author": "Mehryar Mohri, Andres Munoz Medina",
+    "time": "17(74):1−25, 2016.",
+    "abstract": "Second-price auctions with reserve play a critical role in the revenue of modern search engine and popular online sites since the revenue of these companies often directly depends on the outcome of such auctions. The choice of the reserve price is the main mechanism through which the auction revenue can be influenced in these electronic markets. We cast the problem of selecting the reserve price to optimize revenue as a learning problem and present a full theoretical analysis dealing with the complex properties of the corresponding loss function. We further give novel algorithms for solving this problem and report the results of several experiments in both synthetic and real-world data demonstrating their effectiveness.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-499/14-499.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-001.html",
+    "header": "Distributed Coordinate Descent Method for Learning with Big Data",
+    "author": "Peter RichtÃ¡rik, Martin TakÃ¡Ä",
+    "time": "17(75):1−25, 2016.",
+    "abstract": "In this paper we develop and analyze Hydra: HYbriD cooRdinAte descent method for solving loss minimization problems with big data. We initially partition the coordinates (features) and assign each partition to a different node of a cluster. At every iteration, each node picks a random subset of the coordinates from those it owns, independently from the other computers, and in parallel computes and applies updates to the selected coordinates based on a simple closed-form formula. We give bounds on the number of iterations sufficient to approximately solve the problem with high probability, and show how it depends on the data and on the partitioning. We perform numerical experiments with a LASSO instance described by a 3TB matrix.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-001/15-001.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-012.html",
+    "header": "Scaling-up Empirical Risk Minimization: Optimization of Incomplete $U$-statistics",
+    "author": "Stephan ClÃ©menÃ§on, Igor Colin, AurÃ©lien Bellet",
+    "time": "17(76):1−36, 2016.",
+    "abstract": "In a wide range of statistical learning problems such as ranking, clustering or metric learning among others, the risk is accurately estimated by $U$-statistics of degree $d\\geq 1$, i.e. functionals of the training data with low variance that take the form of averages over $k$-tuples. From a computational perspective, the calculation of such statistics is highly expensive even for a moderate sample size $n$, as it requires averaging $O(n^d)$ terms. This makes learning procedures relying on the optimization of such data functionals hardly feasible in practice. It is the major goal of this paper to show that, strikingly, such empirical risks can be replaced by drastically computationally simpler Monte-Carlo estimates based on $O(n)$ terms only, usually referred to as  incomplete $U$-statistics , without damaging the $O_{\\mathbb{P}}(1/\\sqrt{n})$ learning rate of  Empirical Risk Minimization  (ERM) procedures. For this purpose, we establish uniform deviation results describing the error made when approximating a $U$-process by its incomplete version under appropriate complexity assumptions. Extensions to model selection, fast rate situations and various sampling techniques are also considered, as well as an application to stochastic gradient descent for ERM. Finally, numerical examples are displayed in order to provide strong empirical evidence that the approach we promote largely surpasses more naive subsampling techniques.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-012/15-012.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-115.html",
+    "header": "Iterative Regularization for Learning with Convex Loss Functions",
+    "author": "Junhong Lin, Lorenzo Rosasco, Ding-Xuan Zhou",
+    "time": "17(77):1−38, 2016.",
+    "abstract": "We consider the problem of supervised learning with convex loss functions and propose a new form of iterative regularization based on the subgradient method. Unlike other regularization approaches, in iterative regularization no constraint or penalization is considered, and generalization is achieved by (early) stopping an empirical iteration. We consider a nonparametric setting, in the framework of reproducing kernel Hilbert spaces, and prove consistency and finite sample bounds on the excess risk under general regularity conditions. Our study provides a new class of efficient regularized learning algorithms and gives insights on the interplay between statistics and optimization in machine learning.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-115/15-115.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-142.html",
+    "header": "Latent Space Inference of Internet-Scale Networks",
+    "author": "Qirong Ho, Junming Yin, Eric P. Xing",
+    "time": "17(78):1−41, 2016.",
+    "abstract": "The rise of Internet-scale networks, such as web graphs and social media with hundreds of millions to billions of nodes, presents new scientific opportunities, such as overlapping community detection to discover the structure of the Internet, or to analyze trends in online social behavior. However, many existing probabilistic network models are difficult or impossible to deploy at these massive scales. We propose a scalable approach for modeling and inferring latent spaces in Internet-scale networks, with an eye towards overlapping community detection as a key application. By applying a succinct representation of networks as a bag of triangular motifs, developing a parsimonious statistical model, deriving an efficient stochastic variational inference algorithm, and implementing it as a distributed cluster program via the Petuum parameter server system, we demonstrate overlapping community detection on real networks with up to 100 million nodes and 1000 communities on 5 machines in under 40 hours. Compared to other state-of-the-art probabilistic network approaches, our method is several orders of magnitude faster, with competitive or improved accuracy at overlapping community detection.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-142/15-142.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-177.html",
+    "header": "Patient Risk Stratification with Time-Varying Parameters: A Multitask Learning Approach",
+    "author": "Jenna Wiens, John Guttag, Eric Horvitz",
+    "time": "17(79):1−23, 2016.",
+    "abstract": "The proliferation of electronic health records (EHRs) frames opportunities for using machine learning to build models that help healthcare providers improve patient outcomes. However, building useful risk stratification models presents many technical challenges including the large number of factors (both intrinsic and extrinsic) influencing a patient's risk of an adverse outcome and the inherent evolution of that risk over time. We address these challenges in the context of learning a risk stratification model for predicting which patients are at risk of acquiring a  Clostridium difficile  infection (CDI). We take a novel data-centric approach, leveraging the contents of EHRs from nearly 50,000 hospital admissions. We show how, by adapting techniques from multitask learning, we can learn models for patient risk stratification with unprecedented classification performance. Our model, based on thousands of variables, both time-varying and time-invariant, changes over the course of a patient admission. Applied to a held out set of approximately 25,000 patient admissions, we achieve an area under the receiver operating characteristic curve of 0.81 (95% CI 0.78-0.84). The model has been integrated into the health record system at a large hospital in the US, and can be used to produce daily risk estimates for each inpatient. While more complex than traditional risk stratification methods, the widespread development and use of such data-driven models could ultimately enable cost-effective, targeted prevention strategies that lead to better patient outcomes.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-177/15-177.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-234.html",
+    "header": "Multiplicative Multitask Feature Learning",
+    "author": "Xin Wang, Jinbo Bi, Shipeng Yu, Jiangwen Sun, Minghu Song",
+    "time": "17(80):1−33, 2016.",
+    "abstract": "We investigate a general framework of multiplicative multitask feature learning which decomposes individual task's model parameters into a multiplication of two components. One of the components is used across all tasks and the other component is task-specific. Several previous methods can be proved to be special cases of our framework. We study the theoretical properties of this framework when different regularization conditions are applied to the two decomposed components. We prove that this framework is mathematically equivalent to the widely used multitask feature learning methods that are based on a joint regularization of all model parameters, but with a more general form of regularizers. Further, an analytical formula is derived for the across-task component as related to the task- specific component for all these regularizers, leading to a better understanding of the shrinkage effects of different regularizers. Study of this framework motivates new multitask learning algorithms. We propose two new learning formulations by varying the parameters in the proposed framework. An efficient blockwise coordinate descent algorithm is developed suitable for solving the entire family of formulations with rigorous convergence analysis. Simulation studies have identified the statistical properties of data that would be in favor of the new formulations. Extensive empirical studies on various classification and regression benchmark data sets have revealed the relative advantages of the two new formulations by comparing with the state of the art, which provides instructive insights into the feature learning problem with multiple tasks.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-234/15-234.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-242.html",
+    "header": "The Benefit of Multitask Representation Learning",
+    "author": "Andreas Maurer, Massimiliano Pontil, Bernardino Romera-Paredes",
+    "time": "17(81):1−32, 2016.",
+    "abstract": "We discuss a general method to learn data representations from multiple tasks. We provide a justification for this method in both settings of multitask learning and learning-to-learn. The method is illustrated in detail in the special case of linear feature learning. Conditions on the theoretical advantage offered by multitask representation learning over independent task learning are established. In particular, focusing on the important example of half-space learning, we derive the regime in which multitask representation learning is beneficial over independent task learning, as a function of the sample size, the number of tasks and the intrinsic data dimensionality. Other potential applications of our results include multitask feature learning in reproducing kernel Hilbert spaces and multilayer, deep networks.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-242/15-242.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-390.html",
+    "header": "Model-free Variable Selection in Reproducing Kernel Hilbert Space",
+    "author": "Lei Yang, Shaogao Lv, Junhui Wang",
+    "time": "17(82):1−24, 2016.",
+    "abstract": "Variable selection is popular in high-dimensional data analysis to identify the truly informative variables. Many variable selection methods have been developed under various model assumptions. Whereas success has been widely reported in literature, their performances largely depend on validity of the assumed models, such as the linear or additive models. This article introduces a model-free variable selection method via learning the gradient functions. The idea is based on the equivalence between whether a variable is informative and whether its corresponding gradient function is substantially non-zero. The proposed variable selection method is then formulated in a framework of learning gradients in a flexible reproducing kernel Hilbert space. The key advantage of the proposed method is that it requires no explicit model assumption and allows for general variable effects. Its asymptotic estimation and selection consistencies are studied, which establish the convergence rate of the estimated sparse gradients and assure that the truly informative variables are correctly identified in probability. The effectiveness of the proposed method is also supported by a variety of simulated examples and two real-life examples.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-390/15-390.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-417.html",
+    "header": "Lenient Learning in Independent-Learner Stochastic Cooperative Games",
+    "author": "Ermo Wei, Sean Luke",
+    "time": "17(84):1−42, 2016.",
+    "abstract": "We introduce the  Lenient Multiagent Reinforcement Learning 2  (LMRL2) algorithm for independent-learner stochastic cooperative games. LMRL2 is designed to overcome a pathology called  relative overgeneralization , and to do so while still performing well in games with stochastic transitions, stochastic rewards, and miscoordination. We discuss the existing literature, then compare LMRL2 against other algorithms drawn from the literature which can be used for games of this kind: traditional (Ã¢ÂÂDistributedÃ¢ÂÂ) Q-learning, Hysteretic Q-learning, WoLF-PHC, SOoN, and (for repeated games only) FMQ. The results show that LMRL2 is very effective in both of our measures (complete and correct policies), and is found in the top rank more often than any other technique. LMRL2 is also easy to tune: though it has many available parameters, almost all of them stay at default settings. Generally the algorithm is optimally tuned with a single parameter, if any. We then examine and discuss a number of side-issues and options for LMRL2.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-417/15-417.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-444.html",
+    "header": "Structure-Leveraged Methods in Breast Cancer Risk Prediction",
+    "author": "Jun Fan, Yirong Wu, Ming Yuan, David Page, Jie Liu, Irene M. Ong, Peggy Peissig, Elizabeth Burnside",
+    "time": "17(85):1−15, 2016.",
+    "abstract": "Predicting breast cancer risk has long been a goal of medical research in the pursuit of precision medicine. The goal of this study is to develop novel penalized methods to improve breast cancer risk prediction by leveraging structure information in electronic health records. We conducted a retrospective case- control study, garnering 49 mammography descriptors and 77 high- frequency/low-penetrance single-nucleotide polymorphisms (SNPs) from an existing personalized medicine data repository. Structured mammography reports and breast imaging features have long been part of a standard electronic health record (EHR), and genetic markers likely will be in the near future. Lasso and its variants are widely used approaches to integrated learning and feature selection, and our methodological contribution is to incorporate the dependence structure among the features into these approaches. More specifically, we propose a new methodology by combining group penalty and $\\ell^p$ ($1\\leq p\\leq2$) fusion penalty to improve breast cancer risk prediction, taking into account structure information in mammography descriptors and SNPs. We demonstrate that our method provides benefits that are both statistically significant and potentially significant to people's lives.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-444/15-444.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/16-006.html",
+    "header": "L1-Regularized Least Squares for Support Recovery of High Dimensional Single Index Models with Gaussian Designs",
+    "author": "Matey Neykov, Jun S. Liu, Tianxi Cai",
+    "time": "17(87):1−37, 2016.",
+    "abstract": "It is known that for a certain class of single index models (SIMs) $Y = f(X_{p \\times 1}^\\top\\beta_0, \\varepsilon)$, support recovery is impossible when $X \\sim \\mathcal{N}(0, I_{p \\times p})$ and a  model complexity adjusted sample size  is below a critical threshold. Recently, optimal algorithms based on Sliced Inverse Regression (SIR) were suggested. These algorithms work provably under the assumption that the design $X$ comes from an i.i.d. Gaussian distribution. In the present paper we analyze algorithms based on covariance screening and least squares with $L_1$ penalization (i.e. LASSO) and demonstrate that they can also enjoy optimal (up to a scalar) rescaled sample size in terms of support recovery, albeit under slightly different assumptions on $f$ and $\\varepsilon$ compared to the SIR based algorithms. Furthermore, we show more generally, that LASSO succeeds in recovering the signed support of $\\beta_0$ if $X \\sim \\mathcal{N}(0, \\Sigma)$, and the covariance $\\Sigma$ satisfies the irrepresentable condition. Our work extends existing results on the support recovery of LASSO for the linear model, to a more general class of SIMs.",
+    "pdf_url": "http://jmlr.org/papers/volume17/16-006/16-006.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/16-035.html",
+    "header": "Spectral Ranking using Seriation",
+    "author": "Fajwel Fogel, Alexandre d'Aspremont, Milan Vojnovic",
+    "time": "17(88):1−45, 2016.",
+    "abstract": "We describe a seriation algorithm for ranking a set of items given pairwise comparisons between these items. Intuitively, the algorithm assigns similar rankings to items that compare similarly with all others. It does so by constructing a similarity matrix from pairwise comparisons, using seriation methods to reorder this matrix and construct a ranking. We first show that this spectral seriation algorithm recovers the true ranking when all pairwise comparisons are observed and consistent with a total order. We then show that ranking reconstruction is still exact when some pairwise comparisons are corrupted or missing, and that seriation based spectral ranking is more robust to noise than classical scoring methods. Finally, we bound the ranking error when only a random subset of the comparions are observed. An additional benefit of the seriation formulation is that it allows us to solve semi-supervised ranking problems. Experiments on both synthetic and real datasets demonstrate that seriation based spectral ranking achieves competitive and in some cases superior performance compared to classical ranking methods.",
+    "pdf_url": "http://jmlr.org/papers/volume17/16-035/16-035.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/11-207.html",
+    "header": "Sparsity and Error Analysis of Empirical Feature-Based Regularization Schemes",
+    "author": "Xin Guo, Jun Fan, Ding-Xuan Zhou",
+    "time": "17(89):1−34, 2016.",
+    "abstract": "We consider a learning algorithm generated by a regularization scheme with a concave regularizer for the purpose of achieving sparsity and good learning rates in a least squares regression setting. The regularization is induced for linear combinations of empirical features, constructed in the literatures of kernel principal component analysis and kernel projection machines, based on kernels and samples. In addition to the separability of the involved optimization problem caused by the empirical features, we carry out sparsity and error analysis, giving bounds in the norm of the reproducing kernel Hilbert space, based on a priori conditions which do not require assumptions on sparsity in terms of any basis or system. In particular, we show that as the concave exponent $q$ of the concave regularizer increases to $1$, the learning ability of the algorithm improves. Some numerical simulations for both artificial and real MHC-peptide binding data involving the $\\ell^q$ regularizer and the SCAD penalty are presented to demonstrate the sparsity and error analysis.",
+    "pdf_url": "http://jmlr.org/papers/volume17/11-207/11-207.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-430.html",
+    "header": "Estimating Diffusion Networks: Recovery Conditions, Sample Complexity and Soft-thresholding Algorithm",
+    "author": "Manuel Gomez-Rodriguez, Le Song, Hadi Daneshm, Bernhard SchÃ¶lkopf",
+    "time": "17(90):1−29, 2016.",
+    "abstract": "Information spreads across social and technological networks, but often the network structures are hidden from us and we only observe the traces left by the diffusion  processes, called  cascades . Can we recover the hidden network structures from these observed cascades? What kind of cascades and how many cascades  do we need? Are there some network structures which are more difficult than others to recover? Can we design efficient inference algorithms with provable  guarantees? Despite the increasing availability of cascade data and methods for inferring networks from these data, a thorough theoretical understanding of the above questions  remains largely unexplored in the literature. In this paper, we investigate the network structure inference problem for a general family of continuous- time diffusion models  using an $\\ell_1$-regularized likelihood maximization framework.   We show that, as long as the cascade sampling process satisfies a natural incoherence condition, our framework can recover the correct network structure with high probability if we observe $O(d^3 \\log N)$ cascades, where $d$ is the maximum number of parents of a node and $N$ is the total number of nodes. Moreover, we develop a  simple and efficient soft-thresholding network inference algorithm which demonstrate the match between our theoretical prediction and empirical results. In practice, this new algorithm also outperforms other alternatives in terms of the accuracy of recovering hidden diffusion networks.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-430/14-430.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/14-454.html",
+    "header": "Rounding-based Moves for Semi-Metric Labeling",
+    "author": "M. Pawan Kumar, Puneet K. Dokania",
+    "time": "17(91):1−42, 2016.",
+    "abstract": "Semi-metric labeling is a special case of energy minimization for pairwise Markov random fields. The energy function consists of arbitrary unary potentials, and pairwise potentials that are proportional to a given semi-metric distance function over the label set. Popular methods for solving semi-metric labeling include (i) move-making algorithms, which iteratively solve a minimum $st$-cut problem; and (ii) the linear programming ( LP) relaxation based approach. In order to convert the fractional solution of the LP relaxation to an integer solution, several randomized rounding procedures have been developed in the literature. We consider a large class of parallel rounding procedures, and design move-making algorithms that closely mimic them. We prove that the multiplicative bound of a move-making algorithm exactly matches the approximation factor of the corresponding rounding procedure for any arbitrary distance function. Our analysis includes all known results for move- making algorithms as special cases.",
+    "pdf_url": "http://jmlr.org/papers/volume17/14-454/14-454.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-134.html",
+    "header": "Rate Optimal Denoising of Simultaneously Sparse and Low Rank Matrices",
+    "author": "Dan Yang, Zongming Ma, Andreas Buja",
+    "time": "17(92):1−27, 2016.",
+    "abstract": "We study minimax rates for denoising simultaneously sparse and low rank matrices in high dimensions. We show that an iterative thresholding algorithm achieves (near) optimal rates adaptively under mild conditions for a large class of loss functions. Numerical experiments on synthetic datasets also demonstrate the competitive performance of the proposed method.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-134/15-134.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-188.html",
+    "header": "Hierarchical Relative Entropy Policy Search",
+    "author": "Christian Daniel, Gerhard Neumann, Oliver Kroemer, Jan Peters",
+    "time": "17(93):1−50, 2016.",
+    "abstract": "Many reinforcement learning (RL) tasks, especially in robotics, consist of multiple sub-tasks that are strongly structured. Such task structures can be exploited by incorporating hierarchical policies that consist of gating networks and sub-policies. However, this concept has only been partially explored for real world settings and complete methods, derived from first principles, are needed. Real world settings are challenging due to large and continuous state-action spaces that are prohibitive for exhaustive sampling methods. We define the problem of learning sub-policies in continuous state action spaces as finding a hierarchical policy that is composed of a high-level gating policy to select the low-level sub-policies for execution by the agent. In order to efficiently share experience with all sub-policies, also called inter-policy learning, we treat these sub-policies as latent variables which allows for distribution of the update information between the sub-policies. We present three different variants of our algorithm, designed to be suitable for a wide variety of real world robot learning tasks and evaluate our algorithms in two real robot learning scenarios as well as several simulations and comparisons.",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-188/15-188.pdf"
+  },
+  {
+    "volumn": 17,
+    "url": "http://jmlr.org/papers/v17/15-344.html",
+    "header": "Convex Regression with Interpretable Sharp Partitions",
+    "author": "Ashley Petersen, Noah Simon, Daniela Witten",
+    "time": "17(94):1−31, 2016.",
+    "abstract": "We consider the problem of predicting an outcome variable on the basis of a small number of covariates, using an interpretable yet non-additive model. We propose  convex regression with interpretable sharp partitions  (CRISP) for this task. CRISP partitions the covariate space into blocks in a data- adaptive way, and fits a mean model within each block. Unlike other par",
+    "pdf_url": "http://jmlr.org/papers/volume17/15-344/15-344.pdf"
+  }
+]

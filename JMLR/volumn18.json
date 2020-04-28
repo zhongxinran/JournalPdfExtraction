@@ -1,0 +1,209 @@
+[
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/14-249.html",
+    "header": "Averaged Collapsed Variational Bayes Inference",
+    "author": "Katsuhiko Ishiguro, Issei Sato, Naonori Ueda",
+    "time": "18(1):1−29, 2017.",
+    "abstract": "This paper presents the Averaged CVB (ACVB) inference and offers convergence-guaranteed and practically useful fast Collapsed Variational Bayes (CVB) inferences. CVB inferences yield more precise inferences of Bayesian probabilistic models than Variational Bayes (VB) inferences. However, their convergence aspect is fairly unknown and has not been scrutinized. To make CVB more useful, we study th",
+    "pdf_url": "http://jmlr.org/papers/volume18/14-249/14-249.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/14-400.html",
+    "header": "Scalable Influence Maximization for Multiple Products in Continuous-Time Diffusion Networks",
+    "author": "Nan Du, Yingyu Liang, Maria-Florina Balcan, Manuel Gomez-Rodriguez, Hongyuan Zha, Le Song",
+    "time": "18(2):1−45, 2017.",
+    "abstract": "A typical viral marketing model identifies influential u",
+    "pdf_url": "http://jmlr.org/papers/volume18/14-400/14-400.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-085.html",
+    "header": "Local algorithms for interactive clustering",
+    "author": "Pranjal Awasthi, Maria Florina Balcan, Konstantin Voevodski",
+    "time": "18(3):1−35, 2017.",
+    "abstract": "We study the design of interactive clustering algorithms. The user supervision that we consider is in the form of cluster split/merge requests; such feedback is easy for users to provide because it only requires a high-level understanding of the clusters. Our algorithms start with any initial clustering and only make local changes in each step; both are desirable properties in many applications. Local changes are desirable because in practice edits of other parts of the clustering are considered churn - changes that are perceived as quality-neutral or quality-negative. We show that in this framework we can still design provably correct algorithms given that our data satisfies natural separability properties. We also show that our framework works well in practice.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-085/15-085.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-002.html",
+    "header": "Communication-efficient Sparse Regression",
+    "author": "Jason D. Lee, Qiang Liu, Yuekai Sun, Jonathan E. Taylor",
+    "time": "18(5):1−30, 2017.",
+    "abstract": "We devise a communication-efficient approach to distributed sparse regression in the high-dimensional setting. The key idea is to average  debiased  or  desparsified  lasso estimators. We show the approach converges at the same rate as the lasso as long as the dataset is not split across too many machines, and consistently estimates the support under weaker conditions than the lasso. On the computational side, we propose a new parallel and computationally-efficient algorithm to compute the approximate inverse covariance required in the debiasing approach, when the dataset is split across samples. We further extend the approach to generalized linear models.",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-002/16-002.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-070.html",
+    "header": "Improving Variational Methods via Pairwise Linear Response Identities",
+    "author": "Jack Raymond, Federico Ricci-Tersenghi",
+    "time": "18(6):1−36, 2017.",
+    "abstract": "Inference methods are often formulated as variational approximations: these approxima- tions allow easy evaluation of statistics by marginalization or linear response, but these estimates can be inconsistent. We show that by introducing constraints on covariance, one can ensure consistency of linear response with the variational parameters, and in so doing inference of marginal probability distributions is improved. For the Bethe approximation and its generalizations, improvements are achieved with simple choices of the constraints. The approximations are presented as variational frameworks; iterative procedures related to message passing are provided for finding the minima.",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-070/16-070.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-270.html",
+    "header": "Distributed Sequence Memory of Multidimensional Inputs in Recurrent Networks",
+    "author": "Adam S. Charles, Dong Yin, Christopher J. Rozell",
+    "time": "18(7):1−37, 2017.",
+    "abstract": "Recurrent neural networks (RNNs) have drawn interest from machine learning researchers because of their effectiveness at preserving past inputs for time-varying data processing tasks. To understand the success and limitations of RNNs, it is critical that we advance our analysis of their fundamental memory properties. We focus on echo state networks (ESNs), which are RNNs with simple memoryless nodes and random connectivity. In most existing analyses, the short-term memory (STM) capacity results conclude that the ESN network size must scale linearly with the input size for unstructured inputs. The main contribution of this paper is to provide general results characterizing the STM capacity for linear ESNs with multidimensional input streams when the inputs have common low- dimensional structure: sparsity in a basis or significant statistical dependence between inputs. In both cases, we show that the number of nodes in the network must scale linearly with the information rate and poly-logarithmically with the input dimension. The analysis relies on advanced applications of random matrix theory and results in explicit non-asymptotic bounds on the recovery error. Taken together, this analysis provides a significant step forward in our understanding of the STM properties in RNNs.",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-270/16-270.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-337.html",
+    "header": "Persistence Images: A Stable Vector Representation of Persistent Homology",
+    "author": "Henry Adams, Tegan Emerson, Michael Kirby, Rachel Neville, Chris Peterson, Patrick Shipman, Sofya Chepushtanova, Eric Hanson, Francis Motta, Lori Ziegelmeier",
+    "time": "18(8):1−35, 2017.",
+    "abstract": "Many data sets can be viewed as a noisy sampling of an underlying space, and tools from topological data analysis can characterize this structure for the purpose of knowledge discovery. One such tool is persistent homology, which provides a multiscale description of the homological features within a data set. A useful representation of this homological information is a  persistence diagram  (PD). Efforts have been made to map PDs into spaces with additional structure valuable to machine learning tasks. We convert a PD to a finite- dimensional vector representation which we call a  persistence image  (PI), and prove the stability of this transformation with respect to small perturbations in the inputs. The discriminatory power of PIs is compared against existing methods, showing significant performance gains. We explore the use of PIs with vector-based machine learning tools, such as linear sparse support vector machines, which identify features containing discriminating topological information. Finally, high accuracy inference of parameter values from the dynamic output of a discrete dynamical system (the  linked twist map ) and a partial differential equation (the  anisotropic Kuramoto-Sivashinsky equation ) provide a novel application of the discriminatory power of PIs.",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-337/16-337.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-038.html",
+    "header": "On Perturbed Proximal Gradient Algorithms",
+    "author": "Yves F. AtchadÃ©, Gersende Fort, Eric Moulines",
+    "time": "18(10):1−33, 2017.",
+    "abstract": "We study a version of the proximal gradient algorithm for which the gradient is intractable and is approximated by Monte Carlo methods (and in particular Markov Chain Monte Carlo). We derive conditions on the step size and the Monte Carlo batch size under which convergence is guaranteed: both increasing batch size and constant batch size are considered. We also derive non- asymptotic bounds for an averaged version. Our results cover both the cases of biased and unbiased Monte Carlo approximation. To support our findings, we discuss the inference of a sparse generalized linear model with random effect and the problem of learning the edge structure and parameters of sparse undirected graphical models.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-038/15-038.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-449.html",
+    "header": "Using Conceptors to Manage Neural Long-Term Memories for Temporal Patterns",
+    "author": "Herbert Jaeger",
+    "time": "18(13):1−43, 2017.",
+    "abstract": "Biological brains can learn, recognize, organize, and re- generate large repertoires of temporal patterns. Here I propose a mechanism of neurodynamical pattern learning and representation, called  conceptors , which offers an integrated account of a number of such phenomena and functionalities. It becomes possible to store a large number of temporal patterns in a single recurrent neural network. In the recall process, stored patterns can be morphed and  focussed . Parametric families of patterns can be learnt from a very small number of examples. Stored temporal patterns can be content- addressed in ways that are analog to recalling static patterns in Hopfield networks.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-449/15-449.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-107.html",
+    "header": "Automatic Differentiation Variational Inference",
+    "author": "Alp Kucukelbir, Dustin Tran, Rajesh Ranganath, Andrew Gelman, David M. Blei",
+    "time": "18(14):1−45, 2017.",
+    "abstract": "Probabilistic modeling is iterative. A scientist posits a simple model, fits it to her data, refines it according to her analysis, and repeats. However, fitting complex models to large data is a bottleneck in this process. Deriving algorithms for new mo",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-107/16-107.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/14-467.html",
+    "header": "Information-Geometric Optimization Algorithms: A Unifying Picture via Invariance Principles",
+    "author": "Yann Ollivier, Ludovic Arnold, Anne Auger, Nikolaus Hansen",
+    "time": "18(18):1−65, 2017.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume18/14-467/14-467.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/14-546.html",
+    "header": "Breaking the Curse of Dimensionality with Convex Neural Networks",
+    "author": "Francis Bach",
+    "time": "18(19):1−53, 2017.",
+    "abstract": "We consider neural networks with a single hidden layer and non- decreasing positively homogeneous activation functions like the rectified linear units. By letting the number of hidden units grow unbounded and using classical non-Euclidean regularization tools on the output weights, they lead to a convex optimization problem and we provide a detailed theoretical analysis of their generalization performance, with a study of both the approximation and the estimation errors. We show in particular that they are adaptive to unknown underlying linear structures, such as the dependence on the projection of the input variables onto a low-dimensional subspace. Moreover, when using sparsity- inducing norms on the input weights, we show that high- dimensional non-linear variable selection may be achieved, without any strong assumption regarding the data and with a total number of variables potentially exponential in the number of observations. However, solving this convex optimization problem in infinite dimensions is only possible if the non- convex subproblem of addition of a new unit can be solved efficiently. We provide a simple geometric interpretation for our choice of activation functions and describe simple conditions for convex relaxations of the finite-dimensional non- convex subproblem to achieve the same generalization error bounds, even when constant-factor approximations cannot be found. We were not able to find strong enough convex relaxations to obtain provably polynomial-time algorithms and leave open the existence or non-existence of such tractable algorithms with non-exponential sample complexities.",
+    "pdf_url": "http://jmlr.org/papers/volume18/14-546/14-546.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-178.html",
+    "header": "On the Equivalence between Kernel Quadrature Rules and Random Feature Expansions",
+    "author": "Francis Bach",
+    "time": "18(21):1−38, 2017.",
+    "abstract": "We show that kernel-based quadrature rules for computing integrals can be seen as a special case of random feature expansions for positive definite kernels, for a particular decomposition that always exists for such kernels. We provide a theoretical analysis of the number of required samples for a given approximation error, leading to both upper and lower bounds that are based solely on the eigenvalues of the associated integral operator and match up to logarithmic terms. In particular, we show that the upper bound may be obtained from independent and identically distributed samples from a specific non-uniform distribution, while the lower bound if valid for any set of points. Applying our results to kernel-based quadrature, while our results are fairly general, we recover known upper and lower bounds for the special cases of Sobolev spaces. Moreover, our results extend to the more general problem of full function approximations (beyond simply computing an integral), with results in $L_2$- and $L_\\infty$-norm that match known results for special cases. Applying our results to random features, we show an improvement of the number of random features needed to preserve the generalization guarantees for learning with Lipshitz-continuous losses.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-178/15-178.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-486.html",
+    "header": "Analyzing Tensor Power Method Dynamics in Overcomplete Regime",
+    "author": "Animashree An, kumar, Rong Ge, Majid Janzamin",
+    "time": "18(22):1−40, 2017.",
+    "abstract": "We present a novel analysis of the dynamics of tensor power iterations in the overcomplete regime where the tensor CP rank is larger than the input dimension. Finding the CP decomposition of an overcomplete tensor is NP-hard in general. We consider the case where the tensor components are randomly drawn, and show that the simple power iteration recovers the components with bounded error under mild initialization conditions. We apply our analysis to unsupervised learning of latent variable models, such as multi-view mixture models and spherical Gaussian mixtures. Given the third order moment tensor, we learn the parameters using tensor power iterations. We prove it can correctly learn the model parameters when the number of hidden components $k$ is much larger than the data dimension $d$, up to $k = o(d^{1.5})$. We initialize the power iterations with data samples and prove its success under mild conditions on the signal-to-noise ratio of the samples. Our analysis significantly expands the class of latent variable models where spectral methods are applicable. Our analysis also deals with noise in the input tensor leading to sample complexity result in the application to learning latent variable models.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-486/15-486.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-172.html",
+    "header": "Identifying a Minimal Class of Models for High--dimensional Data",
+    "author": "Daniel Nevo, Ya'acov Ritov",
+    "time": "18(24):1−29, 2017.",
+    "abstract": "Model selection consistency in the high--dimensional regression setting can be achieved only if strong assumptions are fulfilled. We therefore suggest to pursue a different goal, which we call a minimal class of models. The minimal class of models includes models that are similar in their prediction accuracy but not necessarily in their elements. We suggest a random search algorithm to reveal candidate models. The algorithm implements simulated annealing while using a score for each predictor that we suggest to derive using a combination of the lasso and the elastic net. The utility of using a minimal class of models is demonstrated in the analysis of two data sets.",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-172/16-172.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-397.html",
+    "header": "Particle Gibbs Split-Merge Sampling for Bayesian Inference in Mixture Models",
+    "author": "Alexandre Bouchard-CÃ´tÃ©, Arnaud Doucet, Andrew Roth",
+    "time": "18(28):1−39, 2017.",
+    "abstract": "This paper presents an original Markov chain Monte Carlo method to sample from the posterior distribution of conjugate mixture models. This algorithm relies on a flexible split-merge procedure built using the particle Gibbs sampler introduced in Andrieu et al. (2009, 2010). The resulting so-called Particle Gibbs Split-Merge sampler does not require the computation of a complex acceptance ratio and can be implemented using existing sequential Monte Carlo libraries. We investigate its performance experimentally on synthetic problems as well as on geolocation data. Our results show that for a given computational budget, the Particle Gibbs Split-Merge sampler empirically outperforms existing split merge methods. The code and instructions allowing to reproduce the experiments is available at  github.com/aroth85/pgsm .",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-397/15-397.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-613.html",
+    "header": "Certifiably Optimal Low Rank Factor Analysis",
+    "author": "Dimitris Bertsimas, Martin S. Copenhaver, Rahul Mazumder",
+    "time": "18(29):1−53, 2017.",
+    "abstract": "Factor Analysis (FA) is a technique of fundamental importance that is widely used in classical and modern multivariate statistics, psychometrics, and econometrics. In this paper, we revisit the classical rank-constrained FA problem which seeks to approximate an observed covariance matrix ($\\B\\Sigma$) by the sum of a Positive Semidefinite (PSD) low-rank component ($\\B\\Theta$) and a diagonal matrix ($\\B\\Phi$) (with nonnegative entries) subject to $\\B\\Sigma - \\B\\Phi$ being PSD. We propose a flexible family of rank-constrained, nonlinear Semidefinite Optimization based formulations for this task. We introduce a reformulation of the problem as a smooth optimization problem with convex, compact constraints and propose a unified algorithmic framework, utilizing state of the art techniques in nonlinear optimization to obtain high-quality feasible solutions for our proposed formulation. At the same time, by using a variety of techniques from discrete and global optimization, we show that these solutions are  certifiably optimal  in many cases, even for problems with thousands of variables. Our techniques are general and make  no  assumption on the underlying problem data. The estimator proposed herein aids statistical interpretability and provides computational scalability and significantly improved accuracy when compared to current, publicly available popular methods for rank-constrained FA. We demonstrate the effectiveness of our proposal on an array of synthetic and real-life datasets. To our knowledge, this is the first paper that demonstrates how a previously intractable rank-constrained optimization problem can be solved to provable optimality by coupling developments in convex analysis and in global and discrete optimization.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-613/15-613.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-651.html",
+    "header": "Group Sparse Optimization via lp,q Regularization",
+    "author": "Yaohua Hu, Chong Li, Kaiwen Meng, Jing Qin, Xiaoqi Yang",
+    "time": "18(30):1−52, 2017.",
+    "abstract": "In this paper, we investigate a group sparse optimization problem via $\\ell_{p,q}$ regularization in three aspects: theory, algorithm and application. In the theoretical aspect, by introducing a notion of group restricted eigenvalue condition, we establish an oracle property and a global recovery bound of order $\\mathcal{O}(\\lambda^\\frac{2}{2-q})$ for any point in a level set of the $\\ell_{p,q}$ regularization problem, and by virtue of modern variational analysis techniques, we also provide a local analysis of recovery bound of order $\\mathcal{O}(\\lambda^2)$ for a path of local minima. In the algorithmic aspect, we apply the well-known proximal gradient method to solve the $\\ell_{p,q}$ regularization problems, either by analytically solving some specific $\\ell_{p,q}$ regularization subproblems, or by using the Newton method to solve general $\\ell_{p,q}$ regularization subproblems. In particular, we establish a local linear convergence rate of the proximal gradient method for solving the $\\ell_{1,q}$ regularization problem under some mild conditions and by first proving a second-order growth condition. As a consequence, the local linear convergence rate of proximal gradient method for solving the usual $\\ell_{q}$ regularization problem ($0<q<1$) is obtained. Finally in the aspect of application, we present some numerical results on both the simulated data and the real data in gene transcriptional regulation.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-651/15-651.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/14-188.html",
+    "header": "Online Bayesian Passive-Aggressive Learning",
+    "author": "Tianlin Shi, Jun Zhu",
+    "time": "18(33):1−39, 2017.",
+    "abstract": "We present online Bayesian Passive-Aggressive (BayesPA) learning, a generic online learning framework for hierarchical Bayesian models with max-margin posterior regularization. We show that BayesPA subsumes the standard online Passive- Aggressive (PA) learning and extends naturally to incorporate latent variables for both parametric and nonparametric Bayesian inference, therefore providing great flexibility for explorative analysis. As an important example, we apply BayesPA to topic modeling and derive efficient online learning algorithms for max-margin topic models. We further develop nonparametric BayesPA topic models to infer the unknown number of topics in an online manner. Experimental results on 20newsgroups and a large Wikipedia multi-label dataset (with 1.1 millions of training documents and 0.9 million of unique terms in the vocabulary) show that our approaches significantly improve time efficiency while achieving comparable accuracy with the corresponding batch algorithms.",
+    "pdf_url": "http://jmlr.org/papers/volume18/14-188/14-188.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/15-468.html",
+    "header": "A Spectral Algorithm for Inference in Hidden semi-Markov Models",
+    "author": "Igor Melnyk, Arindam Banerjee",
+    "time": "18(35):1−39, 2017.",
+    "abstract": "Hidden semi-Markov models (HSMMs) are latent variable models which allow latent state persistence and can be viewed as a generalization of the popular hidden Markov models (HMMs). In this paper, we introduce a novel spectral algorithm to perform inference in HSMMs. Unlike expectation maximization (EM), our approach correctly estimates the probability of given observation sequence based on a set of training sequences. Our approach is based on estimating moments from the sample, whose number of dimensions depends only logarithmically on the maximum length of the hidden state persistence. Moreover, the algorithm requires only a few matrix inversions and is therefore computationally efficient. Empirical evaluations on synthetic and real data demonstrate the advantage of the algorithm over EM in terms of speed and accuracy, especially for large data sets.",
+    "pdf_url": "http://jmlr.org/papers/volume18/15-468/15-468.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-223.html",
+    "header": "Bridging Supervised Learning and Test-Based Co-optimization",
+    "author": "Elena Popovici",
+    "time": "18(38):1−39, 2017.",
+    "abstract": "This paper takes a close look at the important commonalities and subtle differences between the well-established field of supervised learning and the much younger one of co-optimization. It explains the relationships between the problems, algorithms and views on cost and performance of the two fields, all throughout providing a two-way dictionary for the respective terminologies used to describe these concepts. The intent is to facilitate advancement of both fields through transfer and cross-pollination of ideas, techniques and results. As a proof of concept, a theoretical study is presented on the connection between existence / lack of free lunch in the two fields, showcasing a few ideas for improving computational complexity of certain supervised learning approaches.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-223/16-223.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-132.html",
+    "header": "COEVOLVE: A Joint Point Process Model for Information Diffusion and Network Evolution",
+    "author": "Mehrdad Farajtabar, Yichen Wang, Manuel Gomez-Rodriguez, Shuang Li, Hongyuan Zha, Le Song",
+    "time": "18(41):1−49, 2017.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-132/16-132.pdf"
+  },
+  {
+    "volumn": 18,
+    "url": "http://jmlr.org/papers/v18/16-198.html",
+    "header": "Learning Local Dependence In Ordered Data",
+    "author": "Guo Yu, Jacob Bien",
+    "time": "18(42):1−60, 2017.",
+    "abstract": "In many applications, data come with a natural ordering. This ordering can often induce local dependence among nearby variables. However, in complex data, the width of this dependence may vary, making simple assumptions such as a constant neighborhood size unrealistic. We propose a framework for learning this local dependence based on estimating the inverse of the Cholesky factor of the covariance matrix. Penalized maximum likelihood estimation of this matrix yields a simple regression interpretation for local dependence in which variables are predicted by their neighbors. Our proposed method involves solving a convex, penalized Gaussian likelihood problem with a hierarchical group lasso penalty. The problem decomposes into independent subproblems which can be solved efficiently in parallel using first-order methods. Our method yields a sparse, symmetric, positive definite estimator of the precision matrix, encoding a Gaussian graphical model. We derive theoretical results not found in existing methods attaining this structure. In particular, our conditions for signed support recovery and estimation consistency rates in multiple norms are as mild as those in a regression problem. Empirical results show our method performing favorably compared to existing methods. We apply our method to genomic data to flexibly model linkage disequilibrium. Our method is also applied to improve the performance of discriminant analysis in sound recording classification.",
+    "pdf_url": "http://jmlr.org/papers/volume18/16-198/16-198.pdf"
+  }
+]

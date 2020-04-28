@@ -1,0 +1,353 @@
+[
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/15-192.html",
+    "header": "Adaptation Based on Generalized Discrepancy",
+    "author": "Corinna Cortes, Mehryar Mohri, AndrÃ©s MuÃ±oz Medina",
+    "time": "20(1):1−30, 2019.",
+    "abstract": "We present a new algorithm for domain adaptation improving upon a discrepancy minimization algorithm, (DM), previously shown to outperform a number of algorithms for this problem. Unlike many previously proposed solutions for domain adaptation, our algorithm does not consist of a fixed reweighting of the losses over the training sample. Instead, the reweighting depends on the hypothesis sought. The algorithm is derived from a less conservative notion of discrepancy than the DM algorithm called  generalized discrepancy . We present a detailed description of our algorithm and show that it can be formulated as a convex optimization problem. We also give a detailed theoretical analysis of its learning guarantees which helps us select its parameters. Finally, we report the results of experiments demonstrating that it improves upon discrepancy minimization.",
+    "pdf_url": "http://jmlr.org/papers/volume20/15-192/15-192.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/16-243.html",
+    "header": "Transport Analysis of Infinitely Deep Neural Network",
+    "author": "Sho Sonoda, Noboru Murata",
+    "time": "20(2):1−52, 2019.",
+    "abstract": "We investigated the feature map inside deep neural networks (DNNs) by tracking the transport map. We are interested in the role of depth---why do DNNs perform better than shallow models?---and the interpretation of DNNs---what do intermediate layers do? Despite the rapid development in their application, DNNs remain analytically unexplained because the hidden layers are nested and the parameters are not faithful. Inspired by the integral representation of shallow NNs, which is the continuum limit of the width, or the hidden unit number, we developed the flow representation and transport analysis of DNNs. The flow representation is the continuum limit of the depth, or the hidden layer number, and it is specified by an ordinary differential equation (ODE) with a vector field. We interpret an ordinary DNN as a transport map or an Euler broken line approximation of the flow. Technically speaking, a dynamical system is a natural model for the nested feature maps. In addition, it opens a new way to the coordinate-free treatment of DNNs by avoiding the redundant parametrization of DNNs. Following Wasserstein geometry, we analyze a flow in three aspects: dynamical system, continuity equation, and Wasserstein gradient flow. A key finding is that we specified a series of transport maps of the denoising autoencoder (DAE), which is a cornerstone for the development of deep learning. Starting from the shallow DAE, this paper develops three topics: the transport map of the deep DAE, the equivalence between the stacked DAE and the composition of DAEs, and the development of the double continuum limit or the integral representation of the flow representation. As partial answers to the research questions, we found that deeper DAEs converge faster and the extracted features are better; in addition, a deep Gaussian DAE transports mass to decrease the Shannon entropy of the data distr",
+    "pdf_url": "http://jmlr.org/papers/volume20/16-243/16-243.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/16-585.html",
+    "header": "Parsimonious Online Learning with Kernels via Sparse Projections in Function Space",
+    "author": "Alec Koppel, Garrett Warnell, Ethan Stump, Alejandro Ribeiro",
+    "time": "20(3):1−44, 2019.",
+    "abstract": "Despite their attractiveness, popular perception is that techniques for nonparametric function approximation do not scale to streaming data due to an intractable growth in the amount of storage they require. To solve this problem in a memory-affordable way, we propose an online technique based on functional stochastic gradient descent in tandem with supervised sparsification based on greedy function subspace projections. The method, called parsimonious online learning with kernels (POLK), provides a controllable tradeoff between its solution accuracy and the amount of memory it requires. We derive conditions under which the generated function sequence converges almost surely to the optimal function, and we establish that the memory requirement remains finite. We evaluate POLK for kernel multi-class logistic regression and kernel hinge-loss classification on three canonical data sets: a synthetic Gaussian mixture model, the MNIST hand-written digits, and the Brodatz texture database. On all three tasks, we observe a favorable trade-off of objective function evaluation, classification performance, and complexity of the nonparametric regressor extracted by the proposed method.",
+    "pdf_url": "http://jmlr.org/papers/volume20/16-585/16-585.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/16-588.html",
+    "header": "Convergence Rate of a Simulated Annealing Algorithm with Noisy Observations",
+    "author": "ClÃ©ment Bouttier, Ioana Gavra",
+    "time": "20(4):1−45, 2019.",
+    "abstract": "In this paper we propose a modified version of the simulated annealing algorithm for solving a stochastic global optimization problem. More precisely, we address the problem of finding a global minimizer of a function with noisy evaluations. We provide a rate of convergence and its optimized parametrization to ensure a minimal number of evaluations for a given accuracy and a confidence level close to 1. This work is completed with a set of numerical experimentations and assesses the practical performance both on benchmark test cases and on real world examples.",
+    "pdf_url": "http://jmlr.org/papers/volume20/16-588/16-588.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/16-607.html",
+    "header": "Non-Convex Projected Gradient Descent for Generalized Low-Rank Tensor Regression",
+    "author": "Han Chen, Garvesh Raskutti, Ming Yuan",
+    "time": "20(5):1−37, 2019.",
+    "abstract": "In this paper, we consider the problem of learning high-dimensional tensor regression problems with low-rank structure. One of the core challenges associated with learning high-dimensional models is computation since the underlying optimization problems are often non-convex. While convex relaxations could lead to polynomial-time algorithms they are often slow in practice. On the other hand, limited theoretical guarantees exist for non-convex methods. In this paper we provide a general framework that provides theoretical guarantees for learning high-dimensional tensor regression models under different low-rank structural assumptions using the projected gradient descent algorithm applied to a potentially non-convex constraint set $\\Theta$ in terms of its localized Gaussian width (due to Gaussian design). We juxtapose our theoretical results for non-convex projected gradient descent algorithms with previous results on regularized convex approaches. The two main differences between the convex and non-convex approach are: (i) from a computational perspective whether the non-convex projection operator is computable and whether the projection has desirable contraction properties and (ii) from a statistical error bound perspective, the non-convex approach has a superior rate for a number of examples. We provide three concrete examples of low-dimensional structure which address these issues and explain the pros and cons for the non-convex and convex approaches. We supplement our theoretical results with simulations which show that, under several common settings of generalized low rank tensor regression, the projected gradient descent approach is superior both in terms of statistical error and run-time provided the step-sizes of the projected descent algorithm are suitably chosen.",
+    "pdf_url": "http://jmlr.org/papers/volume20/16-607/16-607.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-279.html",
+    "header": "Scalable Approximations for Generalized Linear Problems",
+    "author": "Murat Erdogdu, Mohsen Bayati, Lee H. Dicker",
+    "time": "20(7):1−45, 2019.",
+    "abstract": "In stochastic optimization, the population risk is generally approximated by the empirical risk which is in turn minimized by an iterative algorithm. However, in the large-scale setting, empirical risk minimization may be computationally restrictive. In this paper, we design an efficient algorithm to approximate the population risk minimizer in generalized linear problems such as binary classification with surrogate losses and generalized linear regression models. We focus on large-scale problems where the iterative minimization of the empirical risk is computationally intractable, i.e., the number of observations $n$ is much larger than the dimension of the parameter $p$ ($n \\gg p \\gg 1$). We show that under random sub-Gaussian design, the true minimizer of the population risk is approximately proportional to the corresponding ordinary least squares (OLS) estimator. Using this relation, we design an algorithm that achieves the same accuracy as the empirical risk minimizer through iterations that attain up to a quadratic convergence rate, and that are computationally cheaper than any batch optimization algorithm by at least a factor of $\\mathcal{O}(p)$. We provide theoretical guarantees for our algorithm, and analyze the convergence behavior in terms of data dimensions. Finally, we demonstrate the performance of our algorithm on well-known classification and regression problems, through extensive numerical studies on large-scale datasets, and show that it achieves the highest performance compared to several other widely used optimization algorithms.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-279/17-279.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-334.html",
+    "header": "Forward-Backward Selection with Early Dropping",
+    "author": "Giorgos Borboudakis, Ioannis Tsamardinos",
+    "time": "20(8):1−39, 2019.",
+    "abstract": "Forward-backward selection is one of the most basic and commonly-used feature selection algorithms available. It is also general and conceptually applicable to many different types of data. In this paper, we propose a heuristic that significantly improves its running time, while preserving predictive performance. The idea is to temporarily discard the variables that are conditionally independent with the outcome given the selected variable set. Depending on how those variables are reconsidered and reintroduced, this heuristic gives rise to a family of algorithms with increasingly stronger theoretical guarantees. In distributions that can be faithfully represented by Bayesian networks or maximal ancestral graphs, members of this algorithmic family are able to correctly identify the Markov blanket in the sample limit. In experiments we show that the proposed heuristic increases computational efficiency by about 1-2 orders of magnitude, while selecting fewer or the same number of variables and retaining predictive performance. Furthermore, we show that the proposed algorithm and feature selection with LASSO perform similarly when restricted to select the same number of variables, making the proposed algorithm an attractive alternative for problems where no (efficient) algorithm for LASSO exists.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-334/17-334.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-357.html",
+    "header": "Dynamic Pricing in High-dimensions",
+    "author": "Adel Javanmard, Hamid Nazerzadeh",
+    "time": "20(9):1−49, 2019.",
+    "abstract": "We study the pricing problem faced by a firm that sells a large number of products, described via a wide range of features, to customers that arrive over time. Customers independently make purchasing decisions according to a general choice model that includes products features and customers' characteristics, encoded as $d$-dimensional numerical vectors, as well as the price offered. The parameters of the choice model are a priori unknown to the firm, but can be learned as the (binary-valued) sales data accrues over time. The firm's objective is to maximize its revenue. We benchmark the performance using the classic regret minimization framework where the regret is defined as the expected revenue loss against a clairvoyant policy that knows the parameters of the choice model in advance, and always offers the revenue-maximizing price. This setting is motivated in part by the prevalence of online marketplaces that allow for real-time pricing. We assume a structured choice model, parameters of which depend on $s_0$ out of the $d$ product features. Assuming that the market noise distribution is known, we propose a dynamic policy, called Regularized Maximum Likelihood Pricing (RMLP) that leverages the (sparsity) structure of the high-dimensional model and obtains a logarithmic regret in $T$. More specifically, the regret of our algorithm is of $O(s_0 \\log d \\cdot \\log T)$. Furthermore, we show that no policy can obtain regret better than $O(s_0 (\\log d + \\log T))$. {In addition, we propose a generalization of our policy to a setting that the market noise distribution is unknown but belongs to a parametrized family of distributions. This policy obtains regret of $O(\\sqrt{(\\log d)T})$. We further show that no policy can obtain regret better than $\\Omega(\\sqrt{T})$ in such environments.}",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-357/17-357.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-501.html",
+    "header": "Graphical Lasso and Thresholding: Equivalence and Closed-form Solutions",
+    "author": "Salar Fattahi, Somayeh Sojoudi",
+    "time": "20(10):1−44, 2019.",
+    "abstract": "Graphical Lasso (GL) is a popular method for learning the structure of an undirected graphical model, which is based on an $l_1$ regularization technique. The objective of this paper is to compare the computationally-heavy GL technique with a numerically-cheap heuristic method that is based on simply thresholding the sample covariance matrix. To this end, two notions of sign-consistent and inverse-consistent matrices are developed, and then it is shown that the thresholding and GL methods are equivalent if: (i) the thresholded sample covariance matrix is both sign-consistent and inverse-consistent, and (ii) the gap between the largest thresholded and the smallest un-thresholded entries of the sample covariance matrix is not too small. By building upon this result, it is proved that the GL method---as a conic optimization problem---has an explicit closed-form solution if the thresholded sample covariance matrix has an acyclic structure. This result is then generalized to arbitrary sparse support graphs, where a formula is found to obtain an approximate solution of GL. Furthermore, it is shown that the approximation error of the derived explicit formula decreases exponentially fast with respect to the length of the minimum-length cycle of the sparsity graph. The developed results are demonstrated on synthetic data, functional MRI data, traffic flows for transportation networks, and massive randomly generated data sets. We show that the proposed method can obtain an accurate approximation of the GL for instances with the sizes as large as $80,000\\times 80,000$ (more than 3.2 billion variables) in less than 30 minutes on a standard laptop computer running MATLAB, while other state-of-the-art methods do not converge within 4 hours",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-501/17-501.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-504.html",
+    "header": "An Approach to One-Bit Compressed Sensing Based on Probably Approximately Correct Learning Theory",
+    "author": "Mehmet Eren Ahsen, Mathukumalli Vidyasagar",
+    "time": "20(11):1−23, 2019.",
+    "abstract": "In this paper, the problem of one-bit compressed sensing (OBCS) is formulated as a problem in probably approximately correct (PAC) learning. It is shown that the Vapnik-Chervonenkis (VC-) dimension of the set of half-spaces in $\\R^n$ generated by $k$-sparse vectors is bounded below by $k ( \\lfloor\\lg (n/k) \\rfloor +1 )$ and above by $\\lfloor 2k \\lg (en) \\rfloor $. By coupling this estimate with well-established results in PAC learning theory, we show that a consistent algorithm can recover a $k$-sparse vector with $O(k \\lg n)$ measurements, given only the signs of the measurement vector. This result holds for \\textit{all} probability measures on $\\R^n$. The theory is also applicable to the case of noisy labels, where the signs of the measurements are flipped with some unknown probability.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-504/17-504.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-517.html",
+    "header": "Scalable Kernel K-Means Clustering with Nystrom Approximation: Relative-Error Bounds",
+    "author": "Shusen Wang, Alex Gittens, Michael W. Mahoney",
+    "time": "20(12):1−49, 2019.",
+    "abstract": "Kernel $k$-means clustering can correctly identify and extract a far more varied collection of cluster structures than the linear $k$-means clustering algorithm. However, kernel $k$-means clustering is computationally expensive when the non-linear feature map is high-dimensional and there are many input points. Kernel approximation, e.g., the Nystrom method, has been applied in previous works to approximately solve kernel learning problems when both of the above conditions are present. This work analyzes the application of this paradigm to kernel $k$-means clustering, and shows that applying the linear $k$-means clustering algorithm to $\\frac{k}{\\epsilon} (1 + o(1))$ features constructed using a so-called rank-restricted Nystrom approximation results in cluster assignments that satisfy a $1 + \\epsilon$ approximation ratio in terms of the kernel $k$-means cost function, relative to the guarantee provided by the same algorithm without the use of the Nystrom method. As part of the analysis, this work establishes a novel $1 + \\epsilon$ relative-error trace norm guarantee for low-rank approximation using the rank-restricted Nystrom approximation. Empirical evaluations on the $8.1$ million instance MNIST8M dataset demonstrate the scalability and usefulness of kernel $k$-means clustering with Nystrom approximation. This work argues that spectral clustering using Nystrom approximation---a popular and computationally efficient, but theoretically unsound approach to non-linear clustering---should be replaced with the efficient and theoretically sound combination of kernel $k$-means clustering with Nystrom approximation. The superior performance of the latter approach is empirically verified.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-517/17-517.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-535.html",
+    "header": "Train and Test Tightness of LP Relaxations in Structured Prediction",
+    "author": "Ofer Meshi, Ben London, Adrian Weller, David Sontag",
+    "time": "20(13):1−34, 2019.",
+    "abstract": "Structured prediction is used in areas including computer vision and natural language processing to predict structured outputs such as segmentations or parse trees. In these settings, prediction is performed by MAP inference or, equivalently, by solving an integer linear program. Because of the complex scoring functions required to obtain accurate predictions, both learning and inference typically require the use of approximate solvers. We propose a theoretical explanation for the striking observation that approximations based on linear programming (LP) relaxations are often tight (exact) on real-world instances. In particular, we show that learning with LP relaxed inference encourages integrality of training instances, and that this training tightness generalizes to test data.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-535/17-535.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-547.html",
+    "header": "Approximations of the Restless Bandit Problem",
+    "author": "Steffen GrÃ¼newÃ¤lder, Azadeh Khaleghi",
+    "time": "20(14):1−37, 2019.",
+    "abstract": "The multi-armed restless bandit problem is studied in the case where the pay-off distributions are stationary $\\varphi$-mixing. This version of the problem provides a more realistic model for most real-world applications, but cannot be optimally solved in practice, since it is known to be PSPACE-hard. The objective of this paper is to characterize a sub-class of the problem where good approximate solutions can be found using tractable approaches. Specifically, it is shown that under some conditions on the $\\varphi$-mixing coefficients, a modified version of UCB can prove effective. The main challenge is that, unlike in the i.i.d. setting, the distributions of the sampled pay-offs may not have the same characteristics as those of the original bandit arms. In particular, the $\\varphi$-mixing property does not necessarily carry over. This is overcome by carefully controlling the effect of a sampling policy on the pay-off distributions. Some of the proof techniques developed in this paper can be more generally used in the context of online sampling under dependence. Proposed algorithms are accompanied with corresponding regret analysis.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-547/17-547.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-629.html",
+    "header": "Smooth neighborhood recommender systems",
+    "author": "Ben Dai, Junhui Wang, Xiaotong Shen, Annie Qu",
+    "time": "20(16):1−24, 2019.",
+    "abstract": "Recommender systems predict users' preferences over a large number of items by pooling similar information from other users and/or items in the presence of sparse observations. One major challenge is how to utilize user-item specific covariates and networks describing user-item interactions in a high-dimensional situation, for accurate personalized prediction. In this article, we propose a smooth neighborhood recommender in the framework of the latent factor models. A similarity kernel is utilized to borrow neighborhood information from continuous covariates over a user-item specific network, such as a user's social network, where the grouping information defined by discrete covariates is also integrated through the network. Consequently, user-item specific information is built into the recommender to battle the `cold-startâ issue in the absence of observations in collaborative and content-based filtering. Moreover, we utilize a âdivide-and-conquerâ version of the alternating least squares algorithm to achieve scalable computation, and establish asymptotic results for the proposed method, demonstrating that it achieves superior prediction accuracy. Finally, we illustrate that the proposed method improves substantially over its competitors in simulated examples and real benchmark data--Last.fm music data.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-629/17-629.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-631.html",
+    "header": "Delay and Cooperation in Nonstochastic Bandits",
+    "author": "NicolÃ² Cesa-Bianchi, Claudio Gentile, Yishay Mansour",
+    "time": "20(17):1−38, 2019.",
+    "abstract": "We study networks of communicating learning agents that cooperate to solve a common nonstochastic bandit problem. Agents use an underlying communication network to get messages about actions selected by other agents, and drop messages that took more than $d$ hops to arrive, where $d$ is a delay parameter. We introduce Exp3-Coop, a cooperative version of the Exp3 algorithm and prove that with $K$ actions and $N$ agents the average per-agent regret after $T$ rounds is at most of order $\\sqrt{\\bigl(d+1 + \\tfrac{K}{N}\\alpha_{\\le d}\\bigr)(T\\ln K)}$, where $\\alpha_{\\le d}$ is the independence number of the $d$-th power of the communication graph $G$. We then show that for any connected graph, for $d=\\sqrt{K}$ the regret bound is $K^{1/4}\\sqrt{T}$, strictly better than the minimax regret $\\sqrt{KT}$ for noncooperating agents. More informed choices of $d$ lead to bounds which are arbitrarily close to the full information minimax regret $\\sqrt{T\\ln K}$ when $G$ is dense. When $G$ has sparse components, we show that a variant of Exp3-Coop, allowing agents to choose their parameters according to their centrality in $G$, strictly improves the regret. Finally, as a by-product of our analysis, we provide the first characterization of the minimax regret for bandit learning with delay.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-631/17-631.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-663.html",
+    "header": "Multiplicative local linear hazard estimation and best one-sided cross-validation",
+    "author": "Maria Luz GÃ¡miz, MarÃ­a Dolores  MartÃ­nez-Miranda, Jens Perch Nielsen",
+    "time": "20(18):1−29, 2019.",
+    "abstract": "This paper develops detailed mathematical statistical theory of a new class of cross-validation techniques of local linear kernel hazards and their multiplicative bias corrections. The new class of cross-validation combines principles of local information and recent advances in indirect cross-validation. A few applications of cross-validating multiplicative kernel hazard estimation do exist in the literature. However, detailed mathematical statistical theory and small sample performance are introduced via this paper and further upgraded to our new class of best one-sided cross-validation. Best one-sided cross-validation turns out to have excellent performance in its practical illustrations, in its small sample performance and in its mathematical statistical theoretical performance.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-663/17-663.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-030.html",
+    "header": "Random Feature-based Online Multi-kernel Learning in Environments with Unknown Dynamics",
+    "author": "Yanning Shen, Tianyi Chen, Georgios B. Giannakis",
+    "time": "20(22):1−36, 2019.",
+    "abstract": "Kernel-based methods exhibit well-documented performance in various nonlinear learning tasks. Most of them rely on a preselected kernel, whose prudent choice presumes task-specific prior information. Especially when the latter is not available, multi-kernel learning has gained popularity thanks to its flexibility in choosing kernels from a prescribed kernel dictionary. Leveraging the random feature approximation and its recent orthogonality-promoting variant, the present contribution develops a scalable multi-kernel learning scheme (termed Raker) to obtain the sought nonlinear learning function `on the fly,' first for static environments. To further boost performance in dynamic environments, an adaptive multi-kernel learning scheme (termed AdaRaker) is developed. AdaRaker accounts not only for data-driven learning of kernel combination, but also for the unknown dynamics. Performance is analyzed in terms of both static and dynamic regrets. AdaRaker is uniquely capable of tracking nonlinear learning functions in environments with unknown dynamics, and with with analytic performance guarantees Tests with synthetic and real datasets are carried out to showcase the effectiveness of the novel algorithms.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-030/18-030.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-037.html",
+    "header": "Determining the Number of Latent Factors in Statistical Multi-Relational Learning",
+    "author": "Chengchun Shi, Wenbin Lu, Rui Song",
+    "time": "20(23):1−38, 2019.",
+    "abstract": "Statistical relational learning is primarily concerned with learning and inferring relationships between entities in large-scale knowledge graphs.  Nickel et al. (2011) proposed a RESCAL tensor factorization model for statistical relational learning, which achieves better or at least comparable results on common benchmark data sets when compared to other state-of-the-art methods. Given a positive integer $s$, RESCAL computes an $s$-dimensional latent vector for each entity. The latent factors can be further used for solving relational learning tasks, such as collective classification, collective entity resolution and link-based clustering. The focus of this paper is to determine the number of latent factors in the RESCAL model. Due to the structure of the RESCAL model, its log-likelihood function is not concave. As a result, the corresponding maximum likelihood estimators (MLEs) may not be consistent. Nonetheless, we design a specific pseudometric, prove the consistency of the MLEs under this pseudometric and establish its rate of convergence. Based on these results, we propose a general class of information criteria and prove their model selection consistencies when the number of relations is either bounded or diverges at a proper rate of the number of entities. Simulations and real data examples show that our proposed information criteria have good finite sample properties.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-037/18-037.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-190.html",
+    "header": "Group Invariance, Stability to Deformations, and Complexity of Deep Convolutional Representations",
+    "author": "Alberto Bietti, Julien Mairal",
+    "time": "20(25):1−49, 2019.",
+    "abstract": "The success of deep convolutional architectures is often attributed in part to their ability to learn multiscale and invariant representations of natural signals. However, a precise study of these properties and how they affect learning guarantees is still missing. In this paper, we consider deep convolutional representations of signals; we study their invariance to translations and to more general groups of transformations, their stability to the action of diffeomorphisms, and their ability to preserve signal information. This analysis is carried by introducing a multilayer kernel based on convolutional kernel networks and by studying the geometry induced by the kernel mapping. We then characterize the corresponding reproducing kernel Hilbert space (RKHS), showing that it contains a large class of convolutional neural networks with homogeneous activation functions. This analysis allows us to separate data representation from learning, and to provide a canonical measure of model complexity, the RKHS norm, which controls both stability and generalization of any learned model. In addition to models in the constructed RKHS, our stability analysis also applies to convolutional networks with generic activations such as rectified linear units, and we discuss its relationship with recent generalization bounds based on spectral norms.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-190/18-190.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-539.html",
+    "header": "Iterated Learning in Dynamic Social Networks",
+    "author": "Bernard Chazelle, Chu Wang",
+    "time": "20(29):1−28, 2019.",
+    "abstract": "A classic finding by (Kalish et al., 2007) shows that no language can be learned iteratively by rational agents in a self-sustained manner. In other words, if $A$ teaches a foreign language to $B$, who then teaches what she learned to $C$, and so on, the language will quickly get lost and agents will wind up teaching their own common native language. If so, how can linguistic novelty ever be sustained? We address this apparent paradox by considering the case of iterated learning in a social network: we show that by varying the lengths of the learning sessions over time or by keeping the networks dynamic, it is possible for iterated learning to endure forever with arbitrarily small loss.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-539/18-539.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/16-128.html",
+    "header": "Exact Clustering of Weighted Graphs via Semidefinite Programming",
+    "author": "Aleksis Pirinen, Brendan Ames",
+    "time": "20(30):1−34, 2019.",
+    "abstract": "As a model problem for clustering, we consider the densest $k$-disjoint-clique problem of partitioning a weighted complete graph into $k$ disjoint subgraphs such that the sum of the densities of these subgraphs is maximized. We establish that such subgraphs can be recovered from the solution of a particular semidefinite relaxation with high probability if the input graph is sampled from a distribution of clusterable graphs. Specifically, the semidefinite relaxation is exact if the graph consists of \\(k\\) large disjoint subgraphs, corresponding to clusters, with weight concentrated within these subgraphs, plus a moderate number of nodes not belonging to any cluster. Further, we establish that if noise is weakly obscuring these clusters, i.e, the between-cluster edges are assigned very small weights, then we can recover significantly smaller clusters. For example, we show that in approximately sparse graphs, where the between-cluster weights tend to zero as the size $n$ of the graph tends to infinity, we can recover clusters of size polylogarithmic in $n$ under certain conditions on the distribution of edge weights. Empirical evidence from numerical simulations is also provided to support these theoretical phase transitions to perfect recovery of the cluster structure.",
+    "pdf_url": "http://jmlr.org/papers/volume20/16-128/16-128.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/16-314.html",
+    "header": "Kernels for Sequentially Ordered Data",
+    "author": "Franz J. Kiraly, Harald Oberhauser",
+    "time": "20(31):1−45, 2019.",
+    "abstract": "We present a novel framework for learning with sequential data of any kind, such as multivariate time series, strings, or sequences of graphs. The main result is a âsequentializationâ that transforms any kernel on a given domain into a kernel for sequences in that domain. This procedure preserves properties such as positive definiteness, the associated kernel feature map is an ordered variant of sample (cross-)moments, and this sequentialized kernel is consistent in the sense that it converges to a kernel for paths if sequences converge to paths (by discretization). Further, classical kernels for sequences arise as special cases of this method. We use dynamic programming and low-rank techniques for tensors to provide efficient algorithms to compute this sequentialized kernel.",
+    "pdf_url": "http://jmlr.org/papers/volume20/16-314/16-314.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-066.html",
+    "header": "NetSDM: Semantic Data Mining with Network Analysis",
+    "author": "Jan Kralj, Marko Robnik-Sikonja, Nada Lavrac",
+    "time": "20(32):1−50, 2019.",
+    "abstract": "Semantic data mining (SDM) is a form of relational data mining that uses annotated data together with complex semantic background knowledge to learn rules that can be easily interpreted. The drawback of SDM is a high computational complexity of existing SDM algorithms, resulting in long run times even when applied to relatively small data sets. This paper proposes an effective SDM approach, named NetSDM, which first transforms the available semantic background knowledge into a network format, followed by network analysis based node ranking and pruning to significantly reduce the size of the original background knowledge. The experimental evaluation of the NetSDM methodology on acute lymphoblastic leukemia and breast cancer data demonstrates that NetSDM achieves radical time efficiency improvements and that learned rules are comparable or better than the rules obtained by the original SDM algorithms.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-066/17-066.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-147.html",
+    "header": "The Relationship Between Agnostic Selective Classification, Active Learning and the Disagreement Coefficient",
+    "author": "Roei Gelbhart, Ran El-Yaniv",
+    "time": "20(33):1−38, 2019.",
+    "abstract": "A selective classifier $(f,g)$ comprises a classification function $f$ and a binary selection function $g$, which determines if the classifier abstains from prediction, or uses $f$ to predict. The classifier is called pointwise-competitive if it classifies each point identically to the best classifier in hindsight (from the same class), whenever it does not abstain. The quality of such a classifier is quantified by its rejection mass, defined to be the probability mass of the points it rejects. A âfastâ rejection rate is achieved if the rejection mass is bounded from above by $\\tilde{O}(1/m)$ where $m$ is the number of labeled examples used to train the classifier (and $\\tilde{O}$ hides logarithmic factors). Pointwise-competitive selective (PCS) classifiers are intimately related to disagreement-based active learning and it is known that in the realizable case, a fast rejection rate of a known PCS algorithm (called Consistent Selective Strategy) is equivalent to an exponential speedup of the well-known CAL active algorithm. We focus on the agnostic setting, for which there is a known algorithm called LESS that learns a PCS classifier and achieves a fast rejection rate (depending on HannekeÃ¢ÂÂs disagreement coefficient) under strong assumptions. We present an improved PCS learning algorithm called ILESS for which we show a fast rate (depending on Hanneke's disagreement coefficient) without any assumptions. Our rejection bound smoothly interpolates the realizable and agnostic settings. The main result of this paper is an equivalence between the following three entities: (i) the existence of a fast rejection rate for any PCS learning algorithm (such as ILESS); (ii) a poly-logarithmic bound for Hanneke's disagreement coefficient; and (iii) an exponential speedup for a new disagreement-based active learner called {\\ActiveiLESS}.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-147/17-147.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-153.html",
+    "header": "Matched Bipartite Block Model with Covariates",
+    "author": "Zahra S. Razaee, Arash A. Amini, Jingyi Jessica Li",
+    "time": "20(34):1−44, 2019.",
+    "abstract": "Community detection or clustering is a fundamental task in the analysis of network data. Many real networks have a bipartite structure which makes community detection challenging. In this paper, we consider a model which allows for matched communities in the bipartite setting, in addition to node covariates with information about the matching. We derive a simple fast algorithm for fitting the model based on variational inference ideas and show its effectiveness on both simulated and real data. A variation of the model to allow for degree-correction is also considered, in addition to a novel approach to fitting such degree-corrected models.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-153/17-153.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-185.html",
+    "header": "Optimal Policies for Observing Time Series and Related Restless Bandit Problems",
+    "author": "Christopher R. Dance, Tomi Silander",
+    "time": "20(35):1−93, 2019.",
+    "abstract": "The trade-off between the cost of acquiring and processing data, and uncertainty due to a lack of data is fundamental in machine learning. A basic instance of this trade-off is the problem of deciding when to make noisy and costly observations of a discrete-time Gaussian random walk, so as to minimise the posterior variance plus observation costs. We present the first proof that a simple policy, which observes when the posterior variance exceeds a threshold, is optimal for this problem. The proof generalises to a wide range of cost functions other than the posterior variance. It is based on a new verification theorem by Nino-Mora that guarantees threshold structure for Markov decision processes, and on the relation between binary sequences known as Christoffel words and the dynamics of discontinuous nonlinear maps, which frequently arise in physics, control and biology. This result implies that optimal policies for linear-quadratic-Gaussian control with costly observations have a threshold structure. It also implies that the restless bandit problem of observing multiple such time series, has a well-defined Whittle index policy. We discuss computation of that index, give closed-form formulae for it, and compare the performance of the associated index policy with heuristic policies.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-185/17-185.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-286.html",
+    "header": "A New Approach to Laplacian Solvers and Flow Problems",
+    "author": "Patrick Rebeschini, Sekhar Tatikonda",
+    "time": "20(36):1−37, 2019.",
+    "abstract": "This paper investigates the behavior of the Min-Sum message passing scheme to solve systems of linear equations in the Laplacian matrices of graphs and to compute electric flows. Voltage and flow problems involve the minimization of quadratic functions and are fundamental primitives that arise in several domains. Algorithms that have been proposed are typically centralized and involve multiple graph-theoretic constructions or sampling mechanisms that make them difficult to implement and analyze. On the other hand, message passing routines are distributed, simple, and easy to implement. In this paper we establish a framework to analyze Min-Sum to solve voltage and flow problems. We characterize the error committed by the algorithm on general weighted graphs in terms of hitting times of random walks defined on the computation trees that support the operations of the algorithms with time. For $d$-regular graphs with equal weights, we show that the convergence of the algorithms is controlled by the total variation distance between the distributions of non-backtracking random walks defined on the original graph that start from neighboring nodes. The framework that we introduce extends the analysis of Min-Sum to settings where the contraction arguments previously considered in the literature (based on the assumption of walk summability or scaled diagonal dominance) can not be used, possibly in the presence of constraints.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-286/17-286.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-324.html",
+    "header": "A Well-Tempered Landscape for Non-convex Robust Subspace Recovery",
+    "author": "Tyler Maunu, Teng Zhang, Gilad Lerman",
+    "time": "20(37):1−59, 2019.",
+    "abstract": "We present a mathematical analysis of a non-convex energy landscape for robust subspace recovery. We prove that an underlying subspace is the only stationary point and local minimizer in a specified neighborhood under a deterministic condition on a dataset. If the deterministic condition is satisfied, we further show that a geodesic gradient descent method over the Grassmannian manifold can exactly recover the underlying subspace when the method is properly initialized. Proper initialization by principal component analysis is guaranteed with a simple deterministic condition. Under slightly stronger assumptions, the gradient descent method with a piecewise constant step-size scheme achieves linear convergence. The practicality of the deterministic condition is demonstrated on some statistical models of data, and the method achieves almost state-of-the-art recovery guarantees on the Haystack Model for different regimes of sample size and ambient dimension. In particular, when the ambient dimension is fixed and the sample size is large enough, we show that our gradient method can exactly recover the underlying subspace for any fixed fraction of outliers (less than 1).",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-324/17-324.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-373.html",
+    "header": "Approximation Hardness for A Class of Sparse Optimization Problems",
+    "author": "Yichen Chen, Yinyu Ye, Mengdi Wang",
+    "time": "20(38):1−27, 2019.",
+    "abstract": "In this paper, we consider three typical optimization problems with a convex loss function and a nonconvex sparse penalty or constraint. For the sparse penalized problem, we prove that finding an $\\mathcal{O}(n^{c_1}d^{c_2})$-optimal solution to an $n\\times d$ problem is strongly NP-hard for any $c_1, c_2\\in [0,1)$ such that $c_1+c_2<1$. For two constrained versions of the sparse optimization problem, we show that it is intractable to approximately compute a solution path associated with increasing values of some tuning parameter. The hardness results apply to a broad class of loss functions and sparse penalties. They suggest that one cannot even approximately solve these three problems in polynomial time, unless P $=$ NP.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-373/17-373.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-451.html",
+    "header": "A Bootstrap Method for Error Estimation in Randomized Matrix Multiplication",
+    "author": "Miles E. Lopes, Shusen Wang, Michael W. Mahoney",
+    "time": "20(39):1−40, 2019.",
+    "abstract": "In recent years, randomized methods for numerical linear algebra have received growing interest as a general approach to large-scale problems. Typically, the essential ingredient of these methods is some form of randomized dimension reduction, which accelerates computations, but also creates random app",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-451/17-451.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-526.html",
+    "header": "Stochastic Modified Equations and Dynamics of Stochastic Gradient Algorithms I: Mathematical Foundations",
+    "author": "Qianxiao Li, Cheng Tai, Weinan E",
+    "time": "20(40):1−47, 2019.",
+    "abstract": "We develop the mathematical foundations of the stochastic modified equations (SME) framework for analyzing the dynamics of stochastic gradient algorithms, where the latter is approximated by a class of stochastic differential equations with small noise parameters. We prove that this approximation can be understood mathematically as an weak approximation, which leads to a number of precise and useful results on the approximations of stochastic gradient descent (SGD), momentum SGD and stochastic Nesterov's accelerated gradient method in the general setting of stochastic objectives. We also demonstrate through explicit calculations that this continuous-time approach can uncover important analytical insights into the stochastic gradient algorithms under consideration that may not be easy to obtain in a purely discrete-time setting.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-526/17-526.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-576.html",
+    "header": "Decontamination of Mutual Contamination Models",
+    "author": "Julian Katz-Samuels, Gilles Blanchard, Clayton Scott",
+    "time": "20(41):1−57, 2019.",
+    "abstract": "Many machine learning problems can be characterized by \\emph{mutual contamination models}. In these problems, one observes several random samples from different convex combinations of a set of unknown base distributions and the goal is to infer these base distributions. This paper considers the general setting where the base distributions are defined on arbitrary probability spaces. We examine three popular machine learning problems that arise in this general setting: multiclass classification with label noise, demixing of mixed membership models, and classification with partial labels. In each case, we give sufficient conditions for identifiability and present algorithms for the infinite and finite sample settings, with associated performance guarantees.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-576/17-576.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-608.html",
+    "header": "DSCOVR: Randomized Primal-Dual Block Coordinate Algorithms for Asynchronous Distributed Optimization",
+    "author": "Lin Xiao, Adams Wei Yu, Qihang Lin, Weizhu Chen",
+    "time": "20(43):1−58, 2019.",
+    "abstract": "Machine learning with big data often involves large optimization models. For distributed optimization over a cluster of machines, frequent communication and synchronization of all model parameters (optimization variables) can be very costly. A promising solution is to use parameter servers to store different subsets of the model parameters, and update them asynchronously at different machines using local datasets. In this paper, we focus on distributed optimization of large linear models with convex loss functions, and propose a family of randomized primal-dual block coordinate algorithms that are especially suitable for asynchronous distributed implementation with parameter servers. In particular, we work with the saddle-point formulation of such problems which allows simultaneous data and model partitioning, and exploit its structure by doubly stochastic coordinate optimization with variance reduction (DSCOVR). Compared with other first-order distributed algorithms, we show that DSCOVR may require less amount of overall computation and communication, and less or no synchronization. We discuss the implementation details of the DSCOVR algorithms, and present numerical experiments on an industrial distributed computing system.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-608/17-608.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/17-773.html",
+    "header": "Robust Frequent Directions with Application in Online Learning",
+    "author": "Luo Luo, Cheng Chen, Zhihua Zhang, Wu-Jun Li, Tong Zhang",
+    "time": "20(45):1−41, 2019.",
+    "abstract": "The frequent directions (FD) technique is a deterministic approach for online sketching that has many applications in machine learning. The conventional FD is a heuristic procedure that often outputs rank deficient matrices. To overcome the rank deficiency problem, we propose a new sketching strategy called robust frequent directions (RFD) by introducing a regularization term. RFD can be derived from an optimization problem. It updates the sketch matrix and the regularization term adaptively and jointly. RFD reduces the approximation error of FD without increasing the computational cost. We also apply RFD to online learning and propose an effective hyperparameter-free online Newton algorithm. We derive a regret bound for our online Newton algorithm based on RFD, which guarantees the robustness of the algorithm. The experimental studies demonstrate that the proposed method outperforms state-of-the-art second order online learning algorithms.",
+    "pdf_url": "http://jmlr.org/papers/volume20/17-773/17-773.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-170.html",
+    "header": "Analysis of spectral clustering algorithms for community detection: the general bipartite setting",
+    "author": "Zhixin Zhou, Arash A.Amini",
+    "time": "20(47):1−47, 2019.",
+    "abstract": "We consider spectral clustering algorithms for community detection under a general bipartite stochastic block model (SBM). A modern spectral clustering algorithm consists of three steps: (1) regularization of an appropriate adjacency or Laplacian matrix (2) a form of spectral truncation and (3) a kmeans type algorithm in the reduced spectral domain. We focus on the adjacency-based spectral clustering and for the first step, propose a new data-driven regularization that can restore the concentration of the adjacency matrix even for the sparse networks. This result is based on recent work on regularization of random binary matrices, but avoids using unknown population level parameters, and instead estimates the necessary quantities from the data. We also propose and study a novel variation of the spectral truncation step and show how this variation changes the nature of the misclassification rate in a general SBM. We then show how the consistency results can be extended to models beyond SBMs, such as inhomogeneous random graph models with approximate clusters, including a graphon clustering problem, as well as general sub-Gaussian biclustering. A theme of the paper is providing a better understanding of the analysis of spectral methods for community detection and establishing consistency results, under fairly general clustering models and for a wide regime of degree growths, including sparse cases where the average expected degree grows arbitrarily slowly.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-170/18-170.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-191.html",
+    "header": "Efficient augmentation and relaxation learning for individualized treatment rules using observational data",
+    "author": "Ying-Qi Zhao, Eric B. Laber, Yang Ning, Sumona Saha, Bruce E. Sands",
+    "time": "20(48):1−23, 2019.",
+    "abstract": "Individualized treatment rules aim to identify if, when, which, and to whom treatment should be applied. A globally aging population, rising healthcare costs, and increased access to patient-level data have created an urgent need for high-quality estimators of individualized treatment rules that can be applied to observational data. A recent and promising line of research for estimating individualized treatment rules recasts the problem of estimating an optimal treatment rule as a weighted classification problem. We consider a class of estimators for optimal treatment rules that are analogous to convex large-margin classifiers. The proposed class applies to observational data and is doubly-robust in the sense that correct specification of either a propensity or outcome model leads to consistent estimation of the optimal individualized treatment rule. Using techniques from semiparametric efficiency theory, we derive rates of convergence for the proposed estimators and use these rates to characterize the bias-variance trade-off for estimating individualized treatment rules with classification-based methods. Simulation experiments informed by these results demonstrate that it is possible to construct new estimators within the proposed framework that significantly outperform existing ones. We illustrate the proposed methods using data from a labor training program and a study of inflammatory bowel syndrome.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-191/18-191.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-196.html",
+    "header": "Using Simulation to Improve Sample-Efficiency of Bayesian Optimization for Bipedal Robots",
+    "author": "Akshara Rai, Rika Antonova, Franziska Meier, Christopher G. Atkeson",
+    "time": "20(49):1−24, 2019.",
+    "abstract": "Learning for control can acquire controllers for novel robotic tasks, paving the path for autonomous agents. Such controllers can be expert-designed policies, which typically require tuning of parameters for each task scenario. In this context, Bayesian optimization (BO) has emerged as a promising approach for automatically tuning controllers. However, sample-efficiency can still be an issue for high-dimensional policies on hardware. Here, we develop an approach that utilizes simulation to learn structured feature transforms that map the original parameter space into a domain-informed space. During BO, similarity between controllers is now calculated in this transformed space. Experiments on the ATRIAS robot hardware and simulation show that our approach succeeds at sample-efficiently learning controllers for multiple robots. Another question arises: What if the simulation significantly differs from hardware? To answer this, we create increasingly approximate simulators and study the effect of increasing simulation-hardware mismatch on the performance of Bayesian optimization. We also compare our approach to other approaches from literature, and find it to be more reliable, especially in cases of high mismatch. Our experiments show that our approach succeeds across different controller types, bipedal robot models and simulator fidelity levels, making it applicable to a wide range of bipedal locomotion problems.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-196/18-196.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-213.html",
+    "header": "No-Regret Bayesian Optimization with Unknown Hyperparameters",
+    "author": "Felix Berkenkamp, Angela P. Schoellig, Andreas Krause",
+    "time": "20(50):1−24, 2019.",
+    "abstract": "Bayesian optimization (BO) based on Gaussian process models is a powerful paradigm to optimize black-box functions that are expensive to evaluate. While several BO algorithms provably converge to the global optimum of the unknown function, they assume that the hyperparameters of the kernel are known in advance. This is not the case in practice and misspecification often causes these algorithms to converge to poor local optima. In this paper, we present the first BO algorithm that is provably no-regret and converges to the optimum without knowledge of the hyperparameters. During optimization we slowly adapt the hyperparameters of stationary kernels and thereby expand the associated function class over time, so that the BO algorithm considers more complex function candidates. Based on the theoretical insights, we propose several practical algorithms that achieve the empirical sample efficiency of BO with online hyperparameter estimation, but retain theoretical convergence guarantees. We evaluate our method on several benchmark problems.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-213/18-213.pdf"
+  },
+  {
+    "volumn": 20,
+    "url": "http://jmlr.org/papers/v20/18-241.html",
+    "header": "Bayesian Combination of Probabilistic Classifiers using Multivariate Normal Mixtures",
+    "author": "Gregor PirÅ¡, Erik Å trumbelj",
+    "time": "20(51):1−18, 2019.",
+    "abstract": "Ensemble methods are a powerful tool, often outperforming individual prediction models. Existing Bayesian ensembles either do not model the correlations between sources, or they are only capable of combining non-probabilistic predictions. We propose a new model, which overcomes these disadvantages. Transforming the probabilistic predictions with the inverse additive logistic transformation allows us to model the correlations with multivariate normal mixtures. We derive an efficient Gibbs sampler for the proposed model and implement a regularization method to make it more robust. We compare our method to related work and the classical linear opinion pool. Empirical evaluation on several toy and real-world data sets, including a case study on air-pollution forecasting, shows that the method outperforms other methods, while being robust and easy to use.",
+    "pdf_url": "http://jmlr.org/papers/volume20/18-241/18-241.pdf"
+  }
+]

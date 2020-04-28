@@ -1,0 +1,416 @@
+[
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/lember14a.html",
+    "header": "Bridging Viterbi and Posterior Decoding: A Generalized Risk Approach to Hidden Path Inference Based on Hidden Markov Models",
+    "author": "JÃ¼ri Lember, Alexey A. Koloydenko",
+    "time": "15(1):1−58, 2014.",
+    "abstract": "Motivated by the unceasing interest in hidden Markov models (HMMs), this paper re-examines hidden path inference in these models, using primarily a risk-based framework. While the most common  maximum a posteriori  (MAP), or Viterbi, path estimator and the  minimum error , or  Posterior Decoder  (PD) have long been around, other path estimators, or decoders, have been either only hinted at or applied more recently and in dedicated applications generally unfamiliar to the statistical learning community. Over a decade ago, however, a family of algorithmically defined decoders aiming to hybridize the two standard ones was proposed elsewhere. The present paper gives a careful analysis of this hybridization approach, identifies several problems and issues with it and other previously proposed approaches, and proposes practical resolutions of those. Furthermore, simple modifications of the classical criteria for hidden path recognition are shown to lead to a new class of decoders. Dynamic programming algorithms to compute these decoders in the usual forward-backward manner are presented. A particularly interesting subclass of such estimators can be also viewed as hybrids of the MAP and PD estimators. Similar to previously proposed MAP-PD hybrids, the new class is parameterized by a small number of tunable parameters. Unlike their algorithmic predecessors, the new risk- based decoders are more clearly interpretable, and, most importantly, work \"out-of-the box\" in practice, which is demonstrated on some real bioinformatics tasks and data. Some further generalizations and applications are discussed in the conclusion.",
+    "pdf_url": "http://jmlr.org/papers/volume15/lember14a/lember14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/nandan14a.html",
+    "header": "Fast SVM Training Using Approximate Extreme Points",
+    "author": "Manu Nandan, Pramod P. Khargonekar, Sachin S. Talathi",
+    "time": "15(2):59−98, 2014.",
+    "abstract": "Applications of non-linear kernel support vector machines (SVMs) to large data sets is seriously hampered by its excessive training time. We propose a modification, called the approximate extreme points support vector machine (AESVM), that is aimed at overcoming this burden. Our approach relies on conducting the SVM optimization over a carefully selected subset, called the representative set, of the training data set. We present analytical results that indicate the similarity of AESVM and SVM solutions. A linear time algorithm based on convex hulls and extreme points is used to compute the representative set in kernel space. Extensive computational experiments on nine data sets compared AESVM to LIBSVM (Chang and Lin, 2011), CVM (Tsang et al., 2005), BVM (Tsang et al., 2007), LASVM (Bordes et al., 2005), SVM perf  (Joachims and Yu, 2009), and the random features method (Rahimi and Recht, 2007). Our AESVM implementation was found to train much faster than the other methods, while its classification accuracy was similar to that of LIBSVM in all cases. In particular, for a seizure detection data set, AESVM training was almost 500 times faster than LIBSVM and LASVM and 20 times faster than CVM and BVM. Additionally, AESVM also gave competitively fast classification times.",
+    "pdf_url": "http://jmlr.org/papers/volume15/nandan14a/nandan14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/vats14a.html",
+    "header": "A Junction Tree Framework for Undirected Graphical Model Selection",
+    "author": "Divyanshu Vats, Robert D. Nowak",
+    "time": "15(5):147−191, 2014.",
+    "abstract": "An undirected graphical model is a joint probability distribution defined on an undirected graph $G^*$, where the vertices in the graph index a collection of random variables and the edges encode conditional independence relationships among random variables. The undirected graphical model selection (UGMS) problem is to estimate the graph $G^*$ given observations drawn from the undirected graphical model. This paper proposes a framework for decomposing the UGMS problem into multiple subproblems over clusters and subsets of the separators in a junction tree. The junction tree is constructed using a graph that contains a superset of the edges in $G^*$. We highlight three main properties of using junction trees for UGMS. First, different regularization parameters or different UGMS algorithms can be used to learn different parts of the graph. This is possible since the subproblems we identify can be solved independently of each other. Second, under certain conditions, a junction tree based UGMS algorithm can produce consistent results with fewer observations than the usual requirements of existing algorithms. Third, both our theoretical and experimental results show that the junction tree framework does a significantly better job at finding the weakest edges in a graph than existing methods. This property is a consequence of both the first and second properties. Finally, we note that our framework is independent of the choice of the UGMS algorithm and can be used as a wrapper around standard UGMS algorithms for more accurate graph estimation.",
+    "pdf_url": "http://jmlr.org/papers/volume15/vats14a/vats14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/vanlaarhoven14a.html",
+    "header": "Axioms for Graph Clustering Quality Functions",
+    "author": "Twan van Laarhoven, Elena Marchiori",
+    "time": "15(6):193−215, 2014.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume15/vanlaarhoven14a/vanlaarhoven14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/aravkin14a.html",
+    "header": "Convex vs Non-Convex Estimators for Regression and Sparse Estimation: the Mean Squared Error Properties of ARD and GLasso",
+    "author": "Aleksandr Aravkin, James V. Burke, Alessandro Chiuso, Gianluigi Pillonetto",
+    "time": "15(7):217−252, 2014.",
+    "abstract": "We study a simple linear regression problem for grouped variables; we are interested in methods which jointly perform estimation and  variable selection , that is, that automatically set to zero groups of variables in the regression vector. The Group Lasso (GLasso), a well known approach used to tackle this problem which is also a special case of Multiple Kernel Learning (MKL), boils down to solving convex optimization problems. On the other hand, a Bayesian approach commonly known as Sparse Bayesian Learning (SBL), a version of which is the well known Automatic Relevance Determination (ARD), lead to non- convex problems. In this paper we discuss the relation between ARD (and a penalized version which we call PARD) and Glasso, and study their asymptotic properties in terms of the Mean Squared Error in estimating the unknown parameter. The theoretical arguments developed here are independent of the correctness of the prior models and clarify the advantages of PARD over GLasso.",
+    "pdf_url": "http://jmlr.org/papers/volume15/aravkin14a/aravkin14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/szabo14a.html",
+    "header": "Information Theoretical Estimators Toolbox",
+    "author": "ZoltÃ¡n SzabÃ³",
+    "time": "15(9):283−287, 2014.",
+    "abstract": "We present ITE (information theoretical estimators) a free and open source, multi-platform, Matlab/Octave toolbox that is capable of estimating many different variants of entropy, mutual information, divergence, association measures, cross quantities, and kernels on distributions. Thanks to its highly modular design, ITE supports additionally (i) the combinations of the estimation techniques, (ii) the easy construction and embedding of novel information theoretical estimators, and (iii) their immediate application in information theoretical optimization problems. ITE also includes a prototype application in a central problem class of signal processing, independent subspace analysis and its extensions.",
+    "pdf_url": "http://jmlr.org/papers/volume15/szabo14a/szabo14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/raskutti14a.html",
+    "header": "Early Stopping and Non-parametric Regression: An Optimal Data-dependent Stopping Rule",
+    "author": "Garvesh Raskutti, Martin J. Wainwright, Bin Yu",
+    "time": "15(11):335−366, 2014.",
+    "abstract": "Early stopping is a form of regularization based on choosing when to stop running an iterative algorithm. Focusing on non- parametric regression in a reproducing kernel Hilbert space, we analyze the early stopping strategy for a form of gradient- descent applied to the least-squares loss function. We propose a data-dependent stopping rule that does not involve hold-out or cross-validation data, and we prove upper bounds on the squared error of the resulting function estimate, measured in either the $L^2(\\mathbb{P})$ and $L^2(\\mathbb{P}_n)$ norm. These upper bounds lead to minimax-optimal rates for various kernel classes, including Sobolev smoothness classes and other forms of reproducing kernel Hilbert spaces. We show through simulation that our stopping rule compares favorably to two other stopping rules, one based on hold-out data and the other based on Stein's unbiased risk estimate. We also establish a tight connection between our early stopping strategy and the solution path of a kernel ridge regression estimator.",
+    "pdf_url": "http://jmlr.org/papers/volume15/raskutti14a/raskutti14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/foxroberts14a.html",
+    "header": "Unbiased Generative Semi-Supervised Learning",
+    "author": "Patrick Fox-Roberts, Edward Rosten",
+    "time": "15(12):367−443, 2014.",
+    "abstract": "Reliable semi-supervised learning, where a small amount of labelled data is complemented by a large body of unlabelled data, has been a long-standing goal of the machine learning community. However, while it seems intuitively obvious that unlabelled data can aid the learning process, in practise its performance has often been disappointing. We investigate this by examining generative maximum likelihood semi-supervised learning and derive novel upper and lower bounds on the degree of bias introduced by the unlabelled data. These bounds improve upon those provided in previous work, and are specifically applicable to the challenging case where the model is unable to exactly fit to the underlying distribution, a situation which is common in practise, but for which fewer guarantees of semi-supervised performance have been found. Inspired by this new framework for analysing bounds, we propose a new, simple reweighing scheme which provides a provably unbiased estimator for arbitrary model/distribution pairs---an unusual property for a semi- supervised algorithm. This reweighing introduces no additional computational complexity and can be applied to very many models. Additionally, we provide specific conditions demonstrating the circumstance under which the unlabelled data will lower the estimator variance, thereby improving convergence.",
+    "pdf_url": "http://jmlr.org/papers/volume15/foxroberts14a/foxroberts14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/mohan14a.html",
+    "header": "Node-Based Learning of Multiple Gaussian Graphical Models",
+    "author": "Karthik Mohan, Palma London, Maryam Fazel, Daniela Witten, Su-In Lee",
+    "time": "15(13):445−488, 2014.",
+    "abstract": "We consider the problem of estimating high-dimensional Gaussian graphical models corresponding to a single set of variables under several distinct conditions. This problem is motivated by the task of recovering transcriptional regulatory networks on the basis of gene expression data containing heterogeneous samples, such as different disease states, multiple species, or different developmental stages. We assume that most aspects of the conditional dependence networks are shared, but that there are some structured differences between them. Rather than assuming that similarities and differences between networks are driven by individual edges, we take a  node-based  approach, which in many cases provides a more intuitive interpretation of the network differences. We consider estimation under two distinct assumptions: (1) differences between the $K$ networks are due to individual nodes that are  perturbed  across conditions, or (2) similarities among the $K$ networks are due to the presence of  common hub nodes  that are shared across all $K$ networks. Using a  row-column overlap norm  penalty function, we formulate two convex optimization problems that correspond to these two assumptions. We solve these problems using an alternating direction method of multipliers algorithm, and we derive a set of necessary and sufficient conditions that allows us to decompose the problem into independent subproblems so that our algorithm can be scaled to high-dimensional settings. Our proposal is illustrated on synthetic data, a webpage data set, and a brain cancer gene expression data set.",
+    "pdf_url": "http://jmlr.org/papers/volume15/mohan14a/mohan14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/pang14a.html",
+    "header": "The FASTCLIME Package for Linear Programming and Large-Scale Precision Matrix Estimation in R",
+    "author": "Haotian Pang, Han Liu, Robert V, erbei",
+    "time": "15(14):489−493, 2014.",
+    "abstract": "We develop an  R  package FASTCLIME for solving a family of regularized linear programming (LP) problems. Our package efficiently implements the parametric simplex algorithm, which provides a scalable and sophisticated tool for solving large- scale linear programs. As an illustrative example, one use of our LP solver is to implement an important sparse precision matrix estimation method called CLIME (Constrained $L_1$ Minimization Estimator). Compared with existing packages for this problem such as CLIME and FLARE, our package has three advantages: (1) it efficiently calculates the full piecewise- linear regularization path; (2) it provides an accurate dual certificate as stopping criterion; (3) it is completely coded in C and is highly portable. This package is designed to be useful to statisticians and machine learning researchers for solving a wide range of problems.",
+    "pdf_url": "http://jmlr.org/papers/volume15/pang14a/pang14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/hoi14a.html",
+    "header": "LIBOL: A Library for Online Learning Algorithms",
+    "author": "Steven C.H. Hoi, Jialei Wang, Peilin Zhao",
+    "time": "15(15):495−499, 2014.",
+    "abstract": "LIBOL  is an open-source library for large-scale online learning, which consists of a large family of efficient and scalable state-of-the-art online learning algorithms for large- scale online classification tasks. We have offered easy-to-use command-line tools and examples for users and developers, and also have made comprehensive documents available for both beginners and advanced users.  LIBOL  is not only a machine learning toolbox, but also a comprehensive experimental platform for conducting online learning research.",
+    "pdf_url": "http://jmlr.org/papers/volume15/hoi14a/hoi14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/lowd14a.html",
+    "header": "Improving Markov Network Structure Learning Using Decision Trees",
+    "author": "Daniel Lowd, Jesse Davis",
+    "time": "15(16):501−532, 2014.",
+    "abstract": "Most existing algorithms for learning Markov network structure either are limited to learning interactions among few variables or are very slow, due to the large space of possible structures. In this paper, we propose three new methods for using decision trees to learn Markov network structures. The advantage of using decision trees is that they are very fast to learn and can represent complex interactions among many variables. The first method, DTSL, learns a decision tree to predict each variable and converts each tree into a set of conjunctive features that define the Markov network structure. The second, DT-BLM, builds on DTSL by using it to initialize a search-based Markov network learning algorithm recently proposed by Davis and Domingos (2010). The third, DT+L1, combines the features learned by DTSL with those learned by an L1-regularized logistic regression method (L1) proposed by Ravikumar et al. (2009). In an extensive empirical evaluation on 20 data sets, DTSL is comparable to L1 and significantly faster and more accurate than two other baselines. DT-BLM is slower than DTSL, but obtains slightly higher accuracy. DT+L1 combines the strengths of DTSL and L1 to perform significantly better than either of them with only a modest increase in training time.",
+    "pdf_url": "http://jmlr.org/papers/volume15/lowd14a/lowd14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/cuturi14a.html",
+    "header": "Ground Metric Learning",
+    "author": "Marco Cuturi, David Avis",
+    "time": "15(17):533−564, 2014.",
+    "abstract": "Optimal transport distances have been used for more than a decade in machine learning to compare histograms of features. They have one parameter: the  ground metric , which can be any metric between the features themselves. As is the case for all parameterized distances, optimal transport distances can only prove useful in practice when this parameter is carefully chosen. To date, the only option available to practitioners to set the ground metric parameter was to rely on  a priori  knowledge of the features, which limited considerably the scope of application of optimal transport distances. We propose to lift this limitation and consider instead algorithms that can learn the ground metric using only a training set of labeled histograms. We call this approach ground metric learning. We formulate the problem of learning the ground metric as the minimization of the difference of two convex polyhedral functions over a convex set of metric matrices. We follow the presentation of our algorithms with promising experimental results which show that this approach is useful both for retrieval and binary/multiclass classification tasks.",
+    "pdf_url": "http://jmlr.org/papers/volume15/cuturi14a/cuturi14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/richard14a.html",
+    "header": "Link Prediction in Graphs with Autoregressive Features",
+    "author": "Emile Richard, StÃ©phane GaÃ¯ffas, Nicolas Vayatis",
+    "time": "15(18):565−593, 2014.",
+    "abstract": "In the paper, we consider the problem of link prediction in time-evolving graphs. We assume that certain graph features, such as the node degree, follow a vector autoregressive (VAR) model and we propose to use this information to improve the accuracy of prediction. Our strategy involves a joint optimization procedure over the space of adjacency matrices and VAR matrices. On the adjacency matrix it takes into account both sparsity and low rank properties and on the VAR it encodes the sparsity. The analysis involves oracle inequalities that illustrate the trade-offs in the choice of smoothing parameters when modeling the joint effect of sparsity and low rank. The estimate is computed efficiently using proximal methods, and evaluated through numerical experiments.",
+    "pdf_url": "http://jmlr.org/papers/volume15/richard14a/richard14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/bach14a.html",
+    "header": "Adaptivity of Averaged Stochastic Gradient Descent to Local Strong Convexity for Logistic Regression",
+    "author": "Francis Bach",
+    "time": "15(19):595−627, 2014.",
+    "abstract": "In this paper, we consider supervised learning problems such as logistic regression and study the stochastic gradient method with averaging, in the usual stochastic approximation setting where observations are used only once. We show that after $N$ iterations, with a constant step-size proportional to $1/R^2 \\sqrt{N}$ where $N$ is the number of observations and $R$ is the maximum norm of the observations, the convergence rate is always of order $O(1/\\sqrt{N})$, and improves to $O(R^2 / \\mu N)$ where $\\mu$ is the lowest eigenvalue of the Hessian at the global optimum (when this eigenvalue is greater than $R^2/\\sqrt{N}$). Since $\\mu$ does not need to be known in advance, this shows that averaged stochastic gradient is adaptive to  unknown local  strong convexity of the objective function. Our proof relies on the generalized self-concordance properties of the logistic loss and thus extends to all generalized linear models with uniformly bounded features.",
+    "pdf_url": "http://jmlr.org/papers/volume15/bach14a/bach14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/moore14a.html",
+    "header": "Reinforcement Learning for Closed-Loop Propofol Anesthesia: A Study in Human Volunteers",
+    "author": "Brett L Moore, Larry D Pyeatt, Vivekan, Kulkarni, Periklis Panousis, Kevin Padrez, Anthony G Doufas",
+    "time": "15(21):655−696, 2014.",
+    "abstract": "Clinical research has demonstrated the efficacy of closed-loop control of anesthesia using the bispectral index of the electroencephalogram as the controlled variable. These controllers have evolved to yield patient-specific anesthesia, which is associated with improved patient outcomes. Despite progress, the problem of patient-specific anesthesia remains unsolved. A variety of factors confound good control, including variations in human physiology, imperfect measures of drug effect, and delayed, hysteretic response to drug delivery. Reinforcement learning (RL) appears to be uniquely equipped to overcome these challenges; however, the literature offers no precedent for RL in anesthesia. To begin exploring the role RL might play in improving anesthetic care, we investigated the method's application in the delivery of patient-specific, propofol-induced hypnosis in human volunteers. When compared to performance metrics reported in the anesthesia literature, RL demonstrated patient-specific control marked by improved accuracy and stability. Furthermore, these results suggest that RL may be considered a viable alternative for solving other difficult closed-loop control problems in medicine. More rigorous clinical study, beyond the confines of controlled human volunteer studies, is needed to substantiate these findings.",
+    "pdf_url": "http://jmlr.org/papers/volume15/moore14a/moore14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/coviello14a.html",
+    "header": "Clustering Hidden Markov Models with Variational HEM",
+    "author": "Emanuele Coviello, Antoni B. Chan, Gert R.G. Lanckriet",
+    "time": "15(22):697−747, 2014.",
+    "abstract": "The hidden Markov model (HMM) is a widely-used generative model that copes with sequential data, assuming that each observation is conditioned on the state of a hidden Markov chain. In this paper, we derive a novel algorithm to cluster HMMs based on the hierarchical EM (HEM) algorithm. The proposed algorithm i) clusters a given collection of HMMs into groups of HMMs that are similar, in terms of the distributions they represent, and ii) characterizes each group by a Ã¢ÂÂcluster centerÃ¢ÂÂ, that is, a novel HMM that is representative for the group, in a manner that is consistent with the underlying generative model of the HMM. To cope with intractable inference in the E-step, the HEM algorithm is formulated as a variational optimization problem, and efficiently solved for the HMM case by leveraging an appropriate variational approximation. The benefits of the proposed algorithm, which we call variational HEM (VHEM), are demonstrated on several tasks involving time-series data, such as hierarchical clustering of motion capture sequences, and automatic annotation and retrieval of music and of online hand- writing data, showing improvements over current methods. In particular, our variational HEM algorithm effectively leverages large amounts of data when learning annotation models by using an efficient hierarchical estimation procedure, which reduces learning times and memory requirements, while improving model robustness through better regularization.",
+    "pdf_url": "http://jmlr.org/papers/volume15/coviello14a/coviello14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/zhang14a.html",
+    "header": "A Novel M-Estimator for Robust PCA",
+    "author": "Teng Zhang, Gilad Lerman",
+    "time": "15(23):749−808, 2014.",
+    "abstract": "We study the basic problem of robust subspace recovery. That is, we assume a data set that some of its points are sampled around a fixed subspace and the rest of them are spread in the whole ambient space, and we aim to recover the fixed underlying subspace. We first estimate Ã¢ÂÂrobust inverse sample covarianceÃ¢ÂÂ by solving a convex minimization procedure; we then recover the subspace by the bottom eigenvectors of this matrix (their number correspond to the number of eigenvalues close to 0). We guarantee exact subspace recovery under some conditions on the underlying data. Furthermore, we propose a fast iterative algorithm, which linearly converges to the matrix minimizing the convex problem. We also quantify the effect of noise and regularization and discuss many other practical and theoretical issues for improving the subspace recovery in various settings. When replacing the sum of terms in the convex energy function (that we minimize) with the sum of squares of terms, we obtain that the new minimizer is a scaled version of the inverse sample covariance (when exists). We thus interpret our minimizer and its subspace (spanned by its bottom eigenvectors) as robust versions of the empirical inverse covariance and the PCA subspace respectively. We compare our method with many other algorithms for robust PCA on synthetic and real data sets and demonstrate state-of-the-art speed and accuracy.",
+    "pdf_url": "http://jmlr.org/papers/volume15/zhang14a/zhang14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/dann14a.html",
+    "header": "Policy Evaluation with Temporal Differences: A Survey and Comparison",
+    "author": "Christoph Dann, Gerhard Neumann, Jan Peters",
+    "time": "15(24):809−883, 2014.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume15/dann14a/dann14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/ailon14a.html",
+    "header": "Active Learning Using Smooth Relative Regret Approximations with Applications",
+    "author": "Nir Ailon, Ron Begleiter, Esther Ezra",
+    "time": "15(25):885−920, 2014.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume15/ailon14a/ailon14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/wierstra14a.html",
+    "header": "Natural Evolution Strategies",
+    "author": "Daan Wierstra, Tom Schaul, Tobias Glasmachers, Yi Sun, Jan Peters, J\\\"{u}rgen Schmidhuber",
+    "time": "15(27):949−980, 2014.",
+    "abstract": "This paper presents Natural Evolution Strategies (NES), a recent family of black-box optimization algorithms that use the natural gradient to update a parameterized search distribution in the direction of higher expected fitness. We introduce a collection of techniques that address issues of convergence, robustness, sample complexity, computational complexity and sensitivity to hyperparameters. This paper explores a number of implementations of the NES family, such as general-purpose multi-variate normal distributions and separable distributions tailored towards search in high dimensional spaces. Experimental results show best published performance on various standard benchmarks, as well as competitive performance on others.",
+    "pdf_url": "http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/mizutani14a.html",
+    "header": "Ellipsoidal Rounding for Nonnegative Matrix Factorization Under Noisy Separability",
+    "author": "Tomohiko Mizutani",
+    "time": "15(29):1011−1039, 2014.",
+    "abstract": "We present a numerical algorithm for nonnegative matrix factorization (NMF) problems under noisy separability. An NMF problem under separability can be stated as one of finding all vertices of the convex hull of data points. The research interest of this paper is to find the vectors as close to the vertices as possible in a situation in which noise is added to the data points. Our algorithm is designed to capture the shape of the convex hull of data points by using its enclosing ellipsoid. We show that the algorithm has correctness and robustness properties from theoretical and practical perspectives; correctness here means that if the data points do not contain any noise, the algorithm can find the vertices of their convex hull; robustness means that if the data points contain noise, the algorithm can find the near-vertices. Finally, we apply the algorithm to document clustering, and report the experimental results.",
+    "pdf_url": "http://jmlr.org/papers/volume15/mizutani14a/mizutani14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/wade14a.html",
+    "header": "Improving Prediction from Dirichlet Process Mixtures via Enrichment",
+    "author": "Sara Wade, David B. Dunson, Sonia Petrone, Lorenzo Trippa",
+    "time": "15(30):1041−1071, 2014.",
+    "abstract": "Flexible covariate-dependent density estimation can be achieved by modelling the joint density of the response and covariates as a Dirichlet process mixture. An appealing aspect of this approach is that computations are relatively easy. In this paper, we examine the predictive performance of these models with an increasing number of covariates. Even for a moderate number of covariates, we find that the likelihood for $x$ tends to dominate the posterior of the latent random partition, degrading the predictive performance of the model. To overcome this, we suggest using a different nonparametric prior, namely an enriched Dirichlet process. Our proposal maintains a simple allocation rule, so that computations remain relatively simple. Advantages are shown through both predictive equations and examples, including an application to diagnosis Alzheimer's disease.",
+    "pdf_url": "http://jmlr.org/papers/volume15/wade14a/wade14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/agarwal14a.html",
+    "header": "A Reliable Effective Terascale Linear Learning System",
+    "author": "Alekh Agarwal, Oliveier Chapelle, Miroslav Dud\\'{i}k, John Langford",
+    "time": "15(32):1111−1133, 2014.",
+    "abstract": "We present a system and a set of techniques for learning linear predictors with convex losses on terascale data sets, with trillions of features, (The number of features here refers to the number of non-zero entries in the data matrix.) billions of training examples and millions of parameters in an hour using a cluster of 1000 machines. Individually none of the component techniques are new, but the careful synthesis required to obtain an efficient implementation is. The result is, up to our knowledge, the most scalable and efficient linear learning system reported in the literature. (All the empirical evaluation reported in this work was carried out between May-Oct 2011.) We describe and thoroughly evaluate the components of the system, showing the importance of the various design choices.",
+    "pdf_url": "http://jmlr.org/papers/volume15/agarwal14a/agarwal14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/volkovs14a.html",
+    "header": "New Learning Methods for Supervised and Unsupervised Preference Aggregation",
+    "author": "Maksims N. Volkovs, Richard S. Zemel",
+    "time": "15(33):1135−1176, 2014.",
+    "abstract": "In this paper we present a general treatment of the preference aggregation problem, in which multiple preferences over objects must be combined into a single consensus ranking. We consider two instances of this problem: unsupervised aggregation where no information about a target ranking is available, and supervised aggregation where ground truth preferences are provided. For each problem class we develop novel learning methods that are applicable to a wide range of preference types. (The code for all models introduced in this paper is available at  www.cs.toronto.edu/~mvolkovs .)  Specifically, for unsupervised aggregation we introduce the Multinomial Preference model (MPM) which uses a multinomial generative process to model the observed preferences. For the supervised problem we develop a supervised extension for MPM and then propose two fully supervised models. The first model employs SVD factorization to derive effective item features, transforming the aggregation problems into a learning-to-rank one. The second model aims to eliminate the costly SVD factorization and instantiates a probabilistic CRF framework, deriving unary and pairwise potentials directly from the observed preferences. Using a probabilistic framework allows us to directly optimize the expectation of any target metric, such as NDCG or ERR. All the proposed models operate on pairwise preferences and can thus be applied to a wide range of preference types. We empirically validate the models on rank aggregation and collaborative filtering data sets and demonstrate superior empirical accuracy.",
+    "pdf_url": "http://jmlr.org/papers/volume15/volkovs14a/volkovs14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/chiang14a.html",
+    "header": "Prediction and Clustering in Signed Networks: A Local to Global Perspective",
+    "author": "Kai-Yang Chiang, Cho-Jui Hsieh, Nagarajan Natarajan, Inderjit S. Dhillon, Ambuj Tewari",
+    "time": "15(34):1177−1213, 2014.",
+    "abstract": "The study of social networks is a burgeoning research area. However, most existing work is on networks that simply encode whether relationships exist or not. In contrast, relationships in  signed  networks can be positive (Ã¢ÂÂlike\", Ã¢ÂÂtrust\") or negative (Ã¢ÂÂdislike\", Ã¢ÂÂdistrust\"). The theory of social balance shows that signed networks tend to conform to some local patterns that, in turn, induce certain global characteristics. In this paper, we exploit both local as well as global aspects of social balance theory for two fundamental problems in the analysis of signed networks: sign prediction and clustering. Local patterns of social balance have been used in the past for sign prediction. We define more general measures of social imbalance (MOIs) based on $\\ell$-cycles in the network and give a simple sign prediction rule. Interestingly, by examining measures of social imbalance, we show that the classic Katz measure, which is used widely in unsigned link prediction, also has a balance theoretic interpretation when applied to signed networks. Motivated by the global structure of balanced networks, we propose an effective low rank modeling approach for both sign prediction and clustering. We provide theoretical performance guarantees for our low-rank matrix completion approach via convex relaxations, scale it up to large problem sizes using a matrix factorization based algorithm, and provide extensive experimental validation including comparisons with local approaches. Our experimental results indicate that, by adopting a more global viewpoint of social balance, we get significant performance and computational gains in prediction and clustering tasks on signed networks. Our work therefore highlights the usefulness of the global aspect of balance theory for the analysis of signed networks.",
+    "pdf_url": "http://jmlr.org/papers/volume15/chiang14a/chiang14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/ruiz14a.html",
+    "header": "Bayesian Nonparametric Comorbidity Analysis of Psychiatric Disorders",
+    "author": "Francisco J. R. Ruiz, Isabel Valera, Carlos Blanco, Fern, o Perez-Cruz",
+    "time": "15(35):1215−1247, 2014.",
+    "abstract": "The analysis of comorbidity is an open and complex research field in the branch of psychiatry, where clinical experience and several studies suggest that the relation among the psychiatric disorders may have etiological and treatment implications. In this paper, we are interested in applying latent feature modeling to find the latent structure behind the psychiatric disorders that can help to examine and explain the relationships among them. To this end, we use the large amount of information collected in the National Epidemiologic Survey on Alcohol and Related Conditions (NESARC) database and propose to model these data using a nonparametric latent model based on the Indian Buffet Process (IBP). Due to the discrete nature of the data, we first need to adapt the observation model for discrete random variables. We propose a generative model in which the observations are drawn from a multinomial-logit distribution given the IBP matrix. The implementation of an efficient Gibbs sampler is accomplished using the Laplace approximation, which allows integrating out the weighting factors of the multinomial- logit likelihood model. We also provide a variational inference algorithm for this model, which provides a complementary (and less expensive in terms of computational complexity) alternative to the Gibbs sampler allowing us to deal with a larger number of data. Finally, we use the model to analyze comorbidity among the psychiatric disorders diagnosed by experts from the NESARC database.",
+    "pdf_url": "http://jmlr.org/papers/volume15/ruiz14a/ruiz14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/gillis14a.html",
+    "header": "Robust Near-Separable Nonnegative Matrix Factorization Using Linear Optimization",
+    "author": "Nicolas Gillis, Robert Luce",
+    "time": "15(36):1249−1280, 2014.",
+    "abstract": "Nonnegative matrix factorization (NMF) has been shown recently to be tractable under the  separability assumption , under which all the columns of the input data matrix belong to the convex cone generated by only a few of these columns. Bittorf, Recht, RÃÂ© and Tropp (`Factoring nonnegative matrices with linear programs', NIPS 2012) proposed a linear programming (LP) model, referred to as Hottopixx, which is robust under any small perturbation of the input matrix. However, Hottopixx has two important drawbacks: (i) the input matrix has to be normalized, and (ii) the factorization rank has to be known in advance. In this paper, we generalize Hottopixx in order to resolve these two drawbacks, that is, we propose a new LP model which does not require normalization and detects the factorization rank automatically. Moreover, the new LP model is more flexible, significantly more tolerant to noise, and can easily be adapted to handle outliers and other noise models. Finally, we show on several synthetic data sets that it outperforms Hottopixx while competing favorably with two state-of-the-art methods.",
+    "pdf_url": "http://jmlr.org/papers/volume15/gillis14a/gillis14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/rooij14a.html",
+    "header": "Follow the Leader If You Can, Hedge If You Must",
+    "author": "Steven de Rooij, Tim van Erven, Peter D. GrÃ¼nwald, Wouter M. Koolen",
+    "time": "15(37):1281−1316, 2014.",
+    "abstract": "Follow-the-Leader (FTL) is an intuitive sequential prediction strategy that guarantees constant regret in the stochastic setting, but has poor performance for worst-case data. Other hedging strategies have better worst-case guarantees but may perform much worse than FTL if the data are not maximally adversarial. We introduce the FlipFlop algorithm, which is the first method that provably combines the best of both worlds. As a stepping stone for our analysis, we develop AdaHedge, which is a new way of dynamically tuning the learning rate in Hedge without using the doubling trick. AdaHedge refines a method by Cesa-Bianchi, Mansour, and Stoltz (2007), yielding improved worst-case  guarantees. By interleaving AdaHedge and FTL, FlipFlop achieves regret within a constant factor of the FTL regret, without sacrificing AdaHedge's worst-case guarantees. AdaHedge and FlipFlop do not need to know the range of the losses in advance; moreover, unlike earlier methods, both have the intuitive property that the issued weights are invariant under rescaling and translation of the losses. The losses are also allowed to be negative, in which case they may be interpreted as gains.",
+    "pdf_url": "http://jmlr.org/papers/volume15/rooij14a/rooij14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/doppa14a.html",
+    "header": "Structured Prediction via Output Space Search",
+    "author": "Janardhan Rao Doppa, Alan Fern, Prasad Tadepalli",
+    "time": "15(38):1317−1350, 2014.",
+    "abstract": "We consider a framework for structured prediction based on search in the space of complete structured outputs. Given a structured input, an output is produced by running a time- bounded search procedure guided by a learned cost function, and then returning the least cost output uncovered during the search. This framework can be instantiated for a wide range of search spaces and search procedures, and easily incorporates arbitrary structured-prediction loss functions. In this paper, we make two main technical contributions. First, we describe a novel approach to automatically defining an effective search space over structured outputs, which is able to leverage the availability of powerful classification learning algorithms. In particular, we define the limited-discrepancy search space and relate the quality of that space to the quality of learned classifiers. We also define a sparse version of the search space to improve the efficiency of our overall approach. Second, we give a generic cost function learning approach that is applicable to a wide range of search procedures. The key idea is to learn a cost function that attempts to mimic the behavior of conducting searches guided by the true loss function. Our experiments on six benchmark domains show that a small amount of search in limited discrepancy search space is often sufficient for significantly improving on state-of-the-art structured- prediction  performance. We also demonstrate significant speed improvements for our approach using sparse search spaces with little or no loss in accuracy.",
+    "pdf_url": "http://jmlr.org/papers/volume15/doppa14a/doppa14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/wand14a.html",
+    "header": "Fully Simplified Multivariate Normal Updates in Non-Conjugate Variational Message Passing",
+    "author": "Matt P. W, ",
+    "time": "15(39):1351−1369, 2014.",
+    "abstract": "Fully simplified expressions for Multivariate Normal updates in non-conjugate variational message passing approximate inference schemes are obtained. The simplicity of these expressions means that the updates can be achieved very efficiently. Since the Multivariate Normal family is the most common for approximating the joint posterior density function of a continuous parameter vector, these fully simplified updates are of great practical benefit.",
+    "pdf_url": "http://jmlr.org/papers/volume15/wand14a/wand14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/tan14a.html",
+    "header": "Towards Ultrahigh Dimensional Feature Selection for Big Data",
+    "author": "Mingkui Tan, Ivor W. Tsang, Li Wang",
+    "time": "15(40):1371−1429, 2014.",
+    "abstract": "In this paper, we present a new adaptive feature scaling scheme for ultrahigh-dimensional feature selection on  Big Data , and then reformulate it as a convex semi-infinite programming (SIP) problem. To address the SIP, we propose an efficient  feature generating paradigm . Different from traditional gradient-based approaches that conduct optimization on all input features, the proposed paradigm iteratively activates a group of features, and solves a sequence of multiple kernel learning (MKL) subproblems. To further speed up the training, we propose to solve the MKL subproblems in their primal forms through a modified accelerated proximal gradient approach. Due to such optimization scheme, some efficient cache techniques are also developed. The feature generating paradigm is guaranteed to converge globally under mild conditions, and can achieve lower feature selection bias. Moreover, the proposed method can tackle two challenging tasks in feature selection: 1) group-based feature selection with complex structures, and 2) nonlinear feature selection with explicit feature mappings. Comprehensive experiments on a wide range of synthetic and real-world data sets of tens of million data points with $O(10^{14})$ features demonstrate the competitive performance of the proposed method over state-of-the-art feature selection methods in terms of generalization performance and training efficiency.",
+    "pdf_url": "http://jmlr.org/papers/volume15/tan14a/tan14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/dubout14a.html",
+    "header": "Adaptive Sampling for Large Scale Boosting",
+    "author": "Charles Dubout, Francois Fleuret",
+    "time": "15(41):1431−1453, 2014.",
+    "abstract": "Classical boosting algorithms, such as AdaBoost, build a strong classifier without concern for the computational cost. Some applications, in particular in computer vision, may involve millions of training examples and very large feature spaces. In such contexts, the training time of off-the-shelf boosting algorithms may become prohibitive. Several methods exist to accelerate training, typically either by sampling the features or the examples used to train the weak learners. Even if some of these methods provide a guaranteed speed improvement, they offer no insurance of being more efficient than any other, given the same amount of time. The contributions of this paper are twofold: (1) a strategy to better deal with the increasingly common case where features come from multiple sources (for example, color, shape, texture, etc., in the case of images) and therefore can be partitioned into meaningful subsets; (2) new algorithms which balance at every boosting iteration the number of weak learners and the number of training examples to look at in order to maximize the expected loss reduction. Experiments in image classification and object recognition on four standard computer vision data sets show that the adaptive methods we propose outperform basic sampling and state-of-the-art bandit methods.",
+    "pdf_url": "http://jmlr.org/papers/volume15/dubout14a/dubout14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/boumal14a.html",
+    "header": "Manopt, a Matlab Toolbox for Optimization on Manifolds",
+    "author": "Nicolas Boumal, Bamdev Mishra, P.-A. Absil, Rodolphe Sepulchre",
+    "time": "15(42):1455−1459, 2014.",
+    "abstract": "",
+    "pdf_url": "http://jmlr.org/papers/volume15/boumal14a/boumal14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/gupta14a.html",
+    "header": "Training Highly Multiclass Classifiers",
+    "author": "Maya R. Gupta, Samy Bengio, Jason Weston",
+    "time": "15(43):1461−1492, 2014.",
+    "abstract": "Classification problems with thousands or more classes often have a large range of class-confusabilities, and we show that the more-confusable classes add more noise to the empirical loss that is minimized during training. We propose an online solution that reduces the effect of highly confusable classes in training the classifier parameters, and focuses the training on pairs of classes that are easier to differentiate at any given time in the training. We also show that the adagrad method, recently proposed for automatically decreasing step sizes for convex stochastic gradient descent, can also be profitably applied to the nonconvex joint training of supervised dimensionality reduction and linear classifiers as done in Wsabie. Experiments on ImageNet benchmark data sets and proprietary image recognition problems with 15,000 to 97,000 classes show substantial gains in classification accuracy compared to one-vs- all linear SVMs and Wsabie.",
+    "pdf_url": "http://jmlr.org/papers/volume15/gupta14a/gupta14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/durante14a.html",
+    "header": "Locally Adaptive Factor Processes for Multivariate Time Series",
+    "author": "Daniele Durante, Bruno Scarpa, David B. Dunson",
+    "time": "15(44):1493−1522, 2014.",
+    "abstract": "In modeling multivariate time series, it is important to allow time-varying smoothness in the mean and covariance process. In particular, there may be certain time intervals exhibiting rapid changes and others in which changes are slow. If such time- varying smoothness is not accounted for, one can obtain misleading inferences and predictions, with over-smoothing across erratic time intervals and under-smoothing across times exhibiting slow variation. This can lead to mis-calibration of predictive intervals, which can be substantially too narrow or wide depending on the time. We propose a locally adaptive factor process for characterizing multivariate mean-covariance changes in continuous time, allowing locally varying smoothness in both the mean and covariance matrix. This process is constructed utilizing latent dictionary functions evolving in time through nested Gaussian processes and linearly related to the observed data with a sparse mapping. Using a differential equation representation, we bypass usual computational bottlenecks in obtaining MCMC and online algorithms for approximate Bayesian inference. The performance is assessed in simulations and illustrated in a financial application.",
+    "pdf_url": "http://jmlr.org/papers/volume15/durante14a/durante14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/wang14a.html",
+    "header": "Iteration Complexity of Feasible Descent Methods for Convex Optimization",
+    "author": "Po-Wei Wang, Chih-Jen Lin",
+    "time": "15(45):1523−1548, 2014.",
+    "abstract": "In many machine learning problems such as the dual form of SVM, the objective function to be minimized is convex but not strongly convex. This fact causes difficulties in obtaining the complexity of some commonly used optimization algorithms. In this paper, we proved the global linear convergence on a wide range of algorithms when they are applied to some non-strongly convex problems. In particular, we are the first to prove $O(\\log(1/\\epsilon))$ time complexity of cyclic coordinate descent methods on dual problems of support vector classification and regression.",
+    "pdf_url": "http://jmlr.org/papers/volume15/wang14a/wang14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/janzamin14a.html",
+    "header": "High-Dimensional Covariance Decomposition into Sparse Markov and Independence Models",
+    "author": "Majid Janzamin, Animashree Anandkumar",
+    "time": "15(46):1549−1591, 2014.",
+    "abstract": "Fitting high-dimensional data involves a delicate tradeoff between faithful representation and the use of sparse models. Too often, sparsity assumptions on the fitted model are too restrictive to provide a faithful representation of the observed data. In this paper, we present a novel framework incorporating sparsity in different domains. We decompose the observed covariance matrix into a sparse Gaussian Markov model (with a sparse precision matrix) and a sparse independence model (with a sparse covariance matrix). Our framework incorporates sparse covariance and sparse precision estimation as special cases and thus introduces a richer class of high-dimensional models. %We posit the observed data as generated from a linear combination of a sparse Gaussian Markov model (with a sparse precision matrix) and a sparse Gaussian independence model (with a sparse covariance matrix). We characterize sufficient conditions for identifiability of the two models, viz., Markov and independence models. We propose an efficient decomposition method based on a modification of the popular $\\ell_1$-penalized maximum- likelihood  estimator ($\\ell_1$-MLE). We establish that our estimator is consistent in both the domains, i.e., it successfully recovers the supports of both Markov and independence models, when the number of samples $n$ scales as $n = \\Omega(d^2 \\log p)$,  where $p$ is the number of variables and $d$ is the maximum node degree in the Markov model. Our experiments validate these results and also demonstrate that our models have better inference accuracy under simple algorithms such as loopy belief propagation.",
+    "pdf_url": "http://jmlr.org/papers/volume15/janzamin14a/janzamin14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/hoffman14a.html",
+    "header": "The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo",
+    "author": "Matthew D. Hoffman, Andrew Gelman",
+    "time": "15(47):1593−1623, 2014.",
+    "abstract": "Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo (MCMC) algorithm that avoids the random walk behavior and sensitivity to correlated parameters that plague many MCMC methods by taking a series of steps informed by first-order gradient information. These features allow it to converge to high-dimensional target distributions much more quickly than simpler methods such as random walk Metropolis or Gibbs sampling. However, HMC's performance is highly sensitive to two user-specified parameters: a step size $\\epsilon$ and a desired number of steps $L$. In particular, if $L$ is too small then the algorithm exhibits undesirable random walk behavior, while if $L$ is too large the algorithm wastes computation. We introduce the No-U-Turn Sampler (NUTS), an extension to HMC that eliminates the need to set a number of steps $L$. NUTS uses a recursive algorithm to build a set of likely candidate points that spans a wide swath of the target distribution, stopping automatically when it starts to double back and retrace its steps. Empirically, NUTS performs at least as efficiently as (and sometimes more efficiently than) a well tuned standard HMC method, without requiring user intervention or costly tuning runs. We also derive a method for adapting the step size parameter $\\epsilon$ on the fly based on primal-dual averaging. NUTS can thus be used with no hand-tuning at all, making it suitable for applications such as BUGS-style automatic inference engines that require efficient Ã¢ÂÂturnkeyÃ¢ÂÂ samplers.",
+    "pdf_url": "http://jmlr.org/papers/volume15/hoffman14a/hoffman14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/wager14a.html",
+    "header": "Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife",
+    "author": "Stefan Wager, Trevor Hastie, Bradley Efron",
+    "time": "15(48):1625−1651, 2014.",
+    "abstract": "We study the variability of predictions made by bagged learners and random forests, and show how to estimate standard errors for these methods. Our work builds on variance estimates for bagging proposed by Efron (1992, 2013) that are based on the jackknife and the infinitesimal jackknife (IJ). In practice, bagged predictors are computed using a finite number $B$ of bootstrap replicates, and working with a large $B$ can be computationally expensive. Direct applications of jackknife and IJ estimators to bagging require $B = \\Theta (n^{1.5})$ bootstrap replicates to converge, where $n$ is the size of the training set. We propose improved versions that only require $B = \\Theta (n)$ replicates. Moreover, we show that the IJ estimator requires 1.7 times less bootstrap replicates than the jackknife to achieve a given accuracy. Finally, we study the sampling distributions of the jackknife and IJ variance estimates themselves. We illustrate our findings with multiple experiments and simulation studies.",
+    "pdf_url": "http://jmlr.org/papers/volume15/wager14a/wager14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/agarwal14b.html",
+    "header": "Surrogate Regret Bounds for Bipartite Ranking via Strongly Proper Losses",
+    "author": "Shivani Agarwal",
+    "time": "15(49):1653−1674, 2014.",
+    "abstract": "The problem of bipartite ranking, where instances are labeled positive or negative and the goal is to learn a scoring function that minimizes the probability of mis-ranking a pair of positive and negative instances (or equivalently, that maximizes the area under the ROC curve), has been widely studied in recent years. A dominant theoretical and algorithmic framework for the problem has been to reduce bipartite ranking to pairwise classification; in particular, it is well known that the bipartite ranking regret can be formulated as a pairwise classification regret, which in turn can be upper bounded using usual regret bounds for classification problems. Recently, Kotlowski et al. (2011) showed regret bounds for bipartite ranking in terms of the regret associated with balanced versions of the standard (non- pairwise) logistic and exponential losses. In this paper, we show that such (non-pairwise) surrogate regret bounds for bipartite ranking can be obtained in terms of a broad class of proper (composite) losses that we term as  strongly proper . Our proof technique is much simpler than that of Kotlowski et al. (2011), and relies on properties of proper (composite) losses as elucidated recently by Reid and Williamson (2010, 2011) and others. Our result yields explicit surrogate bounds (with no hidden balancing terms) in terms of a variety of strongly proper losses, including for example logistic, exponential, squared and squared hinge losses as special cases. An important consequence is that standard algorithms minimizing a (non-pairwise) strongly proper loss, such as logistic regression and boosting algorithms (assuming a universal function class and appropriate regularization), are in fact consistent for bipartite ranking; moreover, our results allow us to quantify the bipartite ranking regret in terms of the corresponding surrogate regret. We also obtain tighter surrogate bounds under certain low-noise conditions via a recent result of Clemencon and Robbiano (2011).",
+    "pdf_url": "http://jmlr.org/papers/volume15/agarwal14b/agarwal14b.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/kolar14a.html",
+    "header": "Graph Estimation From Multi-Attribute Data",
+    "author": "Mladen Kolar, Han Liu, Eric P. Xing",
+    "time": "15(51):1713−1750, 2014.",
+    "abstract": "Undirected graphical models are important in a number of modern applications that involve exploring or exploiting dependency structures underlying the data. For example, they are often used to explore complex systems where connections between entities are not well understood, such as in functional brain networks or genetic networks. Existing methods for estimating structure of undirected graphical models focus on scenarios where each node represents a scalar random variable, such as a binary neural activation state or a continuous mRNA abundance measurement, even though in many real world problems, nodes can represent multivariate variables with much richer meanings, such as whole images, text documents, or multi-view feature vectors. In this paper, we propose a new principled framework for estimating the structure of undirected graphical models from such multivariate (or multi-attribute) nodal data. The structure of a graph is inferred through estimation of non-zero partial canonical correlation between nodes. Under a Gaussian model, this strategy is equivalent to estimating conditional independencies between random vectors represented by the nodes and it generalizes the classical problem of covariance selection (Dempster, 1972).  We relate the problem of estimating non-zero partial canonical correlations to maximizing a penalized Gaussian likelihood objective and develop a method that efficiently maximizes this objective. Extensive simulation studies demonstrate the effectiveness of the method under various conditions. We provide illustrative applications to uncovering gene regulatory networks from gene and protein profiles, and uncovering brain connectivity graph from positron emission tomography data. Finally, we provide sufficient conditions under which the true graphical structure can be recovered correctly.",
+    "pdf_url": "http://jmlr.org/papers/volume15/kolar14a/kolar14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/vonluxburg14a.html",
+    "header": "Hitting and Commute Times in Large Random Neighborhood Graphs",
+    "author": "Ulrike von Luxburg, Agnes Radl, Matthias Hein",
+    "time": "15(52):1751−1798, 2014.",
+    "abstract": "In machine learning, a popular tool to analyze the structure of graphs is the hitting time and the commute distance (resistance distance). For two vertices $u$ and $v$, the hitting time $H_{uv}$ is the expected time it takes a random walk to travel from $u$ to $v$. The commute distance is its symmetrized version $C_{uv} = H_{uv} + H_{vu}$. In our paper we study the behavior of hitting times and commute distances when the number $n$ of vertices in the graph tends to infinity. We focus on random geometric graphs ($\\epsilon$-graphs, kNN graphs and Gaussian similarity graphs), but our results also extend to graphs with a given expected degree distribution or Erdos-Renyi graphs with planted partitions. We prove that in these graph families, the suitably rescaled hitting time $H_{uv}$ converges to $1/d_v$ and the rescaled commute time to $1/d_u + 1/d_v$ where $d_u$ and $d_v$ denote the degrees of vertices $u$ and $v$. In these cases, hitting and commute times do not provide information about the structure of the graph, and their use is discouraged in many machine learning applications.",
+    "pdf_url": "http://jmlr.org/papers/volume15/vonluxburg14a/vonluxburg14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/zhu14b.html",
+    "header": "Bayesian Inference with Posterior Regularization and Applications to Infinite Latent SVMs",
+    "author": "Jun Zhu, Ning Chen, Eric P. Xing",
+    "time": "15(53):1799−1847, 2014.",
+    "abstract": "Existing Bayesian models, especially nonparametric Bayesian methods, rely on specially conceived priors to incorporate domain knowledge for discovering improved latent representations. While priors affect posterior distributions through Bayes' rule, imposing posterior regularization is arguably more direct and in some cases more natural and general. In this paper, we present  regularized Bayesian inference  (RegBayes), a novel computational framework that performs posterior inference with a regularization term on the desired post-data posterior distribution under an information theoretical formulation. RegBayes is more flexible than the procedure that elicits expert knowledge via priors, and it covers both directed Bayesian networks and undirected Markov networks. When the regularization is induced from a linear operator on the posterior distributions, such as the expectation operator, we present a general convex-analysis theorem to characterize the solution of RegBayes. Furthermore, we present two concrete examples of RegBayes,  infinite latent support vector machines  (iLSVM) and  multi-task infinite latent support vector machines  (MT-iLSVM), which explore the large- margin idea in combination with a nonparametric Bayesian model for discovering predictive latent features for classification and multi-task learning, respectively. We present efficient inference methods and report empirical studies on several benchmark data sets, which appear to demonstrate the merits inherited from both large-margin learning and Bayesian nonparametrics. Such results contribute to push forward the interface between these two important subfields, which have been largely treated as isolated in the community.",
+    "pdf_url": "http://jmlr.org/papers/volume15/zhu14b/zhu14b.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/jylanki14a.html",
+    "header": "Expectation Propagation for Neural Networks with Sparsity-Promoting Priors",
+    "author": "Pasi JylÃ¤nki, Aapo Nummenmaa, Aki Vehtari",
+    "time": "15(54):1849−1901, 2014.",
+    "abstract": "We propose a novel approach for nonlinear regression using a two-layer neural network (NN) model structure with sparsity- favoring hierarchical priors on the network weights. We present an expectation propagation (EP) approach for approximate integration over the posterior distribution of the weights, the hierarchical scale parameters of the priors, and the residual scale. Using a factorized posterior approximation we derive a computationally efficient algorithm, whose complexity scales similarly to an ensemble of independent sparse linear models. The approach enables flexible definition of weight priors with different sparseness properties such as independent Laplace priors with a common scale parameter or Gaussian automatic relevance determination (ARD) priors with different relevance parameters for all inputs. The approach can be extended beyond standard activation functions and NN model structures to form flexible nonlinear predictors from multiple sparse linear models. The effects of the hierarchical priors and the predictive performance of the algorithm are assessed using both simulated and real-world data. Comparisons are made to two alternative models with ARD priors: a Gaussian process with a NN covariance function and marginal maximum a posteriori estimates of the relevance parameters, and a NN with Markov chain Monte Carlo integration over all the unknown model parameters.",
+    "pdf_url": "http://jmlr.org/papers/volume15/jylanki14a/jylanki14a.pdf"
+  },
+  {
+    "volumn": 15,
+    "url": "http://jmlr.org/papers/v15/lan14a.html",
+    "header": "Sparse Factor Analysis for Learning and Content Analytics",
+    "author": "Andrew S. Lan, Andrew E. Waters, Christoph Studer, Richard G. Baraniuk",
+    "time": "15(57):1959−2008, 2014.",
+    "abstract": "We develop a new model and algorithms for machine learning-based  learning analytics , which estimate a learner's knowledge of the concepts underlying a domain, and {\\em{content analytics}}, which estimate the relationships among a collection of questions and those concepts. Our model represents the probability that a learner provides the correct response to a question in terms of three factors: their understanding of a set of underlying concepts, the concepts involved in each question, and each question's intrinsic difficulty. We estimate these factors given the graded responses to a collection of questions. The underlying estimation problem is ill-posed in general, especially when only a subset of the questions are answered. The key observation that enables a well-posed solution is the fact that typical educational domains of interest involve only a small number of key concepts. Leveraging this observation, we develop both a bi-convex maximum-likelihood-based solution and a Bayesian solution to the resulting  SPARse Factor Analysis  (SPARFA) problem. We also incorporate user-defined tags on questions to facilitate the interpretability of the estimated factors. Experiments with synthetic and real-world data demonstrate the efficacy of our approach. Finally, we make a connection between SPARFA and noisy, binary-valued (1-bit) dictionary learning that is of independent interest.",
+    "pdf_url": "http://jmlr.org/papers/volume15/lan14a/lan14a.pdf"
+  }
+]

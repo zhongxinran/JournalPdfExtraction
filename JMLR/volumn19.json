@@ -1,0 +1,218 @@
+[
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/16-210.html",
+    "header": "Numerical Analysis near Singularities in RBF Networks",
+    "author": "Weili Guo, Haikun Wei (Corresponding author), Yew-Soon Ong, Jaime Rubio Hervas, Junsheng Zhao, Hai Wang, Kanjian Zhang",
+    "time": "19(1):1−39, 2018.",
+    "abstract": "The existence of singularities often affects the learning dynamics in feedforward neural networks. In this paper, based on theoretical analysis results, we numerically analyze the learning dynamics of radial basis function (RBF) networks near singularities to understand to what extent singularities influence the learning dynamics. First, we show the explicit expression of the Fisher information matrix for RBF networks. Second, we demonstrate through numerical simulations that the singularities have a significant impact on the learning dynamics of RBF networks. Our results show that overlap singularities mainly have influence on the low dimensional RBF networks and elimination singularities have a more significant impact to the learning processes than overlap singularities in both low and high dimensional RBF networks, whereas the plateau phenomena are mainly caused by the elimination singularities. The results can also be the foundation to investigate the singular learning dynamics in deep feedforward neural networks.",
+    "pdf_url": "http://jmlr.org/papers/volume19/16-210/16-210.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/16-656.html",
+    "header": "A Hidden Absorbing Semi-Markov Model for Informatively Censored Temporal Data: Learning and Inference",
+    "author": "Ahmed M. Alaa, Mihaela van der Schaar",
+    "time": "19(4):1−62, 2018.",
+    "abstract": "Modeling continuous-time physiological processes that manifest a patient's evolving clinical states is a key step in approaching many problems in healthcare. In this paper, we develop the  Hidden Absorbing Semi-Markov Model  (HASMM): a versatile probabilistic model that is capable of capturing the modern electronic health record (EHR) data. Unlike existing models, the HASMM accommodates irregularly sampled, temporally correlated, and informatively censored physiological data, and can describe non-stationary clinical state transitions. Learning the HASMM parameters from the EHR data is achieved via a novel   forward-filtering backward-sampling  Monte-Carlo EM algorithm that exploits the knowledge of the end-point clinical outcomes (informative censoring) in the EHR data, and implements the E-step by sequentially sampling the patients' clinical states in the reverse-time direction while conditioning on the future states. Real-time inferences are drawn via a forward-filtering algorithm that operates on a virtually constructed discrete-time  embedded Markov chain  that mirrors the patient's continuous-time state trajectory. We demonstrate the prognostic utility of the HASMM in a critical care prognosis setting using a real-world dataset for patients admitted to the Ronald Reagan UCLA Medical Center. In particular, we show that using HASMMs, a patient's clinical deterioration can be predicted 8-9 hours prior to intensive care unit admission, with a 22$\\%$ AUC gain compared to the Rothman index, which is the state-of-the-art critical care risk scoring technology.",
+    "pdf_url": "http://jmlr.org/papers/volume19/16-656/16-656.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-006.html",
+    "header": "Can We Trust the Bootstrap in High-dimensions? The Case of Linear Models",
+    "author": "Noureddine El Karoui, Elizabeth Purdom",
+    "time": "19(5):1−66, 2018.",
+    "abstract": "We consider the performance of the bootstrap in high-dimensions for the setting of linear regression, where $p\\lt n$ but $p/n$ is not close to zero. We consider ordinary least-squares as well as robust regression methods and adopt a minimalist performance requirement: can the bootstrap give us good confidence intervals for a single coordinate of $\\beta$ (where $\\beta$ is the true regression vector)? We show through a mix of numerical and theoretical work that the bootstrap is fraught with problems. Both of the most commonly used methods of bootstrapping for regression–residual bootstrap and pairs bootstrap–give very poor inference on $\\beta$ as the ratio $p/n$ grows. We find that the residual bootstrap tend to give anti-conservative estimates (inflated Type I error), while the pairs bootstrap gives very conservative estimates (severe loss of power) as the ratio $p/n$ grows. We also show that the jackknife resampling technique for estimating the variance of $\\hat{\\beta}$ severely overestimates the variance in high dimensions. We contribute alternative procedures based on our theoretical results that result in dimensionality adaptive and robust bootstrap methods.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-006/17-006.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-016.html",
+    "header": "RSG: Beating Subgradient Method without Smoothness and Strong Convexity",
+    "author": "Tianbao Yang, Qihang Lin",
+    "time": "19(6):1−33, 2018.",
+    "abstract": "In this paper, we study the efficiency of a  R estarted  S ub G radient (RSG) method that periodically restarts the standard subgradient method (SG). We show that, when applied to a broad class of convex optimization problems, RSG method can find an $\\epsilon$-optimal solution with a lower complexity than the SG method. In particular, we first show that RSG can reduce the dependence of SG's iteration complexity on the distance between the initial solution and the optimal set to that between the $\\epsilon$-level set and the optimal set {multiplied by a logarithmic factor}. Moreover, we show the advantages of RSG over SG in solving a broad family of problems that satisfy a local error bound condition, and also demonstrate its advantages for three specific families of convex optimization problems with different power constants in the local error bound condition. (a) For the problems whose epigraph is a polyhedron, RSG is shown to converge linearly. (b) For the problems with local quadratic growth property in the $\\epsilon$-sublevel set, RSG has an $O(\\frac{1}{\\epsilon}\\log(\\frac{1}{\\epsilon}))$ iteration complexity. (c) For the problems that admit a local Kurdyka-{\\L}ojasiewicz property with a power constant of $\\beta\\in[0,1)$, RSG has an $O(\\frac{1}{\\epsilon^{2\\beta}}\\log(\\frac{1}{\\epsilon}))$ iteration complexity. The novelty of our analysis lies at exploiting the lower bound of the first-order optimality residual at the $\\epsilon$-level set. It is this novelty that allows us to explore the local properties of functions (e.g., local quadratic growth property, local Kurdyka-\\L ojasiewicz property, more generally local error bound conditions) to develop the improved convergence of RSG. We also develop a practical variant of RSG enjoying faster convergence than the SG method, which can be run without knowing the involved parameters in the local error bound condition. We demonstrate the effectiveness of the proposed algorithms on several machine learning tasks including regression, classification and matrix completion.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-016/17-016.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-084.html",
+    "header": "Scalable Bayes via Barycenter in Wasserstein Space",
+    "author": "Sanvesh Srivastava, Cheng Li, David B. Dunson",
+    "time": "19(8):1−35, 2018.",
+    "abstract": "Divide-and-conquer based methods for Bayesian inference provide a general approach for tractable posterior inference when the sample size is large. These methods divide the data into smaller subsets, sample from the posterior distribution of parameters in parallel on all the subsets, and combine posterior samples from all the subsets to approximate the full data posterior distribution. The smaller size of any subset compared to the full data implies that posterior sampling on any subset is computationally more efficient than sampling from the true posterior distribution. Since the combination step takes negligible time relative to sampling, posterior computations can be scaled to massive data by dividing the full data into sufficiently large number of data subsets. One such approach relies on the geometry of posterior distributions estimated across different subsets and combines them through their barycenter in a Wasserstein space of probability measures. We provide theoretical guarantees on the accuracy of approximation that are valid in many applications. We show that the geometric method approximates the full data posterior distribution better than its competitors across diverse simulations and reproduces known results when applied to a movie ratings database.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-084/17-084.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-131.html",
+    "header": "Experience Selection in Deep Reinforcement Learning for Control",
+    "author": "Tim de Bruin, Jens Kober, Karl Tuyls, Robert BabuÅ¡ka",
+    "time": "19(9):1−56, 2018.",
+    "abstract": "Experience replay is a technique that allows off-policy reinforcement-learning methods to reuse past experiences. The stability and speed of convergence of reinforcement learning, as well as the eventual performance of the learned policy, are strongly dependent on the experiences being replayed. Which experiences are replayed depends on two important choices. The first is which and how many experiences to retain in the experience replay buffer. The second choice is how to sample the experiences that are to be replayed from that buffer. We propose new methods for the combined problem of experience  retention  and experience  sampling . We refer to the combination as experience  selection . We focus our investigation specifically on the control of physical systems, such as robots, where exploration is costly. To determine which experiences to keep and which to replay, we investigate different proxies for their immediate and long-term utility. These proxies include age, temporal difference error and the strength of the applied exploration noise. Since no currently available method works in all situations, we propose guidelines for using prior knowledge about the characteristics of the control problem at hand to choose the appropriate experience replay strategy.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-131/17-131.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-329.html",
+    "header": "Model-Free Trajectory-based Policy Optimization with Monotonic Improvement",
+    "author": "Riad Akrour, Abbas Abdolmaleki, Hany Abdulsamad, Jan Peters, Gerhard Neumann",
+    "time": "19(14):1−25, 2018.",
+    "abstract": "Many of the recent trajectory optimization algorithms alternate between linear approximation of the system dynamics around the mean trajectory and conservative policy update. One way of constraining the policy change is by bounding the Kullback-Leibler (KL) divergence between successive policies. These approaches already demonstrated great experimental success in challenging problems such as end-to-end control of physical systems. However, the linear approximation of the system dynamics can introduce a bias in the policy update and prevent convergence to the optimal policy. In this article, we propose a new model-free trajectory-based policy optimization algorithm with guaranteed monotonic improvement. The algorithm backpropagates a local, quadratic and time-dependent \\qfunc learned from trajectory data instead of a model of the system dynamics. Our policy update ensures exact KL-constraint satisfaction without simplifying assumptions on the system dynamics. We experimentally demonstrate on highly non-linear control tasks the improvement in performance of our algorithm in comparison to approaches linearizing the system dynamics. In order to show the monotonic improvement of our algorithm, we additionally conduct a theoretical analysis of our policy update scheme to derive a lower bound of the change in policy return between successive iterations.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-329/17-329.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-361.html",
+    "header": "Regularized Optimal Transport and the Rot Mover's Distance",
+    "author": "Arnaud Dessein, Nicolas Papadakis, Jean-Luc Rouas",
+    "time": "19(15):1−53, 2018.",
+    "abstract": "This paper presents a unified framework for smooth convex regularization of discrete optimal transport problems. In this context, the regularized optimal transport turns out to be equivalent to a matrix nearness problem with respect to Bregman divergences. Our framework thus naturally generalizes a previously proposed regularization based on the Boltzmann-Shannon entropy related to the Kullback-Leibler divergence, and solved with the Sinkhorn-Knopp algorithm. We call the regularized optimal transport distance the rot mover's distance in reference to the classical earth mover's distance. By exploiting alternate Bregman projections, we develop the alternate scaling algorithm and non-negative alternate scaling algorithm, to compute efficiently the regularized optimal plans depending on whether the domain of the regularizer lies within the non-negative orthant or not. We further enhance the separable case with a sparse extension to deal with high data dimensions. We also instantiate our framework and discuss the inherent specificities for well-known regularizers and statistical divergences in the machine learning and information geometry communities. Finally, we demonstrate the merits of our methods with experiments using synthetic data to illustrate the effect of different regularizers, penalties and dimensions, as well as real-world data for a pattern recognition application to audio scene classification.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-361/17-361.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-404.html",
+    "header": "Streaming kernel regression with provably adaptive mean, variance, and regularization",
+    "author": "Audrey Durand, Odalric-Ambrym Maillard, Joelle Pineau",
+    "time": "19(17):1−34, 2018.",
+    "abstract": "We consider the problem of streaming kernel regression, when the observations arrive sequentially and the goal is to recover the underlying mean function, assumed to belong to an RKHS. The variance of the noise is not assumed to be known. In this context, we ta",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-404/17-404.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-436.html",
+    "header": "Dual Principal Component Pursuit",
+    "author": "Manolis C. Tsakiris, RenÃ© Vidal",
+    "time": "19(18):1−50, 2018.",
+    "abstract": "We consider the problem of learning a linear subspace from data corrupted by outliers. Classical approaches are typically designed for the case in which the subspace dimension is small relative to the ambient dimension. Our approach works with a dual representation of the subspace and hence aims to find its orthogonal complement; as such, it is particularly suitable for subspaces whose dimension is close to the ambient dimension (subspaces of high relative dimension). We pose the problem of computing normal vectors to the inlier subspace as a non-convex $\\ell_1$ minimization problem on the sphere, which we call Dual Principal Component Pursuit (DPCP) problem. We provide theoretical guarantees under which every global solution to DPCP is a vector in the orthogonal complement of the inlier subspace. Moreover, we relax the non-convex DPCP problem to a recursion of linear programs whose solutions are shown to converge in a finite number of steps to a vector orthogonal to the subspace. In particular, when the inlier subspace is a hyperplane, the solutions to the recursion of linear programs converge to the global minimum of the non-convex DPCP problem in a finite number of steps. We also propose algorithms based on alternating minimization and iteratively re-weighted least squares, which are suitable for dealing with large-scale data. Experiments on synthetic data show that the proposed methods are able to handle more outliers and higher relative dimensions than current state-of-the-art methods, while experiments in the context of the three-view geometry problem in computer vision suggest that the proposed methods can be a useful or even superior alternative to traditional RANSAC-based approaches for computer vision and other applications.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-436/17-436.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-513.html",
+    "header": "Refining the Confidence Level for Optimistic Bandit Strategies",
+    "author": "Tor Lattimore",
+    "time": "19(20):1−32, 2018.",
+    "abstract": "This paper introduces the first strategy for stochastic bandits with unit variance Gaussian noise that is simultaneously minimax optimal up to constant factors, asymptotically optimal, and never worse than the classical upper confidence bound strategy up to universal constant factors. Preliminary empirical evidence is also promising. Besides this, a conjecture on the optimal form of the regret is shown to be false and a finite-time lower bound on the regret of any strategy is present",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-513/17-513.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-777.html",
+    "header": "Robust Synthetic Control",
+    "author": "Muhammad Amjad, Devavrat Shah, Dennis Shen",
+    "time": "19(22):1−51, 2018.",
+    "abstract": "We present a robust generalization of the synthetic control method for comparative case studies. Like the classical method cf. \\cite{abadie3}, we present an algorithm to estimate the unobservable counterfactual of a treatment unit. A distinguishing feature of our algorithm is that of de-noising the data matrix via singular value thresholding, which renders our approach robust in multiple facets: it automatically identifies a good subset of donors for the synthetic control, overcomes the challenges of missing data, and continues to work well in settings where covariate information may not be provided. We posit that the setting can be viewed as an instance of the Latent Variable Model and provide the first finite sample analysis (coupled with asymptotic results) for the estimation of the counterfactual. Our algorithm accurately imputes missing entries and filters corrupted observations in producing a consistent estimator of the underlying signal matrix, provided $p = \\Omega( T^{-1 + \\zeta})$ for some $\\zeta > 0$; here, $p$ is the fraction of observed data and $T$ is the time interval of interest. Under the same proportion of observations, we demonstrate that the mean-squared error in our counterfactual estimation scales as $\\mathcal{O}(\\sigma^2/p + 1/\\sqrt{T})$, where $\\sigma^2$ is the variance of the inherent noise. Additionally, we introduce a Bayesian framework to quantify the estimation uncertainty. Our experiments, using both synthetic and real-world datasets, demonstrate that our robust generalization yields an improvement over the classical synthetic control method.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-777/17-777.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-781.html",
+    "header": "Reverse Iterative Volume Sampling for Linear Regression",
+    "author": "MichaÅ DereziÅski, Manfred K. Warmuth",
+    "time": "19(23):1−39, 2018.",
+    "abstract": "We study the following basic machine learning task: Given a fixed set of input points in $\\mathbb{R}^d$ for a linear regression problem, we wish to predict a hidden response value for each of the points. We can only afford to attain the responses for a small subset of the points that are then used to construct linear predictions for all points in the dataset. The performance of the predictions is evaluated by the total square loss on all responses (the attained as well as the remaining hidden ones). We show that a good approximate solution to this least squares problem can be obtained from just dimension $d$ many responses by using a joint sampling technique called volume sampling. Moreover, the least squares solution obtained for the volume sampled subproblem is an unbiased estimator of optimal solution based on all $n$ responses. This unbiasedness is a desirable property that is not shared by other common subset selection techniques. Motivated by these basic properties, we develop a theoretical framework for studying volume sampling, resulting in a number of new matrix expectation equalities and statistical guarantees which are of importance not only to least squares regression but also to numerical linear algebra in general. Our methods also lead to a regularized variant of volume sampling, and we propose the first efficient algorithm for volume sampling which makes this technique a practical tool in the machine learning toolbox. Finally, we provide experimental evidence which confirms our theoretical findings.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-781/17-781.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/18-020.html",
+    "header": "Universal discrete-time reservoir computers with stochastic inputs and linear readouts using non-homogeneous state-affine systems",
+    "author": "Lyudmila Grigoryeva, Juan-Pablo Ortega",
+    "time": "19(24):1−40, 2018.",
+    "abstract": "A new class of non-homogeneous state-affine systems is introduced for use in reservoir computing. Sufficient conditions are identified that guarantee first, that the associated reservoir computers with linear readouts are causal, time-invariant, and satisfy the fading memory property and second, that a subset of this class is universal in the category of fading memory filters with stochastic almost surely uniformly bounded inputs. This means that any discrete-time filter that satisfies the fading memory property with random inputs of that type can be uniformly approximated by elements in the non-homogeneous state-affine family.",
+    "pdf_url": "http://jmlr.org/papers/volume19/18-020/18-020.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/18-046.html",
+    "header": "Deep Hidden Physics Models: Deep Learning of Nonlinear Partial Differential Equations",
+    "author": "Maziar Raissi",
+    "time": "19(25):1−24, 2018.",
+    "abstract": "We put forth a deep learning approach for discovering nonlinear partial differential equations from scattered and potentially noisy observations in space and time. Specifically, we approximate the unknown solution as well as the nonlinear dynamics by two deep neural networks. The first network acts as a prior on the unknown solution and essentially enables us to avoid numerical differentiations which are inherently ill-conditioned and unstable. The second network represents the nonlinear dynamics and helps us distill the mechanisms that govern the evolution of a given spatiotemporal data-set. We test the effectiveness of our approach for several benchmark problems spanning a number of scientific domains and demonstrate how the proposed framework can help us accurately learn the underlying dynamics and forecast future states of the system. In particular, we study the Burgers', Korteweg-de Vries (KdV), Kuramoto-Sivashinsky, nonlinear Schr\\\"{o}dinger, and Navier-Stokes equations.",
+    "pdf_url": "http://jmlr.org/papers/volume19/18-046/18-046.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-285.html",
+    "header": "A Direct Approach for Sparse Quadratic Discriminant Analysis",
+    "author": "Binyan Jiang, Xiangyu Wang, Chenlei Leng",
+    "time": "19(31):1−37, 2018.",
+    "abstract": "Quadratic discriminant analysis (QDA) is a standard tool for classification due to its simplicity and flexibility. Because the number of its parameters scales quadratically with the number of the variables, QDA is not practical, however, when the dimensionality is relatively large. To address this, we propose a novel procedure named DA-QDA for QDA in analyzing high-dimensional data. Formulated in a simple and coherent framework, DA-QDA aims to directly estimate the key quantities in the Bayes discriminant function including quadratic interactions and a linear index of the variables for classification. Under appropriate sparsity assumptions, we establish consistency results for estimating the interactions and the linear index, and further demonstrate that the misclassification rate of our procedure converges to the optimal Bayes risk, even when the dimensionality is exponentially high with respect to the sample size. An efficient algorithm based on the alternating direction method of multipliers (ADMM) is developed for finding interactions, which is much faster than its competitor in the literature. The promising performance of DA-QDA is illustrated via extensive simulation studies and the analysis of four real datasets.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-285/17-285.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-537.html",
+    "header": "Distribution-Specific Hardness of Learning Neural Networks",
+    "author": "Ohad Shamir",
+    "time": "19(32):1−29, 2018.",
+    "abstract": "Although neural networks are routinely and successfully trained in practice using simple gradient-based methods, most existing theoretical results are negative, showing that learning such networks is difficult, in a worst-case sense over all data distributions. In this paper, we take a more nuanced view, and consider whether specific assumptions on the ânicenessâ of the input distribution, or ânicenessâ of the target function (e.g. in terms of smoothness, non-degeneracy, incoherence, random choice of parameters etc.), are sufficient to guarantee learnability using gradient-based methods. We provide evidence that neither class of assumptions alone is sufficient: On the one hand, for any member of a class of âniceâ target functions, there are difficult input distributions. On the other hand, we identify a family of simple target functions, which are difficult to learn even if the input distribution is âniceâ. To prove our results, we develop some tools which may be of independent interest, such as extending Fourier-based hardness techniques developed in the context of statistical queries (Blum et al., 1994), from the Boolean cube to Euclidean space and to more general classes of functions.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-537/17-537.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/16-349.html",
+    "header": "Kernel Density Estimation for Dynamical Systems",
+    "author": "Hanyuan Hang, Ingo Steinwart, Yunlong Feng, Johan A.K. Suykens",
+    "time": "19(35):1−49, 2018.",
+    "abstract": "We study the density estimation problem with observations generated by certain dynamical systems that admit a unique underlying invariant Lebesgue density. Observations drawn from dynamical systems are not independent and moreover, usual mixing concepts may not be appropriate for measuring the dependence among these observations. By employing the $\\mathcal{C}$-mixing concept to measure the dependence, we conduct statistical analysis on the consistency and convergence of the kernel density estimator. Our main results are as follows: First, we show that with properly chosen bandwidth, the kernel density estimator is universally consistent under $L_1$-norm; Second, we establish convergence rates for the estimator with respect to several classes of dynamical systems under $L_1$-norm. In the analysis, the density function $f$ is only assumed to be H\\\"{o}lder continuous or pointwise H\\\"{o}lder controllable which is a weak assumption in the literature of nonparametric density estimation and also more realistic in the dynamical system context. Last but not least, we prove that the same convergence rates of the estimator under $L_\\infty$-norm and $L_1$-norm can be achieved when the density function is H\\\"{o}lder continuous, compactly supported, and bounded. The bandwidth selection problem of the kernel density estimator for dynamical system is also discussed in our study via numerical simulations.",
+    "pdf_url": "http://jmlr.org/papers/volume19/16-349/16-349.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/16-432.html",
+    "header": "Invariant Models for Causal Transfer Learning",
+    "author": "Mateo Rojas-Carulla, Bernhard SchÃ¶lkopf, Richard Turner, Jonas Peters",
+    "time": "19(36):1−34, 2018.",
+    "abstract": "Methods of transfer learning try to combine knowledge from several related tasks (or domains) to improve performance on a test task. Inspired by causal methodology, we relax the usual covariate shift assumption and assume that it holds true for a  subset  of predictor variables: the conditional distribution of the target variable given this subset of predictors is invariant over all tasks. We show how this assumption can be motivated from ideas in the field of causality. We focus on the problem of Domain Generalization, in which no examples from the test task are observed. We prove that in an adversarial setting using this subset for prediction is optimal in Domain Generalization; we further provide examples, in which the tasks are sufficiently diverse and the estimator therefore outperforms pooling the data, even on average. If examples from the test task are available, we also provide a method to transfer knowledge from the training tasks and exploit all available features for prediction. However, we provide no guarantees for this method. We introduce a practical method which allows for automatic inference of the above subset and provide corresponding code. We present results on synthetic data sets and a gene deletion data set.",
+    "pdf_url": "http://jmlr.org/papers/volume19/16-432/16-432.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/16-515.html",
+    "header": "The xyz algorithm for fast interaction search in high-dimensional data",
+    "author": "Gian-Andrea Thanei, Nicolai Meinshausen, Rajen D. Shah",
+    "time": "19(37):1−42, 2018.",
+    "abstract": "When performing regression on a data set with $p$ variables, it is often of interest to go beyond using main linear effects and include interactions as products between individual variables. For small-scale problems, these interactions can be computed explicitly but this leads to a computational complex",
+    "pdf_url": "http://jmlr.org/papers/volume19/16-515/16-515.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-345.html",
+    "header": "State-by-state Minimax Adaptive Estimation for Nonparametric Hidden {M}arkov Models",
+    "author": "Luc LehÃ©ricy",
+    "time": "19(39):1−46, 2018.",
+    "abstract": "In this paper, we introduce a new estimator for the emission densities of a nonparametric hidden Markov model. It is adaptive and minimax with respect to each state's regularity–as opposed to globally minimax estimators, which adapt to the worst regularity among the emission densities. Our method is based on Goldenshluger and Lepski's methodology. It is computationally efficient and only requires a family of preliminary estimators, without any restriction on the type of estimators considered. We present two such estimators that allow to reach minimax rates up to a logarithmic term: a spectral estimator and a least squares estimator. We show how to calibrate it in practice and assess its performance on simulations and on real data.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-345/17-345.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-607.html",
+    "header": "Learning from Comparisons and Choices",
+    "author": "Sahand Negahban, Sewoong Oh, Kiran K. Thekumparampil, Jiaming Xu",
+    "time": "19(40):1−95, 2018.",
+    "abstract": "When tracking user-specific online activities, each user's preference is revealed in the form of choices and comparisons. For example, a user's purchase history is a record of her choices, i.e. which item was chosen among a subset of offerings. A user's preferences can be observed either explicitly as in movie ratings or implicitly as in viewing times of news articles. Given such individualized ordinal data in the form of comparisons and choices, we address the problem of collaboratively learning representations of the users and the items. The learned features can be used to predict a user's preference of an unseen item to be used in recommendation systems. This also allows one to compute similarities among users and items to be used for categorization and search. Motivated by the empirical successes of the MultiNomial Logit (MNL) model in marketing and transportation, and also more recent successes in word embedding and crowdsourced image embedding, we pose this problem as learning the MNL model parameters that best explain the data. We propose a convex relaxation for learning the MNL model, and show that it is minimax optimal up to a logarithmic factor by comparing its performance to a fundamental lower bound. This characterizes the minimax sample complexity of the problem, and proves that the proposed estimator cannot be improved upon other than by a logarithmic factor. Further, the analysis identifies how the accuracy depends on the topology of sampling via the spectrum of the sampling graph. This provides a guideline for designing surveys when one can choose which items are to be compared. This is accompanied by numerical simulations on synthetic and real data sets, confirming our theoretical predictions.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-607/17-607.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/17-704.html",
+    "header": "Connections with Robust PCA and the Role of Emergent Sparsity in Variational Autoencoder Models",
+    "author": "Bin Dai, Yu Wang, John Aston, Gang Hua, David Wipf",
+    "time": "19(41):1−42, 2018.",
+    "abstract": "Variational autoencoders (VAE) represent a popular, flexible form of deep generative model that can be stochastically fit to samples from a given random process using an information-theoretic variational bound on the true underlying distribution. Once so-obtained, the model can be putatively used to generate new samples from this distribution, or to provide a low-dimensional latent representation of existing samples. While quite effective in numerous application domains, certain important mechanisms which govern the behavior of the VAE are obfuscated by the intractable integrals and resulting stochastic approximations involved. Moreover, as a highly non-convex model, it remains unclear exactly how minima of the underlying energy relate to original design purposes. We attempt to better quantify these issues by analyzing a series of tractable special cases of increasing complexity. In doing so, we unveil interesting connections with more traditional dimensionality reduction models, as well as an intrinsic yet underappreciated propensity for robustly dismissing sparse outliers when estimating latent manifolds. With respect to the latter, we demonstrate that the VAE can be viewed as the natural evolution of recent robust PCA models, capable of learning nonlinear manifolds of unknown dimension obscured by gross corruptions.",
+    "pdf_url": "http://jmlr.org/papers/volume19/17-704/17-704.pdf"
+  },
+  {
+    "volumn": 19,
+    "url": "http://jmlr.org/papers/v19/18-117.html",
+    "header": "An Efficient and Effective Generic Agglomerative Hierarchical Clustering Approach",
+    "author": "Julien Ah-Pine",
+    "time": "19(42):1−43, 2018.",
+    "abstract": "We introduce an agglomerative hierarchical clustering (AHC) framework which is generic, efficient and effective. Our approach embeds a sub-family of Lance-Williams (LW) clusterings and relies on inner-products instead of squared Euclidean distances. We carry out a constrained bottom-up merging procedure on a sparsified normalized inner-product matrix. Our method is named SNK-AHC for Sparsified Normalized Kernel matrix based A",
+    "pdf_url": "http://jmlr.org/papers/volume19/18-117/18-117.pdf"
+  }
+]

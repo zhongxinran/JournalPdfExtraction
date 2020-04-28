@@ -1,0 +1,407 @@
+[
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/16-494.html",
+    "header": "A Low Complexity Algorithm with O(âT) Regret and O(1) Constraint Violations for Online Convex Optimization with Long Term Constraints",
+    "author": "Hao Yu, Michael J. Neely",
+    "time": "21(1):1−24, 2020.",
+    "abstract": "This paper considers online convex optimization over a complicated constraint set, which typically consists of multiple functional constraints and a set constraint.  The conventional online projection algorithm (Zinkevich, 2003) can be difficult to implement due to the potentially high computation complexity of the projection operation. In this paper, we relax the functional constraints by allowing them to be violated at each round but still requiring them to be satisfied in the long term. This type of relaxed online convex optimization (with long term constraints) was first considered in Mahdavi et al. (2012). That prior work proposes an algorithm to achieve $O(\\sqrt{T})$ regret and $O(T^{3/4})$ constraint violations for general problems and another algorithm to achieve an $O(T^{2/3})$ bound for both regret and constraint violations when the constraint set can be described by a finite number of linear constraints.  A recent extension in Jenatton et al. (2016) can achieve $O(T^{\\max\\{\\theta,1-\\theta\\}})$ regret and $O(T^{1-\\theta/2})$ constraint violations where $\\theta\\in (0,1)$. The current paper proposes a new simple algorithm that yields improved performance in comparison to prior works. The new algorithm achieves an $O(\\sqrt{T})$ regret bound with $O(1)$ constraint violations.",
+    "pdf_url": "http://jmlr.org/papers/volume21/16-494/16-494.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/17-068.html",
+    "header": "A Statistical Learning Approach to Modal Regression",
+    "author": "Yunlong Feng, Jun Fan, Johan A.K. Suykens",
+    "time": "21(2):1−35, 2020.",
+    "abstract": "This paper studies the nonparametric modal regression problem systematically from a statistical learning viewpoint.  Originally motivated by pursuing a theoretical understanding of the maximum correntropy criterion based regression (MCCR), our study reveals that MCCR with a tending-to-zero scale parameter is essentially modal regression. We show that the nonparametric modal regression problem can be approached via the classical empirical risk minimization. Some efforts are then made to develop a framework for analyzing and implementing modal regression. For instance, the modal regression function is described, the modal regression risk is defined explicitly and its Bayes rule is characterized; for the sake of computational tractability, the surrogate modal regression risk, which is termed as the generalization risk in our study, is introduced. On the theoretical side, the excess modal regression risk, the excess generalization risk, the function estimation error, and the relations among the above three quantities are studied rigorously. It turns out that under mild conditions, function estimation consistency and convergence may be pursued in modal regression as in vanilla regression protocols such as mean regression, median regression, and quantile regression. On the practical side, the implementation issues of modal regression including the computational algorithm and the selection of the tuning parameters are discussed. Numerical validations on modal regression are also conducted to verify our findings.",
+    "pdf_url": "http://jmlr.org/papers/volume21/17-068/17-068.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/17-360.html",
+    "header": "A Model of Fake Data in Data-driven Analysis",
+    "author": "Xiaofan Li, Andrew B. Whinston",
+    "time": "21(3):1−26, 2020.",
+    "abstract": "Data-driven analysis has been increasingly used in various decision making processes. With more sources, including reviews, news, and pictures, can now be used for data analysis, the authenticity of data sources is in doubt. While previous literature attempted to detect fake data piece by piece, in the current work, we try to capture the fake data sender's strategic behavior to detect the fake data source. Specifically, we model the tension between a data receiver who makes data-driven decisions and a fake data sender who benefits from misleading the receiver. We propose a potentially infinite horizon continuous time game-theoretic model with asymmetric information to capture the fact that the receiver does not initially know the existence of fake data and learns about it during the course of the game. We use point processes to model the data traffic, where each piece of data can occur at any discrete moment in a continuous time flow. We fully solve the model and employ numerical examples to illustrate the players' strategies and payoffs for insights. Specifically, our results show that maintaining some suspicion about the data sources and understanding that the sender can be strategic are very helpful to the data receiver. In addition, based on our model, we propose a methodology of detecting fake data that is complementary to the previous studies on this topic, which suggested various approaches on analyzing the data piece by piece. We show that after analyzing each piece of data, understanding a source by looking at the its whole history of pushing data can be helpful.",
+    "pdf_url": "http://jmlr.org/papers/volume21/17-360/17-360.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/17-470.html",
+    "header": "Universal Latent Space Model Fitting for Large Networks with Edge Covariates",
+    "author": "Zhuang Ma, Zongming Ma, Hongsong Yuan",
+    "time": "21(4):1−67, 2020.",
+    "abstract": "Latent space models are effective tools for statistical modeling and visualization of network data. Due to their close connection to generalized linear models, it is also natural to incorporate covariate information in them. The current paper presents two universal fitting algorithms for networks with edge covariates: one based on nuclear norm penalization and the other based on projected gradient descent. Both algorithms are motivated by maximizing the likelihood function for an existing class of inner-product models, and we establish their statistical rates of convergence for these models. In addition, the theory informs us that both methods work simultaneously for a wide range of different latent space models that allow latent positions to affect edge formation in flexible ways, such as distance models. Furthermore, the effectiveness of the methods is demonstrated on a number of real world network data sets for different statistical tasks, including community detection with and without edge covariates, and network assisted learning.",
+    "pdf_url": "http://jmlr.org/papers/volume21/17-470/17-470.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-771.html",
+    "header": "Lower Bounds for Parallel and Randomized Convex Optimization",
+    "author": "Jelena Diakonikolas, CristÃ³bal GuzmÃ¡n",
+    "time": "21(5):1−31, 2020.",
+    "abstract": "We study the question of whether parallelization in the exploration of the feasible set can be used to speed up convex optimization, in the local oracle model of computation and in the high-dimensional regime. We show that the answer is negative for both deterministic and randomized algorithms applied to essentially any of the interesting geometries and nonsmooth, weakly-smooth, or smooth objective functions. In particular, we show that it is not possible to obtain a polylogarithmic (in the sequential complexity of the problem) number of parallel rounds  with a polynomial (in the dimension) number of queries per round. In the majority of these settings and when the dimension of the space is polynomial in the inverse target accuracy, our lower bounds match the oracle complexity of sequential convex optimization, up to at most a logarithmic factor in the dimension, which makes them (nearly) tight. Another conceptual contribution of our work is in providing a general and streamlined framework for proving lower bounds in the setting of parallel convex optimization. Prior to our work, lower bounds for parallel convex optimization algorithms were only known in a small fraction of the settings considered in this paper, mainly applying to Euclidean ($\\ell_2$) and $\\ell_\\infty$ spaces.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-771/19-771.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-085.html",
+    "header": "Path-Based Spectral Clustering: Guarantees, Robustness to Outliers, and Fast Algorithms",
+    "author": "Anna Little, Mauro Maggioni, James M. Murphy",
+    "time": "21(6):1−66, 2020.",
+    "abstract": "We consider the problem of clustering with the longest-leg path distance (LLPD) metric, which is informative for elongated and irregularly shaped clusters. We prove finite-sample guarantees on the performance of clustering with respect to this metric when random samples are drawn from multiple intrinsically low-dimensional clusters in high-dimensional space, in the presence of a large number of high-dimensional outliers.  By combining these results with spectral clustering with respect to LLPD, we provide conditions under which the Laplacian eigengap statistic correctly determines the number of clusters for a large class of data sets,  and prove guarantees on the labeling accuracy of the proposed algorithm.  Our methods are quite general and provide performance guarantees for spectral clustering with any ultrametric.  We also introduce an efficient, easy to implement approximation algorithm for the LLPD based on a multiscale analysis of adjacency graphs, which allows for the runtime of LLPD spectral clustering to be quasilinear in the number of data points.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-085/18-085.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-141.html",
+    "header": "Target Propagation in Recurrent Neural Networks",
+    "author": "Nikolay Manchev, Michael Spratling",
+    "time": "21(7):1−33, 2020.",
+    "abstract": "Recurrent Neural Networks have been widely used to process sequence data, but have long been criticized for their biological implausibility and training difficulties related to vanishing and exploding gradients. This paper presents a novel algorithm for training recurrent networks, target propagation through time (TPTT), that outperforms standard backpropagation through time (BPTT) on four out of the five problems used for testing. The proposed algorithm is initially tested and compared to BPTT on four synthetic time lag tasks, and its performance is also measured using the sequential MNIST data set. In addition, as TPTT uses target propagation, it allows for discrete nonlinearities and could potentially mitigate the credit assignment problem in more complex recurrent architectures.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-141/18-141.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-144.html",
+    "header": "DESlib: A Dynamic ensemble selection library in Python",
+    "author": "Rafael M. O. Cruz, Luiz G. Hafemann, Robert Sabourin, George D. C. Cavalcanti",
+    "time": "21(8):1−5, 2020.",
+    "abstract": "DESlib is an open-source python library providing the implementation of several dynamic selection techniques. The library is divided into three modules: (i) dcs, containing the implementation of dynamic classifier selection methods (DCS); (ii) des, containing the implementation of dynamic ensemble selection methods (DES); (iii) static, with the implementation of static ensemble techniques. The library is fully documented (documentation available online on Read the Docs), has a high test coverage (codecov.io) and is part of the scikit-learn-contrib supported projects. Documentation, code and examples can be found on its GitHub page: https://github.com/scikit-learn-contrib/DESlib.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-144/18-144.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-156.html",
+    "header": "On Mahalanobis Distance in Functional Settings",
+    "author": "JosÃ© R. Berrendero, Beatriz Bueno-Larraz, Antonio Cuevas",
+    "time": "21(9):1−33, 2020.",
+    "abstract": "Mahalanobis distance is a classical tool in multivariate analysis. We suggest here an extension of this concept to the case of functional data. More precisely, the proposed definition concerns those statistical problems where the sample data are real functions defined on a compact interval of the real line. The obvious difficulty for such a functional extension is the non-invertibility of the covariance operator in infinite-dimensional cases. Unlike other recent proposals, our definition is suggested and motivated in terms of the Reproducing Kernel Hilbert Space (RKHS) associated with the stochastic process that generates the data. The proposed distance is a true metric; it depends on a unique real smoothing parameter which is fully motivated in RKHS terms. Moreover, it shares some properties of its finite dimensional counterpart: it is invariant under isometries, it can be consistently estimated from the data and its sampling distribution is known under Gaussian models. An empirical study for two statistical applications, outliers detection and binary classification, is included. The results are quite competitive when compared to other recent proposals in the literature.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-156/18-156.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-567.html",
+    "header": "Online Sufficient Dimension Reduction Through Sliced Inverse Regression",
+    "author": "Zhanrui Cai, Runze Li, Liping Zhu",
+    "time": "21(10):1−25, 2020.",
+    "abstract": "Sliced inverse regression is an effective paradigm that achieves the goal of dimension reduction through replacing  high dimensional covariates with a small number of linear combinations. It does not impose  parametric assumptions on the dependence structure. More importantly, such a reduction of dimension  is sufficient in that it  does  not cause  loss of  information. In this paper, we adapt the stationary sliced inverse regression to cope with the rapidly  changing environments. We propose to implement sliced inverse regression in an online fashion. This online  learner consists of two steps. In the first step we construct an online estimate for the  kernel matrix; in the second step we propose two online algorithms, one is motivated by the perturbation method and the other is originated from the gradient descent optimization, to perform   online singular value decomposition. The  theoretical properties of this   online learner are established. We demonstrate the numerical performance of  this  online learner  through simulations and  real world applications. All numerical studies confirm that this  online learner  performs as well as the batch learner.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-567/18-567.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-573.html",
+    "header": "Weighted Message Passing and Minimum Energy Flow for Heterogeneous Stochastic Block Models with Side Information",
+    "author": "T. Tony Cai, Tengyuan Liang, Alexander Rakhlin",
+    "time": "21(11):1−34, 2020.",
+    "abstract": "We study the misclassification error for community detection in general heterogeneous stochastic block models (SBM) with noisy or partial label information. We establish a connection between the misclassification rate and the notion of minimum energy on the local neighborhood of the SBM. We develop an optimally weighted message passing algorithm to reconstruct labels for SBM based on the minimum energy flow and the eigenvectors of a certain Markov transition matrix. The general SBM considered in this paper allows for unequal-size communities, degree heterogeneity, and different connection probabilities among blocks. We focus on how to optimally weigh the message passing to improve misclassification.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-573/18-573.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-577.html",
+    "header": "Neyman-Pearson classification: parametrics and sample size requirement",
+    "author": "Xin Tong, Lucy Xia, Jiacheng Wang, Yang Feng",
+    "time": "21(12):1−48, 2020.",
+    "abstract": "The Neyman-Pearson (NP) paradigm in binary classification seeks classifiers that achieve a minimal type II error while enforcing the prioritized type I error controlled under some user-specified level $\\alpha$. This paradigm serves naturally in applications such as severe disease diagnosis and spam detection, where people have clear priorities among the two error types. Recently, Tong, Feng, and Li (2018) proposed a nonparametric umbrella algorithm that adapts all scoring-type classification methods (e.g., logistic regression, support vector machines, random forest) to respect the given type I error (i.e., conditional probability of classifying a class $0$ observation as class $1$ under the 0-1 coding) upper bound $\\alpha$ with high probability, without specific  distributional assumptions on the features and the responses. Universal the umbrella algorithm is, it demands an explicit minimum sample size requirement on class $0$, which is often the more scarce class, such as in rare disease diagnosis applications. In this work, we employ the parametric linear discriminant analysis (LDA) model and propose a new parametric thresholding algorithm, which does not need the minimum sample size requirements on class $0$ observations and thus is suitable for small sample applications such as rare disease diagnosis. Leveraging both the existing nonparametric and the newly proposed parametric thresholding rules, we propose four LDA-based NP classifiers, for both low- and high-dimensional settings. On the theoretical front, we prove NP oracle inequalities for one proposed classifier, where the rate for excess type II error benefits from the explicit parametric model assumption. Furthermore, as NP classifiers involve a sample splitting step of class $0$ observations,  we construct a new adaptive sample splitting scheme that can be applied universally to NP classifiers, and this adaptive strategy reduces the type II error of these classifiers. The proposed NP classifiers are implemented in the R package nproc.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-577/18-577.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-595.html",
+    "header": "Generalized probabilistic principal component analysis of correlated data",
+    "author": "Mengyang Gu, Weining Shen",
+    "time": "21(13):1−41, 2020.",
+    "abstract": "Principal component analysis (PCA) is a well-established tool in machine learning and data processing. The principal axes in PCA were shown to be equivalent to the maximum marginal likelihood estimator of the factor loading matrix in a latent factor model for the observed data, assuming that the latent factors are independently distributed as standard normal distributions. However, the independence assumption may be unrealistic for many scenarios such as modeling multiple time series, spatial processes, and functional data, where the outcomes are correlated.  In this paper, we introduce the generalized probabilistic principal component analysis (GPPCA) to study the latent factor model for multiple correlated outcomes, where each factor is modeled by a Gaussian process. Our method generalizes the previous probabilistic formulation of PCA (PPCA)  by providing the closed-form maximum marginal likelihood estimator of the factor loadings and other parameters.  Based on the explicit expression of the precision matrix in the marginal likelihood that we derived, the number of the computational operations is linear to the number of output variables. Furthermore, we also provide the closed-form expression of the marginal likelihood when   other covariates are included in the mean structure. We highlight the advantage of GPPCA in terms of the practical relevance, estimation accuracy and computational convenience.  Numerical studies of simulated and real data confirm the excellent finite-sample performance of the proposed approach.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-595/18-595.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-601.html",
+    "header": "On lp-Support Vector Machines and Multidimensional Kernels",
+    "author": "Victor Blanco, Justo Puerto, Antonio M. Rodriguez-Chia",
+    "time": "21(14):1−29, 2020.",
+    "abstract": "In this paper, we extend the  methodology developed for Support Vector Machines (SVM) using the $\\ell_2$-norm  ($\\ell_2$-SVM)  to the more general case of  $\\ell_p$-norms with $p>1$ ($\\ell_p$-SVM).  We derive second order cone formulations for the resulting dual and primal problems.  The concept of kernel function, widely applied in $\\ell_2$-SVM,  is extended to the more general case of $\\ell_p$-norms with $p>1$ by defining a new operator called multidimensional kernel. This object gives rise to reformulations of dual problems, in a transformed space of the original data, where the dependence on the original data always appear as homogeneous polynomials. We adapt known solution algorithms to efficiently solve the primal and dual resulting problems and some computational experiments on real-world datasets are presented showing rather good behavior in terms of the accuracy of $\\ell_p$-SVM with $p>1$.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-601/18-601.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-720.html",
+    "header": "Perturbation Bounds for Procrustes, Classical Scaling, and Trilateration, with Applications to Manifold Learning",
+    "author": "Ery Arias-Castro, Adel Javanmard, Bruno Pelletier",
+    "time": "21(15):1−37, 2020.",
+    "abstract": "One of the common tasks in unsupervised learning is dimensionality reduction, where the goal is to find meaningful low-dimensional structures hidden in high-dimensional data.  Sometimes referred to as manifold learning, this problem is closely related to the problem of localization, which aims at embedding a weighted graph into a low-dimensional Euclidean space.  Several methods have been proposed for localization, and also manifold learning. Nonetheless, the robustness property of most of them is little understood. In this paper, we obtain perturbation bounds for classical scaling and trilateration, which are then applied to derive performance bounds for Isomap, Landmark Isomap, and Maximum Variance Unfolding.  A new perturbation bound for procrustes analysis plays a key role.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-720/18-720.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-786.html",
+    "header": "Practical Locally Private Heavy Hitters",
+    "author": "Raef Bassily, Kobbi Nissim, Uri Stemmer, Abhradeep Thakurta",
+    "time": "21(16):1−42, 2020.",
+    "abstract": "We present new practical local differentially private heavy hitters algorithms achieving optimal or near-optimal worst-case error and running time -- TreeHist and Bitstogram. In both algorithms, server running time is $\\tilde O(n)$ and user running time is $\\tilde O(1)$, hence improving on the prior state-of-the-art result of Bassily and Smith [STOC 2015] requiring $O(n^{5/2})$ server time and $O(n^{3/2})$ user time. With a typically large number of participants in local algorithms (in the millions), this reduction in time complexity, in particular at the user side, is crucial for making locally private heavy hitters algorithms usable in practice. We implemented Algorithm TreeHist to verify our theoretical analysis and compared its performance with the performance of Google's RAPPOR code.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-786/18-786.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-817.html",
+    "header": "Expectation Propagation as a Way of Life: A Framework for Bayesian Inference on Partitioned Data",
+    "author": "Aki Vehtari, Andrew Gelman, Tuomas Sivula, Pasi JylÃ¤nki, Dustin Tran, Swupnil Sahai, Paul Blomstedt, John P. Cunningham, David Schiminovich, Christian P. Robert",
+    "time": "21(17):1−53, 2020.",
+    "abstract": "A common divide-and-conquer approach for Bayesian computation with big data is to partition the data, perform local inference for each piece separately, and combine the results to obtain a global posterior approximation. While being conceptually and computationally appealing, this method involves the problematic need to also split the prior for the local inferences; these weakened priors may not provide enough regularization for each separate computation, thus eliminating one of the key advantages of Bayesian methods. To resolve this dilemma while still retaining the generalizability of the underlying local inference method, we apply the idea of expectation propagation (EP) as a framework for distributed Bayesian inference. The central idea is to iteratively update approximations to the local likelihoods given the state of the other approximations and the prior. The present paper has two roles: we review the steps that are needed to keep EP algorithms numerically stable, and we suggest a general approach, inspired by EP, for approaching data partitioning problems in a way that achieves the computational benefits of parallelism while allowing each local update to make use of relevant information from the other sites. In addition, we demonstrate how the method can be applied in a hierarchical context to make use of partitioning of both data and parameters. The paper describes a general algorithmic framework, rather than a specific algorithm, and presents an example implementation for it.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-817/18-817.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-850.html",
+    "header": "Connecting Spectral Clustering to Maximum Margins and Level Sets",
+    "author": "David P. Hofmeyr",
+    "time": "21(18):1−35, 2020.",
+    "abstract": "We study the connections between spectral clustering and the problems of maximum margin clustering, and estimation of the components of level sets of a density function. Specifically, we obtain bounds on the eigenvectors of graph Laplacian matrices in terms of the between cluster separation, and within cluster connectivity. These bounds ensure that the spectral clustering solution converges to the maximum margin clustering solution as the scaling parameter is reduced towards zero. The sensitivity of maximum margin clustering solutions to outlying points is well known, but can be mitigated by first removing such outliers, and applying maximum margin clustering to the remaining points. If outliers are identified using an estimate of the underlying probability density, then the remaining points may be seen as an estimate of a level set of this density function. We show that such an approach can be used to consistently estimate the components of the level sets of a density function under very mild assumptions.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-850/18-850.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-071.html",
+    "header": "High-Dimensional Interactions Detection with Sparse Principal Hessian Matrix",
+    "author": "Cheng Yong Tang, Ethan X. Fang, Yuexiao Dong",
+    "time": "21(19):1−25, 2020.",
+    "abstract": "In statistical learning framework with regressions, interactions are the contributions to the response variable from the products of the explanatory variables. In high-dimensional problems, detecting interactions is challenging due to  combinatorial complexity and limited data information. We consider detecting interactions by exploring their connections with the principal Hessian matrix. Specifically, we propose a one-step synthetic approach for estimating the principal Hessian matrix by a penalized M-estimator. An alternating direction method of multipliers (ADMM) is proposed to efficiently solve the encountered regularized optimization problem. Based on the sparse estimator, we  detect the interactions by identifying its nonzero components. Our method directly targets at the interactions, and it requires no structural assumption on the hierarchy of the interactions effects.  We show that our estimator is theoretically valid, computationally efficient, and practically useful for detecting the interactions in a broad spectrum of scenarios.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-071/19-071.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-083.html",
+    "header": "Convergences of Regularized Algorithms and Stochastic Gradient Methods with Random Projections",
+    "author": "Junhong Lin, Volkan Cevher",
+    "time": "21(20):1−44, 2020.",
+    "abstract": "We study the least-squares regression problem over a Hilbert space, covering nonparametric regression over a reproducing kernel Hilbert space as a special case.  We first investigate regularized algorithms adapted to a projection operator on a closed subspace of the Hilbert space. We prove convergence results with respect to variants of norms, under a capacity assumption on the hypothesis space and a regularity condition on the target function.  As a result, we obtain optimal rates for regularized algorithms with randomized sketches, provided that the sketch dimension is proportional to the effective dimension up to a logarithmic factor. As a byproduct, we obtain similar results for Nystr\\\"{o}m regularized algorithms.  Our results provide optimal, distribution-dependent rates that do not have any saturation effect for sketched/Nystr\\\"{o}m regularized algorithms, considering both the attainable and non-attainable cases, in the well-conditioned regimes. We then study stochastic gradient methods with projection over the subspace, allowing multi-pass over the data and minibatches, and we derive similar optimal statistical convergence results.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-083/19-083.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-198.html",
+    "header": "Derivative-Free Methods for Policy Optimization: Guarantees for Linear Quadratic Systems",
+    "author": "Dhruv Malik, Ashwin Pananjady, Kush Bhatia, Koulik Khamaru, Peter L. Bartlett, Martin J. Wainwright",
+    "time": "21(21):1−51, 2020.",
+    "abstract": "We study derivative-free methods for policy optimization over the class of linear policies. We focus on characterizing the convergence rate of these methods when applied to linear-quadratic systems, and study various settings of driving noise and reward feedback.  Our main theoretical result provides an explicit bound on the sample or evaluation complexity: we show that these methods are guaranteed to converge to within any pre-specified tolerance of the optimal policy with a number of zero-order evaluations that is an explicit polynomial of the error tolerance, dimension, and curvature properties of the problem.  Our analysis reveals some interesting differences between the settings of additive driving noise and random initialization, as well as the settings of one-point and two-point reward feedback. Our theory is corroborated by simulations of derivative-free methods in application to these systems. Along the way, we derive convergence rates for stochastic zero-order optimization algorithms when applied to a certain class of non-convex problems.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-198/19-198.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-276.html",
+    "header": "A Unified Framework for Structured Graph Learning via Spectral Constraints",
+    "author": "Sandeep Kumar, Jiaxi Ying, JosÃ© VinÃ­cius de M. Cardoso, Daniel P. Palomar",
+    "time": "21(22):1−60, 2020.",
+    "abstract": "Graph learning from data is a canonical problem that has received substantial attention in the literature. Learning a structured graph is essential for interpretability and identification of the relationships among data. In general, learning a graph with a specific structure is an NP-hard combinatorial problem and thus designing a general tractable algorithm is challenging. Some useful structured graphs include connected, sparse, multi-component, bipartite, and regular graphs. In this paper, we introduce a unified framework for structured graph learning that combines Gaussian graphical model and spectral graph theory. We propose to convert combinatorial structural constraints into spectral constraints on graph matrices and develop an optimization framework based on block majorization-minimization to solve structured graph learning problem. The proposed algorithms are provably convergent and practically amenable for a number of graph based applications such as data clustering. Extensive numerical experiments with both synthetic and real data sets illustrate the effectiveness of the proposed algorithms. An open source R package containing the code for all the experiments is available at https://CRAN.R-project.org/package=spectralGraphTopology.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-276/19-276.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-429.html",
+    "header": "GluonCV and GluonNLP: Deep Learning in Computer Vision and Natural Language Processing",
+    "author": "Jian Guo, He He, Tong He, Leonard Lausen, Mu Li, Haibin Lin, Xingjian Shi, Chenguang Wang, Junyuan Xie, Sheng Zha, Aston Zhang, Hang Zhang, Zhi Zhang, Zhongyue Zhang, Shuai Zheng, Yi Zhu",
+    "time": "21(23):1−7, 2020.",
+    "abstract": "We present GluonCV and GluonNLP, the deep learning toolkits for computer vision and natural language processing based on Apache MXNet (incubating). These toolkits provide state-of-the-art pre-trained models, training scripts, and training logs, to facilitate rapid prototyping and promote reproducible research. We also provide modular APIs with flexible building blocks to enable efficient customization. Leveraging the MXNet ecosystem, the deep learning models in GluonCV and GluonNLP can be deployed onto a variety of platforms with different programming languages. The Apache 2.0 license has been adopted by GluonCV and GluonNLP to allow for software distribution, modification, and usage.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-429/19-429.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-537.html",
+    "header": "Distributed Feature Screening via Componentwise Debiasing",
+    "author": "Xingxiang Li, Runze Li, Zhiming Xia, Chen Xu",
+    "time": "21(24):1−32, 2020.",
+    "abstract": "Feature screening is a powerful tool in processing high-dimensional data. When the sample size N and the number of features p are both large, the implementation of classic screening methods can be numerically challenging. In this paper, we propose a distributed screening framework for big data setup. In the spirit of 'divide-and-conquer', the proposed framework expresses a correlation measure as a function of several component parameters, each of which can be distributively estimated using a natural U-statistic from data segments. With the component estimates aggregated, we obtain a final correlation estimate that can be readily used for screening features. This framework enables distributed storage and parallel computing and thus is computationally attractive. Due to the unbiased distributive estimation of the component parameters, the final aggregated estimate achieves a high accuracy that  is insensitive to the number of data segments m. Under mild conditions, we show that the aggregated correlation estimator is as efficient as the centralized estimator in terms of the probability convergence bound and the mean squared error rate; the corresponding screening procedure enjoys sure screening property for a wide range of correlation measures. The promising performances of the new method are supported by extensive numerical examples.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-537/19-537.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-580.html",
+    "header": "Lower Bounds for Testing Graphical Models: Colorings and Antiferromagnetic Ising Models",
+    "author": "Ivona BezÃ¡kovÃ¡, Antonio Blanca, Zongchen Chen, Daniel Å tefankoviÄ, Eric Vigoda",
+    "time": "21(25):1−62, 2020.",
+    "abstract": "We study the identity testing problem in the context of spin systems or undirected graphical models, where it takes the following form: given the parameter specification of the model $M$ and a sampling oracle for the distribution $\\mu_{M^*}$ of an unknown model $M^*$, can we efficiently determine if the two models $M$ and $M^*$ are the same? We consider identity testing for both soft-constraint and hard-constraint systems. In particular, we prove hardness results in two prototypical cases, the Ising model and proper colorings, and explore whether identity testing is any easier than structure learning. For the ferromagnetic (attractive) Ising model, Daskalakis et al. (2018) presented a polynomial-time algorithm for identity testing. We prove hardness results in the antiferromagnetic (repulsive) setting in the same regime of parameters where structure learning is known to require a super-polynomial number of samples. Specifically, for $n$-vertex graphs of maximum degree $d$, we prove that if $|\\beta| d = \\omega(\\log{n})$ (where $\\beta$ is the inverse temperature parameter), then there is no polynomial running time identity testing algorithm unless $RP=NP$. In the hard-constraint setting, we present hardness results for identity testing for proper colorings. Our results are based on the presumed hardness of #BIS, the problem of (approximately) counting independent sets in bipartite graphs.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-580/19-580.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/15-509.html",
+    "header": "Targeted Fused Ridge Estimation of Inverse Covariance Matrices from Multiple High-Dimensional Data Classes",
+    "author": "Anders Ellern Bilgrau, Carel F.W. Peeters, Poul Svante Eriksen, Martin Boegsted, Wessel N. van Wieringen",
+    "time": "21(26):1−52, 2020.",
+    "abstract": "We consider the problem of jointly estimating multiple inverse covariance matrices from high-dimensional data consisting of distinct classes. An $\\ell_2$-penalized maximum likelihood approach is employed. The suggested approach is flexible and generic, incorporating several other $\\ell_2$-penalized estimators as special cases. In addition, the approach allows specification of target matrices through which prior knowledge may be incorporated and which can stabilize the estimation procedure in high-dimensional settings. The result is a targeted fused ridge estimator that is of use when the precision matrices of the constituent classes are believed to chiefly share the same structure while potentially differing in a number of locations of interest. It has many applications in (multi)factorial study designs. We focus on the graphical interpretation of precision matrices with the proposed estimator then serving as a basis for integrative or meta-analytic Gaussian graphical modeling. Situations are considered in which the classes are defined by data sets and subtypes of diseases. The performance of the proposed estimator in the graphical modeling setting is assessed through extensive simulation experiments. Its practical usability is illustrated by the differential network modeling of 12 large-scale gene expression data sets of diffuse large B-cell lymphoma subtypes. The estimator and its related procedures are incorporated into the R-package rags2ridges.",
+    "pdf_url": "http://jmlr.org/papers/volume21/15-509/15-509.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/16-639.html",
+    "header": "A New Class of Time Dependent Latent Factor Models with Applications",
+    "author": "Sinead A. Williamson, Michael Minyi Zhang, Paul Damien",
+    "time": "21(27):1−24, 2020.",
+    "abstract": "In many applications, observed data are influenced by some combination of latent causes. For example, suppose sensors are placed inside a building to record responses such as temperature, humidity, power consumption and noise levels. These random, observed responses are typically affected by many unobserved, latent factors (or features) within the building such as the number of individuals, the turning on and off of electrical devices, power surges, etc. These latent factors are usually present for a contiguous period of time before disappearing; further, multiple factors could be present at a time. This paper develops new probabilistic methodology and inference methods for random object generation influenced by latent features exhibiting temporal persistence. Every datum is associated with subsets of a potentially infinite number of hidden, persistent features that account for temporal dynamics in an observation. The ensuing class of dynamic models constructed by adapting the Indian Buffet Process â a probability measure on the space of random, unbounded binary matrices â finds use in a variety of applications arising in operations, signal processing, biomedicine, marketing, image analysis, etc. Illustrations using synthetic and real data are provided.",
+    "pdf_url": "http://jmlr.org/papers/volume21/16-639/16-639.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/17-698.html",
+    "header": "On the consistency of graph-based Bayesian semi-supervised learning and the scalability of sampling algorithms",
+    "author": "Nicolas Garcia Trillos, Zachary Kaplan, Thabo Samakhoana, Daniel Sanz-Alonso",
+    "time": "21(28):1−47, 2020.",
+    "abstract": "This paper considers a Bayesian approach to graph-based semi-supervised learning. We show that if the graph parameters are suitably scaled, the graph-posteriors converge to a continuum limit as the size of the unlabeled data set grows. This consistency result has profound algorithmic implications: we prove that when consistency holds, carefully designed Markov chain Monte Carlo algorithms have a uniform spectral gap, independent of the number of unlabeled inputs. Numerical experiments illustrate and complement the theory.",
+    "pdf_url": "http://jmlr.org/papers/volume21/17-698/17-698.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/17-788.html",
+    "header": "The Maximum Separation Subspace in Sufficient Dimension Reduction with Categorical Response",
+    "author": "Xin Zhang, Qing Mai, Hui Zou",
+    "time": "21(29):1−36, 2020.",
+    "abstract": "Sufficient dimension reduction (SDR) is a very useful concept for exploratory analysis and data visualization in regression, especially when the number of covariates is large. Many SDR methods have been proposed for regression with a continuous response, where the central subspace (CS) is the target of estimation. Various conditions, such as the linearity condition and the constant covariance condition, are imposed so that these methods can estimate at least a portion of the CS. In this paper we study SDR for regression and discriminant analysis with categorical response. Motivated by the exploratory analysis and data visualization aspects of SDR,  we propose a new geometric framework to reformulate the SDR problem in terms of manifold optimization and introduce a new concept called Maximum Separation Subspace (MASES). The MASES naturally preserves the âsufficiencyâ in SDR without imposing additional conditions on the predictor distribution, and directly inspires a semi-parametric estimator. Numerical studies show MASES exhibits superior performance as compared with competing SDR methods in specific settings.",
+    "pdf_url": "http://jmlr.org/papers/volume21/17-788/17-788.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-112.html",
+    "header": "Generalized Nonbacktracking Bounds on the Influence",
+    "author": "Emmanuel Abbe, Sanjeev Kulkarni, Eun Jee Lee",
+    "time": "21(31):1−36, 2020.",
+    "abstract": "This paper develops deterministic upper and lower bounds on the influence measure in a network, more precisely, the expected number of nodes that a seed set can influence in the independent cascade model. In particular, our bounds exploit r-nonbacktracking walks and Fortuin-Kasteleyn-Ginibre (FKG) type inequalities, and are computed by message passing algorithms. Further, we provide parameterized versions of the bounds that control the trade-off between efficiency and accuracy. Finally, the tightness of the bounds is illustrated on various network models.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-112/18-112.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-143.html",
+    "header": "Provably robust estimation of modulo 1 samples of a smooth function with applications to phase unwrapping",
+    "author": "Mihai Cucuringu, Hemant Tyagi",
+    "time": "21(32):1−77, 2020.",
+    "abstract": "Consider an unknown smooth function  $f: [0,1]^d \\rightarrow \\mathbb{R}$, and assume we are given $n$ noisy mod 1 samples of $f$, i.e., $y_i = (f(x_i) + \\eta_i)  \\bmod 1$, for  $x_i \\in [0,1]^d$, where $\\eta_i$ denotes the noise. Given the samples $(x_i,y_i)_{i=1}^{n}$, our goal is to recover smooth, robust estimates of the clean  samples $f(x_i) \\bmod  1$. We formulate a natural approach for solving this problem, which works with angular embeddings of  the noisy mod 1 samples over the unit circle, inspired by the angular synchronization framework. This amounts to solving a smoothness regularized least-squares problem -- a quadratically constrained quadratic program (QCQP) -- where the variables are constrained to lie on the unit circle. Our proposed approach is based on solving its relaxation, which is a trust-region sub-problem and hence solvable efficiently. We provide theoretical guarantees demonstrating its robustness to noise for adversarial, as well as random Gaussian and Bernoulli noise models. To the best of our knowledge, these are the first such theoretical results for this problem. We demonstrate the robustness and efficiency of our proposed approach via extensive numerical simulations on synthetic data, along with a simple least-squares based solution for the unwrapping stage, that recovers the original samples of $f$ (up to a global shift). It is shown to perform well at high levels of noise, when taking as input the denoised modulo $1$ samples. Finally, we also consider two other approaches for denoising the modulo 1 samples that leverage tools from Riemannian optimization on manifolds, including a Burer-Monteiro approach for a semidefinite programming relaxation of our formulation. For the two-dimensional version of the problem, which has applications in synthetic aperture radar interferometry (InSAR), we are able to solve instances of real-world data with a million sample points in under 10 seconds, on a personal laptop.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-143/18-143.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-425.html",
+    "header": "On the Complexity Analysis of the Primal Solutions for the Accelerated Randomized Dual Coordinate Ascent",
+    "author": "Huan Li, Zhouchen Lin",
+    "time": "21(33):1−45, 2020.",
+    "abstract": "Dual first-order methods are essential techniques for large-scale constrained convex optimization. However, when recovering the primal solutions, we need $T(\\epsilon^{-2})$ iterations to achieve an $\\epsilon$-optimal primal solution when we apply an algorithm to the non-strongly convex dual problem with $T(\\epsilon^{-1})$ iterations to achieve an $\\epsilon$-optimal dual solution, where $T(x)$ can be $x$ or $\\sqrt{x}$. In this paper, we prove that the iteration complexity of the primal solutions and dual solutions have the same $O\\left(\\frac{1}{\\sqrt{\\epsilon}}\\right)$ order of magnitude for the accelerated randomized dual coordinate ascent. When the dual function further satisfies the quadratic functional growth condition, by restarting the algorithm at any period, we establish the linear iteration complexity for both the primal solutions and dual solutions even if the condition number is unknown. When applied to the regularized empirical risk minimization problem, we prove the iteration complexity of $O\\left(n\\log n+\\sqrt{\\frac{n}{\\epsilon}}\\right)$ in both primal space and dual space, where $n$ is the number of samples. Our result takes out the $\\left(\\log \\frac{1}{\\epsilon}\\right)$ factor compared with the methods based on smoothing/regularization or Catalyst reduction. As far as we know, this is the first time that the optimal $O\\left(\\sqrt{\\frac{n}{\\epsilon}}\\right)$ iteration complexity in the primal space is established for the dual coordinate ascent based stochastic algorithms. We also establish the accelerated linear complexity for some problems with nonsmooth loss, e.g., the least absolute deviation and SVM.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-425/18-425.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/18-638.html",
+    "header": "Graph-Dependent Implicit Regularisation for Distributed Stochastic Subgradient Descent",
+    "author": "Dominic Richards, Patrick Rebeschini",
+    "time": "21(34):1−44, 2020.",
+    "abstract": "We propose graph-dependent implicit regularisation strategies for synchronised distributed stochastic subgradient descent (Distributed SGD) for convex problems in multi-agent learning. Under the standard assumptions of convexity, Lipschitz continuity, and smoothness, we establish statistical learning rates that retain, up to logarithmic terms, single-machine serial statistical guarantees through implicit regularisation (step size tuning and early stopping) with appropriate dependence on the graph topology. Our approach avoids the need for explicit regularisation in  decentralised learning problems, such as adding constraints to the empirical risk minimisation rule. Particularly for distributed methods, the use of implicit regularisation allows the algorithm to remain simple, without projections or dual methods. To prove our results, we establish graph-independent generalisation bounds for Distributed SGD that match the single-machine serial SGD setting (using algorithmic stability), and we establish graph-dependent optimisation bounds that are of independent interest. We present numerical experiments to show that the qualitative nature of the upper bounds we derive can be representative of real behaviours.",
+    "pdf_url": "http://jmlr.org/papers/volume21/18-638/18-638.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-021.html",
+    "header": "Learning with Fenchel-Young losses",
+    "author": "Mathieu Blondel, AndrÃ© F.T. Martins, Vlad Niculae",
+    "time": "21(35):1−69, 2020.",
+    "abstract": "Over the past decades, numerous loss functions have been been proposed for a variety of supervised learning tasks, including regression, classification, ranking, and more generally structured prediction. Understanding the core principles and theoretical properties underpinning these losses is key to choose the right loss for the right problem, as well as to create new losses which combine their strengths. In this paper, we introduce Fenchel-Young losses, a generic way to construct a convex loss function for a regularized prediction function. We provide an in-depth study of their properties in a very broad setting, covering all the aforementioned supervised learning tasks, and revealing new connections between sparsity, generalized entropies, and separation margins. We show that Fenchel-Young losses unify many well-known loss functions and allow to create useful new ones easily. Finally, we derive efficient predictive and training algorithms, making Fenchel-Young losses appealing both in theory and practice.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-021/19-021.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-117.html",
+    "header": "Noise Accumulation in High Dimensional Classification and Total Signal Index",
+    "author": "Miriam R. Elman, Jessica Minnier, Xiaohui Chang, Dongseok Choi",
+    "time": "21(36):1−23, 2020.",
+    "abstract": "Great attention has been paid to Big Data in recent years. Such data hold promise for scientific discoveries but also pose challenges to analyses. One potential challenge is noise accumulation. In this paper, we explore noise accumulation in high dimensional two-group classification. First, we revisit a previous assessment of noise accumulation with principal component analyses, which yields a different threshold for discriminative ability than originally identified. Then we extend our scope to its impact on classifiers developed with three common machine learning approaches---random forest, support vector machine, and boosted classification trees. We simulate four scenarios with differing amounts of signal strength to evaluate each method. After determining noise accumulation may affect the performance of these classifiers, we assess factors that impact it. We conduct simulations by varying sample size, signal strength, signal strength proportional to the number predictors, and signal magnitude with random forest classifiers. These simulations suggest that noise accumulation affects the discriminative ability of high-dimensional classifiers developed using common machine learning methods, which can be modified by sample size, signal strength, and signal magnitude. We developed the measure total signal index (TSI) to track the trends of total signal and noise accumulation.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-117/19-117.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-187.html",
+    "header": "Causal Discovery Toolbox: Uncovering causal relationships in Python",
+    "author": "Diviyan Kalainathan, Olivier Goudet, Ritik Dutta",
+    "time": "21(37):1−5, 2020.",
+    "abstract": "This paper presents a new open source Python framework for causal discovery from observational data and domain background knowledge, aimed at causal graph and causal mechanism modeling. The cdt package implements an end-to-end approach, recovering the direct dependencies (the skeleton of the causal graph) and the causal relationships between variables. It includes algorithms from the `Bnlearn' and `Pcalg' packages, together with algorithms for pairwise causal discovery such as ANM.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-187/19-187.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-239.html",
+    "header": "Latent Simplex Position Model: High Dimensional Multi-view Clustering with Uncertainty Quantification",
+    "author": "Leo L. Duan",
+    "time": "21(38):1−25, 2020.",
+    "abstract": "High dimensional data often contain multiple facets, and several clustering patterns can co-exist under different variable subspaces, also known as the views. While multi-view clustering algorithms were proposed, the uncertainty quantification remains difficult --- a particular challenge is in the high complexity of estimating the cluster assignment probability under each view, and sharing information among views. In this article, we propose an approximate Bayes approach --- treating the similarity matrices generated over the views as rough first-stage estimates for the co-assignment probabilities; in its Kullback-Leibler neighborhood, we obtain a refined low-rank matrix, formed by the pairwise product of simplex coordinates. Interestingly, each simplex coordinate directly encodes the cluster assignment uncertainty. For multi-view clustering, we let each view draw a  parameterization from a few candidates, leading to dimension reduction. With high model flexibility, the estimation can be efficiently carried out as a continuous optimization problem, hence enjoys gradient-based computation. The theory establishes the connection of this model to a random partition distribution under multiple views. Compared to single-view clustering approaches, substantially more interpretable results are obtained when clustering brains from a human traumatic brain injury study, using high-dimensional gene expression data.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-239/19-239.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-260.html",
+    "header": "Learning Linear Non-Gaussian Causal Models in the Presence of Latent Variables",
+    "author": "Saber Salehkaleybar, AmirEmad Ghassami, Negar Kiyavash, Kun Zhang",
+    "time": "21(39):1−24, 2020.",
+    "abstract": "We consider the problem of learning causal models from observational data generated by linear non-Gaussian acyclic causal models with latent variables. Without considering the effect of latent variables, the inferred causal relationships among the observed variables are often wrong. Under faithfulness assumption, we propose a method to check whether there exists a causal path between any two observed variables. From this information, we can obtain the causal order among the observed variables. The next question is whether the causal effects can be uniquely identified as well. We show that causal effects among observed variables cannot be identified uniquely under mere assumptions of faithfulness and non-Gaussianity of exogenous noises. However, we are able to propose an efficient method that identifies the set of all possible causal effects that are compatible with the observational data. We present additional structural conditions on the causal graph under which causal effects among observed variables can be determined uniquely.  Furthermore, we provide necessary and sufficient graphical conditions for unique identification of the number of variables in the system. Experiments on synthetic data and real-world data show the effectiveness of our proposed algorithm for learning causal models.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-260/19-260.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-299.html",
+    "header": "Optimal Bipartite Network Clustering",
+    "author": "Arash A. Amini, Zhixin Zhou",
+    "time": "21(40):1−68, 2020.",
+    "abstract": "We study bipartite community detection in networks, or more generally the network  biclustering problem. We present a fast two-stage procedure based on spectral initialization followed by the application of a pseudo-likelihood  classifier twice. Under mild regularity conditions, we establish the weak consistency of the procedure (i.e., the convergence of the misclassification rate to zero) under a general bipartite stochastic block model. We show that the procedure is optimal in the sense that it achieves the optimal convergence rate that is achievable by a biclustering oracle, adaptively over the whole class, up to constants. This is further formalized by deriving a minimax lower bound over a class of biclustering problems.  The optimal rate we obtain sharpens some of the existing results and generalizes others to a wide regime of  average degree growth, from sparse networks with average degrees growing arbitrarily slowly  to fairly dense networks with average degrees of order $\\sqrt{n}$. As a special case, we recover the known exact recovery threshold in the $\\log n$ regime of sparsity. To obtain the consistency result, as part of the provable version of the algorithm, we introduce a sub-block partitioning scheme that is also computationally attractive, allowing for distributed implementation of the algorithm without sacrificing optimality. The provable  algorithm is derived from a general class of pseudo-likelihood biclustering algorithms that employ simple EM type updates. We show the effectiveness of this general class  by numerical simulations.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-299/19-299.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-407.html",
+    "header": "Switching Regression Models and Causal Inference in the Presence of Discrete Latent Variables",
+    "author": "Rune Christiansen, Jonas Peters",
+    "time": "21(41):1−46, 2020.",
+    "abstract": "Given a response $Y$ and a vector $X = (X^1, \\dots, X^d)$ of $d$ predictors, we investigate the problem of inferring direct causes of $Y$ among the vector $X$. Models for $Y$ that use all of its causal covariates as predictors enjoy the property of being invariant across different environments or interventional settings. Given data from such environments, this property has been exploited for causal discovery. Here, we extend this inference principle to situations in which some (discrete-valued) direct causes of $ Y $ are unobserved. Such cases naturally give rise to switching regression models. We provide sufficient conditions for the existence, consistency and asymptotic normality of the MLE in linear switching regression models with Gaussian noise, and construct a test for the equality of such models. These results allow us to prove that the proposed causal discovery method obtains asymptotic false discovery control under mild conditions. We provide an algorithm, make available code, and test our method on simulated data. It is robust against model violations and outperforms state-of-the-art approaches. We further apply our method to a real data set, where we show that it does not only output causal predictors, but also a process-based clustering of data points, which could be of additional interest to practitioners.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-407/19-407.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-468.html",
+    "header": "Branch and Bound for Piecewise Linear Neural Network Verification",
+    "author": "Rudy Bunel, Jingyue Lu, Ilker Turkaslan, Philip H.S. Torr, Pushmeet Kohli, M. Pawan Kumar",
+    "time": "21(42):1−39, 2020.",
+    "abstract": "The success of Deep Learning and its potential use in many safety-critical applicationshas motivated research on formal verification of Neural Network (NN) models. In thiscontext, verification involves proving or disproving that an NN model satisfies certaininput-output properties. Despite the reputation of learned NN models as black boxes,and the theoretical hardness of proving useful properties about them, researchers havebeen successful in verifying some classes of models by exploiting their piecewise linearstructure and taking insights from formal methods such as Satisifiability Modulo Theory.However, these methods are still far from scaling to realistic neural networks. To facilitateprogress on this crucial area, we exploit the Mixed Integer Linear Programming (MIP) formulation of verification to propose a family of algorithms based on Branch-and-Bound (BaB). We show that our family contains previous verification methods as special cases.With the help of the BaB framework, we make three key contributions. Firstly, we identifynew methods that combine the strengths of multiple existing approaches, accomplishingsignificant performance improvements over previous state of the art. Secondly, we introducean effective branching strategy on ReLU non-linearities. This branching strategy allows usto efficiently and successfully deal with high input dimensional problems with convolutionalnetwork architecture, on which previous methods fail frequently.  Finally, we proposecomprehensive test data sets and benchmarks which includes a collection of previouslyreleased testcases. We use the data sets to conduct a thorough experimental comparison ofexisting and new algorithms and to provide an inclusive analysis of the factors impactingthe hardness of verification problems.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-468/19-468.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-569.html",
+    "header": "Greedy Attack and Gumbel Attack: Generating Adversarial Examples for Discrete Data",
+    "author": "Puyudi Yang, Jianbo Chen, Cho-Jui Hsieh, Jane-Ling Wang, Michael I. Jordan",
+    "time": "21(43):1−36, 2020.",
+    "abstract": "We present a probabilistic framework for studying adversarial attacks on discrete data. Based on this framework, we derive a perturbation-based method, Greedy Attack, and a scalable learning-based method, Gumbel Attack, that illustrate various tradeoffs in the design of attacks. We demonstrate the effectiveness of these methods using both quantitative metrics and human evaluation on various state-of-the-art models for text classification, including a word-based CNN, a character-based CNN and an LSTM. As an example of our results, we show that the accuracy of character-based convolutional networks drops to the level of random selection by modifying only five characters through Greedy Attack.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-569/19-569.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-589.html",
+    "header": "Dynamical Systems as Temporal Feature Spaces",
+    "author": "Peter Tino",
+    "time": "21(44):1−42, 2020.",
+    "abstract": "Parametrised state space models in the form of recurrent networks are often used in machine learning to learn from data streams exhibiting temporal dependencies. To break the black box nature of such models it is important to understand the dynamical features of the input-driving time series that are formed in the state space. We propose a framework for rigorous analysis of such state representations in vanishing memory state space models such as echo state networks (ESN). In particular, we consider the state space a temporal feature space and the readout mapping from the state space a kernel machine operating in that feature space. We show that: (1) The usual ESN strategy of randomly generating input-to-state, as well as state coupling leads to shallow memory time series representations, corresponding to cross-correlation operator with fast exponentially decaying coefficients; (2) Imposing symmetry on dynamic coupling yields a constrained dynamic kernel matching the input time series with straightforward exponentially decaying motifs or exponentially decaying motifs of the highest frequency; (3) Simple ring (cycle) high-dimensional reservoir topology specified only through two free parameters can implement deep memory dynamic kernels with a rich variety of matching motifs. We quantify richness of feature representations imposed by dynamic kernels and demonstrate that for dynamic kernel associated with cycle reservoir topology, the kernel richness undergoes a phase transition close to the edge of stability.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-589/19-589.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-594.html",
+    "header": "A Convex Parametrization of a New Class of Universal Kernel Functions",
+    "author": "Brendon K. Colbert, Matthew M. Peet",
+    "time": "21(45):1−29, 2020.",
+    "abstract": "The accuracy and complexity of kernel learning algorithms is determined by the set of kernels over which it is able to optimize. An ideal set of kernels should: admit a linear parameterization (tractability); be dense in the set of all kernels (accuracy); and every member should be universal so that the hypothesis space is infinite-dimensional (scalability). Currently, there is no class of kernel that meets all three criteria - e.g. Gaussians are not tractable or accurate; polynomials are not scalable. We propose a new class that meet all three criteria - the Tessellated Kernel (TK) class. Specifically, the TK class: admits a linear parameterization using positive matrices; is dense in all kernels; and every element in the class is universal. This implies that the use of TK kernels for learning the kernel can obviate the need for selecting candidate kernels in algorithms such as SimpleMKL and parameters such as the bandwidth.  Numerical testing on soft margin Support Vector Machine (SVM) problems show that algorithms using TK kernels outperform other kernel learning algorithms and neural networks. Furthermore, our results show that when the ratio of the number of training data to features is high, the improvement of TK over MKL increases significantly.",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-594/19-594.pdf"
+  },
+  {
+    "volumn": 21,
+    "url": "http://jmlr.org/papers/v21/19-985.html",
+    "header": "Ancestral Gumbel-Top-k Sampling for Sampling Without Replacement",
+    "author": "Wouter Kool, Herke van Hoof, Max Welling",
+    "time": "21(47):1−36, 2020.",
+    "abstract": "We develop ancestral Gumbel-Top-$k$ sampling: a generic and efficient method for sampling without replacement from discrete-valued Bayesian networks, which includes multivariate discrete distributions, Markov chains and sequence models. The method uses an extension of the Gumbel-Max trick to sample without replacement by finding the top $k$ of perturbed log-probabilities among all possible configurations of a Bayesian network. Despite the exponentially large domain, the algorithm has a complexity linear in the number of variables and sample size $k$. Our algorithm allows to set the number of parallel processors $m$, to trade off the number of iterations versus the total cost (iterations times $m$) of running the algorithm. For $m = 1$ the algorithm has minimum total cost, whereas for $m = k$ the number of iterations is minimized, and the resulting algorithm is known as Stochastic Beam Search. We provide extensions of the algorithm and discuss a number of related algorithms. We analyze the properties of Gumbel-Top-$k$ sampling and compare against alternatives on randomly generated Bayesian networks with different levels of connectivity. In the context of (deep) sequence models, we show its use as a method to generate diverse but high-quality translations and statistical estimates of translation quality and entropy.  [ ][ ]",
+    "pdf_url": "http://jmlr.org/papers/volume21/19-985/19-985.pdf"
+  }
+]
