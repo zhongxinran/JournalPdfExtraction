@@ -19,6 +19,7 @@ def merge_keywords_in_parent_path(parent_path):
                     for keyword in record_dict[key]["keywords"]:
                         if keyword != "":
                             keywords.append(keyword)
+    keywords = list(set(keywords))
     print(keywords)
     with open("{}keywords.json".format(parent_path), "w") as f:
         json.dump(keywords, f)
