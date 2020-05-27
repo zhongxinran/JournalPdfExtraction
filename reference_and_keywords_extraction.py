@@ -4,15 +4,14 @@ import re
 import miner_text_generator
 
 
-def get_reference(pdf_path, regex="\n\nReferences\n\n", page_regex="\n\n[0-9]*\n\n"):
+def get_reference(journal, regex="\n\nReferences\n\n", page_regex="\n\n[0-9]*\n\n"):
     # 获取摘要文本
     # Args:
-    #   pdf_path: 要解析的pdf的路径
+    #   journal: 解析pdf的结果
     #   regex: 参考文献标志的正则表达式
     #   page_regex: 页码的正则表达式
     # Returns:
     #   reference_str: 摘要字符串
-    journal = miner_text_generator.extract_text(pdf_path)
     for i in range(len(journal)):
         reg_result = re.search(regex, journal[len(journal) - i - 1])
         if reg_result:
@@ -32,22 +31,30 @@ def get_reference(pdf_path, regex="\n\nReferences\n\n", page_regex="\n\n[0-9]*\n
     return reference_str
 
 
-def get_keywords(pdf_path, regex="\nKeywords(.|\n)*\n\n", page_regex="\n\n[0-9]*\n\n"):
+def get_keywords(journal, regex="\nKeywords(.|\n)*\n\n", page_regex="\n\n[0-9]*\n\n"):
     # 获取关键词列表
     # Args:
-    #   pdf_path: 要解析的pdf的路径
+    #   journal: 解析pdf的结果
     #   regex: 关键词标志的正则表达式
     #   page_regex: 页码的正则表达式
     # Returns:
     #   keywords_list: 关键词列表
-    journal = miner_text_generator.extract_text(pdf_path)
     for i in range(len(journal)):
         reg_result = re.search(regex, journal[i])
         if reg_result:
-            keywords_list = journal[i][(reg_result.start() + 1):(reg_result.end())].split("\n\n")[0].replace("-\n",
-                                                                                                             "").replace(
-                "\n", " ").replace("\ufb01", "fi").replace("\u2013", "-")[10:].split(", ")
+            keywords = journal[i][(reg_result.start() + 1):(reg_result.end())].split("\n\n")[0].replace("-\n",
+                                                                                                        "").replace(
+                "\n", " ").replace("\ufb01", "fi").replace("\u2013", "-")[10:]
+            if ", " in keywords:
+                keywords_list = keywords.replace(".", "").split(", ")
+            elif "; " in keywords:
+                keywords_list = keywords.replace(".", "").split("; ")
+            elif ". " in keywords:
+                keywords_list = keywords.replace(". ")
+            else:
+                keywords_list = [keywords]
             return keywords_list
+    return []
 
 
 def get_all_reference_and_keywords_in_path(folder_path, record_dict):
@@ -61,11 +68,12 @@ def get_all_reference_and_keywords_in_path(folder_path, record_dict):
     for file_name in file_names:
         if file_name.endswith(".pdf"):
             try:
+                journal = miner_text_generator.extract_text(folder_path + file_name)
                 print("==={}===".format(file_name))
-                keywords = get_keywords(folder_path + file_name)
+                keywords = get_keywords(journal)
                 record_dict[file_name[:-4]]["keywords"] = keywords
                 print("get keywords {}".format(keywords))
-                record_dict[file_name[:-4]]["reference"] = get_reference(folder_path + file_name)
+                record_dict[file_name[:-4]]["reference"] = get_reference(journal)
                 print("get reference")
             except:
                 continue
@@ -94,4 +102,4 @@ def get_all_reference_and_keywords_in_parent_path(parent_path):
 
 
 if __name__ == '__main__':
-    get_all_reference_and_keywords_in_parent_path("v23/")
+    get_all_reference_and_keywords_in_parent_path("COLT/")
