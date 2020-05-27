@@ -12,7 +12,7 @@ def merge_keywords_in_parent_path(parent_path):
     file_names = os.listdir(parent_path)
     for file_name in file_names:
         if os.path.isdir(os.path.join(parent_path, file_name)):
-            with open("{}{}_with_reference_and_keywords.json".format(parent_path, file_name)) as f:
+            with open("{}new_{}_with_reference_and_keywords.json".format(parent_path, file_name)) as f:
                 record_dict = json.load(f)
             for key in record_dict:
                 if "keywords" in record_dict[key].keys() and record_dict[key]["keywords"] != None:
@@ -26,4 +26,4 @@ def merge_keywords_in_parent_path(parent_path):
 
 
 if __name__ == '__main__':
-    merge_keywords_in_parent_path("JMLR/")
+    merge_keywords_in_parent_path("v23/")

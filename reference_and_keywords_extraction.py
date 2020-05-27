@@ -18,7 +18,16 @@ def get_reference(pdf_path, regex="\n\nReferences\n\n", page_regex="\n\n[0-9]*\n
         if reg_result:
             reference_str = journal[len(journal) - i - 1][(reg_result.end()):].replace("\n", " ")
             for j in range(len(journal) - i - 1, len(journal)):
-                reference_str = "{}{}".format(reference_str, re.sub(page_regex, "", journal[j]).replace("\n", " ")).replace("\ufb01","fi").replace("\u2013","-")
+                end_result = re.search("Appendix|appendix", journal[j])
+                reference_str = "{}{}".format(reference_str,
+                                              re.sub(page_regex, "", journal[j]).replace("\n", " ")).replace("\ufb01",
+                                                                                                             "fi").replace(
+                    "\u2013", "-") if not end_result else "{}{}".format(reference_str, re.sub(page_regex, "",
+                                                                                              journal[j][
+                                                                                              0:end_result.start()]).replace(
+                    "\n", " ").replace("\ufb01", "fi").replace("\u2013", "-"))
+                if end_result:
+                    break
             break
     return reference_str
 
@@ -35,7 +44,9 @@ def get_keywords(pdf_path, regex="\nKeywords(.|\n)*\n\n", page_regex="\n\n[0-9]*
     for i in range(len(journal)):
         reg_result = re.search(regex, journal[i])
         if reg_result:
-            keywords_list = journal[i][(reg_result.start()+1):(reg_result.end())].split("\n\n")[0].replace("-\n"," ").replace("\n", " ").replace("\ufb01","fi").replace("\u2013","-")[10:].split(", ")
+            keywords_list = journal[i][(reg_result.start() + 1):(reg_result.end())].split("\n\n")[0].replace("-\n",
+                                                                                                             "").replace(
+                "\n", " ").replace("\ufb01", "fi").replace("\u2013", "-")[10:].split(", ")
             return keywords_list
 
 
@@ -76,10 +87,11 @@ def get_all_reference_and_keywords_in_parent_path(parent_path):
             record_dict = {}
             for record in record_list:
                 record_dict[record["header"]] = record
-            record_dict_add_reference = get_all_reference_and_keywords_in_path("{}{}/".format(parent_path, file_name), record_dict)
+            record_dict_add_reference = get_all_reference_and_keywords_in_path("{}{}/".format(parent_path, file_name),
+                                                                               record_dict)
             with open("{}{}_with_reference_and_keywords.json".format(parent_path, file_name), "w") as f:
                 json.dump(record_dict_add_reference, f)
 
 
 if __name__ == '__main__':
-    get_all_reference_and_keywords_in_parent_path("JMLR/")
+    get_all_reference_and_keywords_in_parent_path("v23/")
