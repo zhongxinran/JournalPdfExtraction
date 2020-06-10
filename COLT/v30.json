@@ -1,0 +1,359 @@
+[
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Preface",
+    "abstract": "(No Abstract)",
+    "pdf_url": "http://proceedings.mlr.press/v30/Shalev13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Open Problem: Adversarial Multiarmed Bandits with Limited Advice ",
+    "abstract": "Adversarial multiarmed bandits with expert advice is one of the fundamental problems in studying the exploration-exploitation trade-off. It is known that if we observe the advice of all experts on every round we can achieve O\\left(\\sqrtKT \\ln N\\right) regret, where K is the number of arms, T is the number of game rounds, and N is the number of experts. It is also known that if we observe the advice of just one expert on every round, we can achieve regret of order O\\left(\\sqrtNT\\right). Our open problem is what can be achieved by asking M experts on every round, where 1",
+    "pdf_url": "http://proceedings.mlr.press/v30/Seldin13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Open Problem: Fast Stochastic Exp-Concave Optimization  ",
+    "abstract": "Stochastic exp-concave optimization is an important primitive in machine learning that captures several fundamental problems, including linear regression, logistic regression and more. The exp-concavity property allows for fast convergence rates, as compared to general stochastic optimization.  However, current algorithms that attain such rates scale poorly with the dimension n and run in time O(n^4), even on very simple instances of the problem.  The question we pose is whether it is possible to obtain fast rates for exp-concave functions using more computationally-efficient algorithms.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Koren13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Open Problem: Lower bounds for Boosting with Hadamard Matrices ",
+    "abstract": "Boosting algorithms can be viewed as a zero-sum game. At each iteration a new column / hypothesis is chosen from a game matrix representing the entire hypotheses class.  There are algorithms for which the gap between the value of the sub-matrix (the t columns chosen so far) and the value of the entire game matrix is O(\\sqrt\\frac\\log nt).  A matching lower bound has been shown for random game matrices for t up to n^αwhere α∈(0,\\frac12).  We conjecture that with Hadamard matrices we can build a certain game matrix for which the game value grows at the slowest possible rate for t up to a fraction of n.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Nie13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "On the Complexity of Bandit and Derivative-Free Stochastic Convex Optimization",
+    "abstract": "The problem of stochastic convex optimization with bandit feedback (in the learning community) or without knowledge of gradients (in the optimization community) has received much attention in recent years, in the form of algorithms and performance upper bounds. However, much less is known about the inherent complexity of these problems, and there are few lower bounds in the literature, especially for nonlinear functions. In this paper, we investigate the attainable error/regret in the bandit and derivative-free settings, as a function of the dimension d and the available number of queries T. We provide a precise characterization of the attainable performance for strongly-convex and smooth functions, which also imply a non-trivial lower bound for more general problems. Moreover, we prove that in both the bandit and derivative-free setting, the required number of queries must scale at least quadratically with the dimension. Finally, we show that on the natural class of quadratic functions, it is possible to obtain a “fast” O(1/T) error rate in terms of T, under mild assumptions, even without having access to gradients. To the best of our knowledge, this is the first such rate in a derivative-free stochastic setting, and holds despite previous results which seem to imply the contrary.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Shamir13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "A Theoretical Analysis of NDCG Type Ranking Measures",
+    "abstract": "Ranking has been extensively studied in information retrieval, machine learning and statistics. A central problem in ranking is to design a ranking measure for evaluation of ranking functions. State of the art leaning to rank methods often train a ranking function by using a ranking measure as the objective to maximize. In this paper we study, from a theoretical perspective, the widely used NDCG type ranking measures. We analyze the behavior of these ranking measures as the number of objects to rank getting large. We first show that, whatever the ranking function is, the standard NDCG which adopts a logarithmic discount, converges to 1 as the number of items to rank goes to infinity. On the first sight, this result seems to imply that NDCG cannot distinguish good and bad ranking functions, contradicting to the empirical success of NDCG in many applications. Our next main result is a theorem which shows that although NDCG converge to the same limit for all ranking functions, it has distinguishability for ranking functions in a strong sense. We then investigate NDCG with other possible discount. Specifically we characterize the class of feasible discount functions for NDCG. We also compare the limiting behavior and the power of distinguishability of these feasible NDCG type measures to the standard NDCG. We next turn to the cut-off version of NDCG, i.e., NDCG@k. The most popular NDCG@k uses a combination of a slow logarithmic decay and a hard cut-off as its discount. So a natural question is why not simply use a smooth discount with fast decay? We show that if the decay is too fast, then the NDCG measure does not have strong power of distinguishability and even not converge. Finally, feasible NDCG@k are also discussed.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Wang13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Excess risk bounds for multitask learning with trace norm regularization",
+    "abstract": "Trace norm regularization is a popular method of multitask learning. We give excess risk bounds with explicit dependence on the number of tasks, the number of examples per task and properties of the data distribution. The bounds are independent of the dimension of the input space, which may be infinite as in the case of reproducing kernel Hilbert spaces. A byproduct of the proof are bounds on the expected norm of sums of random positive semidefinite matrices with subexponential moments.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Pontil13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Honest Compressions and Their Application to Compression Schemes",
+    "abstract": "The existence of a compression scheme for every concept class with bounded VC-dimension is one of the oldest open problems in statistical learning theory. Here we demonstrate the existence of such compression schemes under stronger assumptions than finite VC-dimension. Specifically, for each concept class we associate a family of concept classes that we call the alternating concept classes. Under the assumption that these concept classes have bounded VC dimension, we prove existence of a compression scheme. This result is motivated by recent progress in the field of model theory with respect to an analogues problem. In fact, our proof can be considered as a constructive proof of these advancements. This means that we describe the reconstruction function explicitly. Not less important, the theorems and proofs we present are in purely combinatorial terms and are available to the reader who is unfamiliar with model theory. Also, using tools from model theory, we apply our results and prove existence of compression schemes in interesting cases, such as concept classes defined by hyperplanes, polynomials, exponentials, restricted analytic functions and compositions, additions and multiplications of all of the above.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Livni13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "The price of bandit information in multiclass online classification",
+    "abstract": "We consider two scenarios of multiclass online learning of a hypothesis class H⊆Y^X. In the \\em full information scenario, the learner is exposed to instances together with their labels. In the \\em bandit scenario, the true label is not exposed, but rather an indication whether the learner’s prediction is correct or not. We show that the ratio between the error rates in the two scenarios is at most 8⋅|Y|⋅\\log(|Y|) in the realizable case, and \\tildeO(\\sqrt|Y|) in the agnostic case. The results are tight up to a logarithmic factor and essentially answer an open question from (Daniely et. al. - Multiclass learnability and the erm principle).We apply these results to the class of γ-margin multiclass linear classifiers in \\mathbbR^d. We show that the bandit error rate of this class is \\tildeΘ\\left(\\frac|Y|γ^2\\right) in the realizable case and \\tildeΘ\\left(\\frac1γ\\sqrt|Y|T\\right) in the agnostic case. This resolves an open question from (Kakade et. al. - Efficient bandit algorithms for onlinemulticlass prediction).",
+    "pdf_url": "http://proceedings.mlr.press/v30/Daniely13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Estimation of Extreme Values and Associated Level Sets of a Regression Function via Selective Sampling",
+    "abstract": "We propose a new method for estimating the locations and the value of an absolute maximum (minimum) of a function from the observations contaminated by random noise. Our goal is to solve the problem under minimal regularity and shape constraints. In particular, we do not assume differentiability of a function nor that its maximum is attained at a single point. We provide tight upper and lower bounds for the performance of proposed estimators. Our method is adaptive with respect to the unknown parameters of the problem over a large class of underlying distributions.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Minsker13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Bounded regret in stochastic multi-armed bandits",
+    "abstract": "We study the stochastic multi-armed bandit problem when one knows the value μ^(⋆) of an optimal arm, as a well as a positive lower bound on the smallest positive gap ∆. We propose a new randomized policy that attains a regret uniformly bounded over time in this setting. We also prove several lower bounds, which show in particular that bounded regret is not possible if one only knows ∆, and bounded regret of order 1/∆is not possible if one only knows μ^(⋆).",
+    "pdf_url": "http://proceedings.mlr.press/v30/Bubeck13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Recovering the Optimal Solution by Dual Random Projection",
+    "abstract": "Random projection has been widely used in data classification. It maps high-dimensional data into a low-dimensional subspace in order to reduce the computational cost in solving the related optimization problem. While previous studies are focused on analyzing the classification performance of using random projection, in this work, we consider the recovery problem, i.e., how to accurately recover the optimal solution to the original optimization problem in the high-dimensional space based on the solution learned from the subspace spanned by random projections. We present a simple algorithm, termed Dual Random Projection, that uses the dual solution of the low-dimensional optimization problem to recover the optimal solution to the original problem. Our theoretical analysis shows that with a high probability, the proposed algorithm is able to accurately recover the optimal solution to the original problem, provided that the data matrix is of low rank or can be well approximated by a low rank matrix.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Zhang13a.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Opportunistic Strategies for Generalized No-Regret Problems",
+    "abstract": "No-regret algorithms has played a key role in on-line learning and prediction problems. In this paper, we focus on a generalized no-regret problem with vector-valued rewards, defined in terms of a desired reward set of the agent. For each mixed action q of the opponent, the agent has a set R(q) where the average reward should reside. In addition, the agent has a response mixed action p which brings the expected reward under these two actions, r(p, q), to R(q). If a strategy of the agent ensures that the average reward converges to R(\\barq_n), where \\barq_n is the empirical distribution of the opponent’s actions, for any strategy of the opponent, we say that it is a no-regret strategy with respect to R(q). The standard no-regret problem is obtained as a special case for scalar rewards and R(q) = r ∈R: r ≥r(q), where r(q) = \\max_p r(p, q). For this problem, the multifunction R(q) is convex, and no-regret strategies can be devised. Our main interest in this paper is in cases where this convexity property does not hold. The best that can be guaranteed in general then is the convergence of the average reward to R^c(\\barq_n), the convex hull of R(\\barq_n). However, as the game unfolds, it may turn out that the opponent’s choices of actions are limited in some way. If  these restrictions were known in advance, the agent could possibly ensure convergence of the average reward to some desired subset of R^c(\\barq_n), or even approach R(\\barq_n) itself. We formulate appropriate goals for opportunistic no-regret strategies, in the sense that they may exploit such limitations on the opponent’s action sequence in an on-line manner, without knowing them beforehand. As the main technical tool, we propose a class of approachability algorithms that rely on a calibrated forecast of the opponent’s actions, which are opportunistic in the above mentioned sense. As an application, we consider the online no-regret problem with average cost constraints, introduced in Mannor, Tsitsiklis, and Yu (2009), where the best-response-in-hindsight is not generally attainable, but only its convex relaxation. Our proposed algorithm applied to this problem does attain the best-response-in-hindsight if the opponent’s play happens to be stationary (either in terms of its mixed actions, or the empirical frequencies of its pure actions).",
+    "pdf_url": "http://proceedings.mlr.press/v30/Bernstein13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Online Learning for Time Series Prediction",
+    "abstract": "In this paper, we address the problem of predicting a time series using the ARMA (autoregressive moving average) model, under minimal assumptions on the noise terms. Using regret minimization techniques, we develop effective online learning algorithms for the prediction problem, \\emphwithout assuming that the noise terms are Gaussian, identically distributed or even independent. Furthermore, we show that our algorithm’s performances asymptotically approaches the performance of the best ARMA model in hindsight.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Anava13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Sharp analysis of low-rank  kernel matrix approximations",
+    "abstract": "We consider supervised learning problems within the positive-definite kernel framework, such as kernel ridge regression, kernel logistic regression or the support vector machine. With  kernels leading to infinite-dimensional feature spaces, a common practical limiting difficulty is the necessity of computing the kernel matrix, which most frequently leads to algorithms with running time at least quadratic in the number of observations n, i.e., O(n^2). Low-rank approximations of the kernel matrix are often considered as they allow the reduction of  running time complexities  to O(p^2 n), where p is the rank of the approximation. The practicality of such methods thus depends on the required rank p. In this paper, we show that for approximations based on a random subset of columns of the original kernel matrix, the rank p may be chosen to be linear in the \\emphdegrees of freedom associated with the problem, a quantity which is classically used in the statistical analysis of such methods, and is often seen as the implicit number of parameters of non-parametric estimators. This result enables simple algorithms that have sub-quadratic running time complexity, but provably exhibit the same \\emphpredictive performance than existing algorithms, for any given problem instance, and not only for worst-case situations.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Bach13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Beating Bandits in Gradually Evolving Worlds",
+    "abstract": "Consider the online convex optimization problem, in which a player has to choose actions iteratively and suffers corresponding losses according to some convex loss functions, and the goal is to minimize the regret. In the full-information setting, the player after choosing her action can observe the whole loss function in that round, while in the bandit setting, the only information the player can observe is the loss value of that action. Designing such bandit algorithms appears challenging, as the best regret currently achieved for general convex loss functions is much higher than that in the full-information setting, while for strongly convex loss functions, there is even a regret lower bound which is exponentially higher than that achieved in the full-information setting. To aim for smaller regrets, we adopt a relaxed two-point bandit setting in which the player can play two actions in each round and observe the loss values of those two actions. Moreover, we consider loss functions parameterized by their deviation D, which measures how fast they evolve, and we study how regrets depend on D. We show that two-point bandit algorithms can in fact achieve regrets matching those in the full-information setting in terms of D. More precisely, for convex loss functions, we achieve a regret of O(\\sqrtD), while for strongly convex loss functions, we achieve a regret of O(\\ln D), which is much smaller than the Ω(\\sqrtD) lower bound in the traditional bandit setting.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Chiang13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Information Complexity in Bandit Subset Selection",
+    "abstract": "We consider the problem of efficiently exploring the arms of a stochastic bandit to identify the best subset. Under the PAC and the fixed-budget formulations, we derive improved bounds by using KL-divergence-based confidence intervals. Whereas the application of a similar idea in the regret setting has yielded bounds in terms of the KL-divergence between the arms, our bounds in the pure-exploration setting involve the Chernoff information between the arms. In addition to introducing this novel quantity to the bandits literature, we contribute a comparison between the “racing” and “smart sampling” strategies for pure-exploration problems, finding strong evidence in favor of the latter.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Kaufmann13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Passive Learning with Target Risk",
+    "abstract": "In this paper we consider learning in passive setting but with a slight modification. We assume that the target expected loss, also referred to as target risk, is provided in advance for  learner as  prior knowledge. Unlike most studies in the learning theory  that only incorporate the prior knowledge into the generalization bounds, we are able to explicitly utilize the target risk in the learning process. Our analysis reveals a surprising result on the sample complexity of learning: by exploiting the target risk in the learning algorithm,  we show that when the loss function is both strongly convex and smooth, the sample complexity reduces to \\mathcalO(\\log \\left(\\frac1ε\\right)), an exponential improvement compared to the sample complexity \\mathcalO(\\frac1ε) for learning with strongly convex loss functions.  Furthermore,  our proof is constructive and is based on a computationally efficient stochastic optimization algorithm  for such settings which demonstrate that the  proposed algorithm is practically useful.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Mahdavi13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Blind Signal Separation in the Presence of Gaussian Noise",
+    "abstract": "A prototypical blind signal separation problem  is the so-called cocktail party problem, with n people talking simultaneously and n different microphones within a room. The goal is to  recover  each speech signal  from the microphone inputs. Mathematically this can be modeled by assuming that we are given samples from a n-dimensional random variable X=AS, where S is a vector whose coordinates are independent random variables corresponding to each speaker. The objective is to recover the  matrix A^-1 given random samples from X. A range of techniques  collectively known as Independent Component Analysis (ICA) have been proposed to address this problem in the signal processing and machine learning literature. Many of these techniques are based on using the kurtosis or other cumulants to recover the components. In this paper we propose a new algorithm for solving the blind signal separation problem in the presence of additive Gaussian noise, when we are given samples from X=AS+η, where ηis drawn from an unknown, not necessarily spherical n-dimensional Gaussian distribution. Our approach is based on a method for decorrelating a sample with additive Gaussian noise under the assumption that the underlying distribution is a linear transformation of a distribution with independent components. Our decorrelation routine is based on the properties of cumulant tensors and can be combined with any standard cumulant-based method for ICA to get an algorithm that is provably robust in the presence of Gaussian noise. We derive polynomial bounds for sample complexity and error propagation of our method.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Belkin13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Active and passive learning of linear separators under log-concave distributions",
+    "abstract": "We prove that active learning provides an exponential improvement over PAC (passive) learning of homogeneous linear separators under nearly log-concave distributions. Building on this, we provide a computationally efficient PAC algorithm with optimal (up to a constant factor) sample complexity for such problems. This resolves an open question of (Long, 1995, 2003; Bshouty et al., 2009) concerning the sample complexity of efficient PAC algorithms under the uniform distribution in the unit ball. Moreover, it provides the first bound for a polynomial-time  PAC algorithm that is tight for an interesting infinite class of hypothesis functions under a general class of data-distributions, providing significant progress towards  a long standing open question of (Ehrenfeucht et al., 1989; Blumer et al., 1989). We also provide new bounds for active and passive learning in the case that the data might not be linearly separable, both in the agnostic case and and under the Tsybakov low-noise condition. To derive our results, we provide new  structural results for (nearly) log-concave distributions, which might be of independent interest  as well.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Balcan13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Randomized partition trees for exact nearest neighbor search",
+    "abstract": "The k-d tree was one of the first spatial data structures proposed for nearest neighbor search. Its efficacy is diminished in high-dimensional spaces, but several variants, with randomization and overlapping cells, have proved to be successful in practice. We analyze three such schemes. We show that the probability that they fail to find the nearest neighbor, for any data set and any query point, is directly related to a simple potential function that captures the difficulty of the point configuration. We then bound this potential function in two situations of interest: the first, when data come from a doubling measure, and the second, when the data are documents from a topic model.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Dasgupta13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Surrogate Regret Bounds for the Area Under the ROC Curve via Strongly Proper Losses",
+    "abstract": "The area under the ROC curve (AUC) is a widely used performance measure in machine learning, and has been widely studied in recent years particularly in the context of bipartite ranking. A dominant theoretical and algorithmic framework for AUC optimization/bipartite ranking has been to reduce the problem to pairwise classification; in particular, it is well known that the AUC regret can be formulated as a pairwise classification regret, which in turn can be upper bounded using usual regret bounds for binary classification. Recently, Kotlowski et al. (2011) showed AUC regret bounds in terms of the regret associated with ‘balanced’ versions of the standard (non-pairwise) logistic and exponential losses. In this paper, we obtain such (non-pairwise) surrogate regret bounds for the AUC in terms of a broad class of proper (composite) losses that we term \\emphstrongly proper. Our proof technique is considerably simpler than that of Kotlowski et al. (2011), and relies on properties of proper (composite) losses as elucidated recently by Reid and Williamson (2009, 2010, 2011) and others. Our result yields explicit surrogate bounds (with no hidden balancing terms) in terms of a variety of strongly proper losses, including for example logistic, exponential, squared and squared hinge losses. An important consequence is that standard algorithms minimizing a (non-pairwise) strongly proper loss, such as logistic regression and boosting algorithms (assuming a universal function class and appropriate regularization), are in fact AUC-consistent; moreover, our results allow us to quantify the AUC regret in terms of the corresponding surrogate regret. We also obtain tighter surrogate regret bounds under certain low-noise conditions via a recent result of Clémen\\con and Robbiano (2011).",
+    "pdf_url": "http://proceedings.mlr.press/v30/Agarwal13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Algorithms and Hardness for Robust Subspace Recovery",
+    "abstract": "We consider a fundamental problem in unsupervised learning called subspace recovery: given a collection of m points in R^n, if many but not necessarily all of these points are contained in a d-dimensional subspace T can we find it? The points contained in T are called  inliers and the remaining points are  outliers. This problem has received considerable attention in computer science and in statistics. Yet efficient algorithms from computer science are not robust to  adversarial outliers, and the estimators from robust statistics are hard to compute in high dimensions. This is a serious and persistent issue not just in this application, but for many other problems in unsupervised learning. Are there algorithms for subspace recovery that are both robust to outliers and efficient?  We give an algorithm that finds T when it contains more than a d/n fraction of the points.  Hence, for say d = n/2 this estimator is both easy to compute and well-behaved when there are a constant fraction of outliers. We prove that it is small set expansion hard to find T when the fraction of errors is any larger and so our estimator is an  optimal compromise between efficiency and robustness. In fact, this basic problem has a surprising number of connections to other areas including small set expansion, matroid theory and functional analysis that we make use of here.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Hardt13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "PLAL: Cluster-based active learning",
+    "abstract": "We investigate the label complexity of active learning under some smoothness assumptions on the data-generating process.We propose a procedure, PLAL, for “activising” passive, sample-based learners. The procedure takes an unlabeledsample, queries the labels of some of its members, and outputs a full labeling of that sample. Assuming the data satisfies “Probabilistic Lipschitzness”, a notion of clusterability, we show that for several common learning paradigms, applying our procedure as a preprocessing leads to provable label complexity reductions (over any “passive”learning algorithm, under the same data assumptions). Our labeling procedure is simple and easy to implement. We complement our theoretical findings with experimental validations.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Urner13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Learning Using Local Membership Queries",
+    "abstract": "We introduce a new model of membership query (MQ) learning, where the learning algorithm is restricted to query points that are close to random examples drawn from the underlying distribution. The learning model is intermediate between the PAC model (Valiant,1984) and the PAC+MQ model (where the queries are allowed to be arbitrary points). Membership query algorithms are not popular among machine learning practitioners. Apart from the obvious difficulty of adaptively querying labellers, it has also been observed that querying unnatural points leads to increased noise from human labellers (Lang and Baum, 1992). This motivates our study of learning algorithms that make queries that are close to examples generated from the data distribution. We restrict our attention to functions defined on the n-dimensional Boolean hypercube and say that a membership query is local if its Hamming distance from some example in the (random) training data is at most O(log(n)). We show the following results in this model:  \\beginenumerate \\item The class of sparse polynomials (with coefficients in R) over {0, 1}^n is polynomial time learnable under a large class of locally smooth distributions using O(log(n))-local queries. This class also includes the class of O(log(n))-depth decision trees.  \\item The class of polynomial-sized decision trees is polynomial time learnable under product distributions using O(log(n))-local queries.  \\item The class of polynomial size DNF formulas is learnable under the uniform distribution using O(log(n))-local queries in time n^O(log(log(n))).  \\item In addition we prove a number of results relating the proposed model to the traditional PAC model and the PAC+MQ model. \\endenumerate",
+    "pdf_url": "http://proceedings.mlr.press/v30/Awasthi13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Sparse Adaptive Dirichlet-Multinomial-like Processes",
+    "abstract": "Online estimation and modelling of i.i.d. data for shortsequences over large or complex “alphabets” is a ubiquitous (sub)problem in machine learning, information theory, data compression, statistical language processing, and document analysis. The Dirichlet-Multinomial distribution (also called Polya urn scheme) and extensions thereof are widely applied for online i.i.d. estimation. Good a-priori choices for the parameters in this regime are difficult to obtain though. I derive an optimal adaptive choice for the main parameter via tight, data-dependent redundancy bounds for a related model. The 1-line recommendation is to set the ’total mass’ = ’precision’ = ’concentration’ parameter to m/[2\\ln\\fracn+1m], where n is the (past) sample size and m the number of different symbols observed (so far). The resulting estimator is simple, online, fast,and experimental performance is superb.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Hutter13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Prediction by random-walk perturbation",
+    "abstract": "We propose a version of the follow-the-perturbed-leader online prediction algorithm in which the cumulative losses are perturbed by independent symmetric random walks. The forecaster is shown to achieve an expected regret of the optimal order O(\\sqrtn \\log N) where n is the time horizon and N is the number of experts. More importantly, it is shown that the forecaster changes its prediction at most O(\\sqrtn \\log N) times, in expectation. We also extend the analysis to online combinatorial optimization and show that even in this more general setting, the forecaster rarely switches between experts while having a regret of near-optimal order.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Devroye13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Approachability, fast and slow",
+    "abstract": "Approachability has become a central tool in the analysis of repeated games and online learning. A player plays a repeated vector-valued game against Nature and her objective is to have her long-term average reward inside some target set.  The celebrated results of Blackwell provide a 1/\\sqrtn convergence rate of the expected point-to-set distance if this is achievable, i.e., if the set is approachable. In this paper we provide a  characterization for the convergence rates of approachability and show that in some cases a set can be approached with a 1/n rate. Our characterization is solely based on a combination of geometric properties of the set with properties of the repeated game, and not on additional restrictive assumptions on Nature’s behavior.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Perchet13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Classification with Asymmetric Label Noise: Consistency and Maximal Denoising",
+    "abstract": "In many real-world classification problems, the labels of training examples are randomly corrupted. Thus, the set of training examples for each class is contaminated by examples of the other class. Previous theoretical work on this problem assumes that the two classes are separable, that the label noise is independent of the true class label, or that the noise proportions for each class are known. We introduce a general framework for classification with label noise that eliminates these assumptions. Instead, we give assumptions ensuring identifiability and the existence of a consistent estimator of the optimal risk, with associated estimation strategies. For any arbitrary pair of contaminated distributions, there is a unique pair of non-contaminated distributions satisfying the proposed assumptions, and we argue that this solution corresponds in a certain sense to maximal denoising. In particular, we find that learning in the presence of label noise is possible even when the class-conditional distributions overlap and the label noise is not symmetric. A key to our approach is a universally consistent estimator of the maximal proportion of one distribution that is present in another, a problem we refer to as“mixture proportion estimation. This work is motivated by a problem in nuclear particle classification.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Scott13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "General Oracle Inequalities for Gibbs Posterior with Application to Ranking",
+    "abstract": "In this paper, we summarize some recent results in Li et al. (2012), which can be used to extend an important PAC-Bayesian approach, namely the Gibbs posterior, to study the nonadditive ranking risk. The methodology is based on assumption-free risk bounds and nonasymptotic oracle inequalities, which leads to nearly optimal convergence rates and optimal model selection to balance the approximation errors and the stochastic errors.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Li13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Learning Halfspaces Under Log-Concave Densities: Polynomial Approximations and Moment Matching",
+    "abstract": "We give the first polynomial-time algorithm for agnostically learning any function of a constant number of halfspaces with respect to any log-concave distribution (for any constant accuracy parameter).  This result was not known even for the case of PAC learning the intersection of two halfspaces. We give two very different proofs of this result.  The first develops a theory of polynomial approximation for log-concave measures and constructs a low-degree L_1 polynomial approximator for sufficiently smooth functions.  The second uses techniques related to the classical moment problem to obtain sandwiching polynomials.  Both approaches deviate significantly from known Fourier-based methods, where essentially all previous work required the underlying distribution to have some product structure. Additionally, we show that in the smoothed-analysis setting, the above results hold with respect to distributions that have sub-exponential tails, a property satisfied by many natural and well-studied distributions in machine learning.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Kane13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Subspace Embeddings and \\ell_p-Regression Using Exponential Random Variables",
+    "abstract": "Oblivious low-distortion subspace embeddings are a crucial building block for numerical linear algebra problems. We show for any real p, 1 ≤p < ∞, given a matrix M ∈\\mathbbR^n \\times d with n ≫d, with constant probability we can choose a matrix \\Pi with \\max(1, n^1-2/p) \\textpoly(d) rows and n columns so that simultaneously for all x ∈\\mathbbR^d, \\|Mx\\|_p ≤\\|\\Pi Mx\\|_∞ ≤\\textpoly(d) \\|Mx\\|_p. Importantly, \\Pi M can be computed in the optimal O(\\textnnz(M)) time, where \\textnnz(M) is the number of non-zero entries of M. This generalizes all previous oblivious subspace embeddings which required p ∈[1,2] due to their use of p-stable random variables. Using our new matrices \\Pi, we also improve the best known distortion of oblivious subspace embeddings of \\ell_1 into \\ell_1 with \\tildeO(d) target dimension in O(\\textnnz(M)) time from \\tildeO(d^3) to \\tildeO(d^2), which can further be improved to \\tildeO(d^3/2) \\log^1/2 n if d = Ω(\\log n), answering a question of Meng and Mahoney (STOC, 2013). We apply our results to \\ell_p-regression, obtaining a (1+ε)-approximation in O(\\textnnz(M)\\log n) + \\textpoly(d/ε) time, improving the best known \\textpoly(d/ε) factors for every p ∈[1, ∞) ∖{2}. If one is just interested in a \\textpoly(d) rather than a (1+ε)-approximation to \\ell_p-regression, a corollary of our results is that for all p ∈[1, ∞) we can solve the \\ell_p-regression problem without using general convex programming, that is, since our subspace embeds into \\ell_∞ it suffices to solve a linear programming problem.  Finally, we give the first protocols for the distributed \\ell_p-regression problem for every p ≥1 which are nearly optimal in communication and computation.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Woodruff13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Consistency of Robust Kernel Density Estimators",
+    "abstract": "The kernel density estimator (KDE) based on a radial positive-semidefinite kernel may be viewed as a sample mean in a reproducing kernel Hilbert space. This mean can be viewed as the solution of a least squares problem in that space. Replacing the squared loss with a robust loss yields a robust kernel density estimator (RKDE). Previous work has shown that RKDEs are weighted kernel density estimators which have desirable robustness properties. In this paper we establish asymptotic L^1 consistency of the RKDE for a class of losses and show that the RKDE converges with the same rate on bandwidth required for the traditional KDE. We also present a novel proof of the consistency of the traditional KDE.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Vandermeulen13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Divide and Conquer Kernel Ridge Regression",
+    "abstract": "We study a decomposition-based scalable approach to performing kernel ridge regression.  The method is simply described: it randomly partitions a dataset of size N into m subsets of equal size, computes an independent kernel ridge regression estimator for each subset, then averages the local solutions into a global predictor. This partitioning leads to a substantial reduction in computation time versus the standard approach of performing kernel ridge regression on all N samples. Our main theorem establishes that despite the computational speed-up, statistical optimality is retained: that so long as m is not too large, the partition-based estimate achieves optimal rates of convergence for the full sample size N.  As concrete examples, our theory guarantees that m may grow polynomially in N for Sobolev spaces, and nearly linearly for finite-rank kernels and Gaussian kernels. We conclude with simulations complementing our theoretical results and exhibiting the computational and statistical benefits of our approach.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Zhang13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Regret Minimization for Branching Experts",
+    "abstract": "We study regret minimization bounds in which the dependence on the number of experts is replaced by measures of the realized complexity of the expert class. The measures we consider are defined in retrospect given the realized losses. We concentrate on two interesting cases. In the first, our measure of complexity is the number of different “leading experts”, namely, experts that were best at some point in time. We derive regret bounds that depend only on this measure, independent of the total number of experts. We also consider a case where all experts remain grouped in just a few clusters in terms of their realized cumulative losses. Here too, our regret bounds depend only on the number of clusters determined in retrospect, which serves as a measure of complexity. Our results are obtained as special cases of a more general analysis for a setting of branching experts,where the set of experts may grow over time according to a tree-like structure, determined by an adversary. For this setting of branching experts, we give algorithms and analysis that cover both the full information and the bandit scenarios.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Gofer13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Horizon-Independent Optimal Prediction with Log-Loss in Exponential Families",
+    "abstract": "We study online learning under logarithmic loss with regular parametric models. Hedayati and Bartlett (2012) showed that a Bayesian prediction strategy with Jeffreys prior and sequential normalized maximum likelihood (SNML) coincide and are optimal if and only if the latter is exchangeable, which occurs if and only if the optimal strategy can be calculated without knowing the time horizon in advance. They put forward the question what families have exchangeable SNML strategies. We answer this question for one-dimensional exponential families: SNML is exchangeable only for three classes of natural exponential family distributions,namely the Gaussian, the gamma, and the Tweedie exponential family of order 3/2.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Bartlett13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Online Similarity Prediction of Networked Data from Known and Unknown Graphs",
+    "abstract": "We consider online similarity prediction problems over networked data. We begin by relating this task to the more standard class prediction problem, showing that, given an arbitrary algorithm for class prediction, we can construct an algorithm for similarity prediction with “nearly” the same mistake bound, and vice versa. After noticing that this general construction is computationally infeasible, we target our study to feasible similarity prediction algorithms on networked data. We initially assume that the network structure is known to the learner. Here we observe that Matrix Winnow (Warmuth, 2007) has a near-optimal mistake guarantee, at the price of cubic prediction time per round. This motivates our effort for an efficient implementation of a Perceptron-like algorithm with a weaker mistake guarantee but with only poly-logarithmic prediction time. Our focus then turns to the challenging case of networks whose structure is initially unknown to the learner. In this novel setting, where the network structure is only incrementally revealed, we obtain a mistake-bounded algorithm with a quadratic prediction time per round.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Gentile13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "A near-optimal algorithm for finite partial-monitoring games against adversarial opponents",
+    "abstract": "Partial monitoring is an online learning model where in every time step, after a learner and an opponent choose their actions, the loss and the feedback for the learner is calculated based on a loss  and a feedback function, both of which are known to the learner ahead of time. As in other online learning scenarios, the goal of the learner is to minimize his cumulative loss. In this paper we present and analyze a new algorithm for locally observable partial monitoring games. We prove that the expected regret of our algorithm is of \\tilde O(\\sqrtN’T), where T is the time horizon and N’ is the size of the largest point-local game. The most important improvement of this bound compared to previous results is that it does not depend directly on the number of actions, but rather on the structure of the game.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Bartok13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Representation, Approximation and Learning of Submodular Functions Using Low-rank Decision Trees",
+    "abstract": "We study the complexity of approximate representation and learning of submodular functions over the uniform distribution on the Boolean hypercube {0,1}^n. Our main result is the following structural theorem: any submodular function is ε-close in \\ell_2 to a real-valued decision tree (DT) of depth O(1/ε^2). This immediately implies that any submodular function is  ε-close to a function of at most 2^O(1/ε^2) variables and has a spectral \\ell_1 norm of 2^O(1/ε^2). It also implies the closest previous result that states that submodular functions can be approximated by polynomials of degree O(1/ε^2) (Cheraghchi et al., 2012). Our result is proved by constructing an approximation of a submodular function by a DT of rank 4/ε^2 and a proof that any rank-r DT can be ε-approximated by a DT of depth \\frac52(r+\\log(1/ε)). We show that these structural results can be exploited to give an attribute-efficient PAC learning algorithm for submodular functions running in time \\tildeO(n^2) ⋅2^O(1/ε^4). The best previous algorithm for the problem requires n^O(1/ε^2) time and examples (Cheraghchi et al., 2012) but works also in the agnostic setting. In addition, we give improved learning algorithms for a number of related settings. We also prove that our PAC and agnostic learning algorithms are essentially optimal via two lower bounds: (1) an information-theoretic lower bound of 2^Ω(1/ε^2/3) on the complexity of learning monotone submodular functions  in any reasonable model (including learning with value queries); (2) computational lower bound of n^Ω(1/ε^2/3) based on a reduction to learning of sparse parities with noise, widely-believed to be intractable. These are the first lower bounds for learning of submodular functions over the uniform distribution.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Feldman13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "A Tale of Two Metrics: Simultaneous Bounds on Competitiveness and Regret",
+    "abstract": "We consider algorithms for “smoothed online convex optimization” problems, a variant of the class of online convex optimization problems that is strongly related to metrical task systems. Prior literature on these problems has focused on two performance metrics: regret and the competitive ratio. There exist known algorithms with sublinear regret and known algorithms with constant competitive ratios; however, no known algorithm achieves both simultaneously. We show that this is due to a fundamental incompatibility between these two metrics - no algorithm (deterministic or randomized) can achieve sublinear regret and a constant competitive ratio, even in the case when the objective functions are linear. However, we also exhibit an algorithm that, for the important special case of one dimensional decision spaces, provides sublinear regret while maintaining a competitive ratio that grows arbitrarily slowly.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Andrew13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Optimal Probability Estimation  with Applications to Prediction and Classification",
+    "abstract": "Via a unified viewpoint of probability estimation, classification,and prediction, we derive a uniformly-optimal combined-probability estimator, construct a classifier that uniformly approaches the error of the best possible label-invariant classifier, and improve existing results on pattern prediction and compression.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Acharya13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Polynomial Time Optimal Query Algorithms for Finding Graphs with Arbitrary Real Weights",
+    "abstract": "We consider the problem of finding the edges of a hidden weighted graph and their weights by using a certain type of queries as few times as possible, with focusing on two types of queries with additive property. For a set of vertices, the additive query asks the sum of weights of the edges with both ends in the set. For a pair of disjoint sets of vertices, the cross-additive query asks the sum of weights of the edges crossing between the two sets. These queries were motivated by DNA sequencing, population genetics, and artificial intelligence, and have been paid considerable attention to in computational learning. In this paper, we achieve an ultimate goal of recent years for graph finding with the two types of queries, by constructing the first polynomial time algorithms with optimal query complexity for the general class of graphs with n vertices and at most m edges in which the weights of edges are arbitrary real numbers. The algorithms are randomized and their query complexities are O(\\fracm \\log n\\log m). These bounds improve the best known by a factor of \\log m, and settle the open problem posed in some papers including [Choi and Kim, Optimal query complexity bounds for finding graphs, STOC 2008].  To build key components for graph finding, we consider the coin weighing problem with a spring scale. The problem itself has been paid much attention to in a long history of combinatorial search. We construct the first polynomial time algorithm with optimal query complexity for the general case in which the weight differences between counterfeit and authentic coins are arbitrary real numbers. We also construct the first polynomial time optimal query algorithm for finding the Fourier coefficients of a certain class of pseudo-Boolean functions.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Choi13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Differentially Private Feature Selection via Stability Arguments, and the Robustness of the Lasso",
+    "abstract": "We design differentially private algorithms for statistical model selection. Given a data set and a large, discrete collection of  “models”, each of which is a family of probability distributions, the goal is to determine the model that best “fits” the data. This is a basic problem in many areas of statistics and machine learning. We consider settings in which there is a well-defined answer, in  the following sense: Suppose that there is a \\emphnonprivate model  selection procedure f, which is the reference to which we compare our performance. Our differentially private algorithms output the correct value  f(D) whenever f is \\emphstable on the input data set D. We work with two notions, \\emphperturbation stability and \\emphsub-sampling stability. We give two classes of results: generic ones, that apply to any function with discrete output set; and specific algorithms for the problem of sparse linear regression. The algorithms we describe are efficient and in some cases match the optimal \\emphnon-private asymptotic sample complexity. Our algorithms for sparse linear regression require analyzing the stability properties of the popular LASSO estimator. We give sufficient conditions for the LASSO estimator to be robust to small changes in the data set, and show that these conditions hold with high probability under essentially the same stochastic assumptions that are used in the literature to analyze convergence of the LASSO.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Guha13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Learning a set of directions",
+    "abstract": "Assume our data consists of unit vectors (directions) and we are to find a small orthogonal set of the “the most important directions” summarizing the data. We develop online algorithms for this type of problem. The techniques used are similar to Principal Component Analysis which finds the most important small rank subspace of the data.The new problem is significantly more complex since the online algorithm maintains uncertainty over the most relevant subspace as well as directional information.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Koolen13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "A Tensor Spectral Approach to Learning Mixed Membership Community Models",
+    "abstract": "Modeling community formation and detecting hidden communities in networks is a well studied problem. However, theoretical analysis of  community detection has been mostly limited to models with non-overlapping communities such as the stochastic block model. In this paper, we remove this restriction, and consider a family of probabilistic network models with overlapping communities, termed as the mixed membership Dirichlet model, first introduced   in Aioroldi et. al (2008). This model allows for nodes to have fractional memberships in multiple communities and assumes that the community memberships are drawn from a Dirichlet distribution. We propose a unified  approach to learning these models via a   tensor spectral decomposition method. Our estimator is based on  low-order  moment tensor of the observed network, consisting of  3-star counts. Our learning method is fast and is based on   simple linear algebra operations, e.g. singular value decomposition and tensor power iterations. We provide guaranteed recovery of community memberships and model parameters and present a careful finite sample analysis of our learning method. Additionally, our results  match the best known scaling requirements in the special case of the stochastic block model.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Anandkumar13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Adaptive Crowdsourcing Algorithms for the Bandit Survey Problem",
+    "abstract": "Very recently crowdsourcing has become the de facto platform for distributing and collecting human computation for a wide range of tasks and applications such as information retrieval, natural language processing and machine learning. Current crowdsourcing platforms have some limitations in the area of quality control. Most of the effort to ensure good quality has to be done by the experimenter who has to manage the number of workers needed to reach good results.We propose a simple model for adaptive quality control in crowdsourced multiple-choice tasks which we call the “bandit survey problem”. This model is related to, but technically different from the well-known multi-armed bandit problem. We present several algorithms for this problem, and support them with analysis and simulations.Our approach is based in our experience conducting relevance evaluation for a large commercial search engine.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Abraham13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Boosting with the Logistic Loss is Consistent",
+    "abstract": "This manuscript provides optimization guarantees, generalization bounds, and statistical consistency results for AdaBoost variants which replace the exponential loss with the logistic and similar losses (specifically, twice differentiable convex losses which are Lipschitz and tend to zero on one side).The heart of the analysis is to show that, in lieu of explicit regularization and constraints, the structure of the problem is fairly rigidly controlled by the source distribution itself. The first control of this type is in the separable case, where a distribution-dependent relaxed weak learning rate induces speedy convergence with high probability over any sample. Otherwise, in the nonseparable case, the convex surrogate risk itself exhibits distribution-dependent levels of curvature, and consequently the algorithm’s output has small norm with high probability.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Telgarsky13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Competing With Strategies",
+    "abstract": "We study the problem of online learning with a notion of regret defined with respect to a set of strategies. We develop tools for analyzing the minimax rates and for deriving regret-minimization algorithms in this scenario. While the standard methods for minimizing the usual notion of regret fail, through our analysis we demonstrate existence of regret-minimization methods that compete with such sets of strategies as: autoregressive algorithms, strategies based on statistical models, regularized least squares, and follow the regularized leader strategies. In several cases we also derive efficient learning algorithms.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Han13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Online Learning with Predictable Sequences",
+    "abstract": "We present methods for online linear optimization that take advantage of benign (as opposed to worst-case) sequences. Specifically if the sequence encountered by the learner is described well by a known “predictable process”, the algorithms presented enjoy tighter bounds as compared to the typical worst case bounds. Additionally, the methods achieve the usual worst-case regret bounds if the sequence is not benign. Our approach can be seen as a way of adding \\emphprior knowledge about the sequence within the paradigm of online learning. The setting is shown to encompass partial and side information. Variance and path-length bounds can be seen as particular examples of online learning with simple predictable sequences.We further extend our methods to include competing with a set of possible predictable processes (models), that is “learning” the predictable process itself concurrently with using it to obtain better regret guarantees. We show that such model selection is possible under various assumptions on the available feedback.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Rakhlin13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Efficient Learning of Simplices",
+    "abstract": "We show an efficient algorithm for the following problem: Given uniformly random points from an arbitrary n-dimensional simplex, estimate the simplex. The size of the sample and the number of arithmetic operations of our algorithm are polynomial in n. This answers a question of Frieze, Jerrum and Kannan Frieze et al. (1996). Our result can also be interpreted as efficiently learning the intersection of n + 1 half-spaces in R^n in the model where the intersection is bounded and we are given polynomially many uniform samples from it. Our proof uses the local search technique from Independent Component Analysis (ICA), also used by Frieze et al. (1996). Unlike these previous algorithms, which were based on analyzing the fourth moment, ours is based on the third moment.  We also show a direct connection between the problem of learning a simplex and ICA: a simple randomized reduction to ICA from the problem of learning a simplex. The connection is based on a known representation of the uniform measure on a simplex. Similar representations lead to a reduction from the problem of learning an affine transformation of an n-dimensional l_p ball to ICA.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Anderson13.pdf"
+  },
+  {
+    "volumn": "v30",
+    "url": "http://proceedings.mlr.press/v30/",
+    "header": "Complexity Theoretic Lower Bounds for Sparse Principal Component Detection",
+    "abstract": "In the context of sparse principal component detection, we bring evidence towards the existence of a statistical price to pay for computational efficiency. We measure the performance of a test by the smallest signal strength that it can detect and we propose a computationally efficient method based on semidefinite programming. We also prove that the statistical performance of this test cannot be strictly improved by any computationally efficient method. Our results can be viewed as complexity theoretic lower bounds conditionally on the assumptions that some instances of the planted clique problem cannot be solved in randomized polynomial time.",
+    "pdf_url": "http://proceedings.mlr.press/v30/Berthet13.pdf"
+  }
+]

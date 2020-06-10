@@ -1,0 +1,1 @@
+{"1": "We prove that the evolution of weight vectors in online gradient descent can encode arbitrary polynomial-space computations, even in very simple learning settings. Our results imply that, under weak complexity-theoretic assumptions, it is impossible to reason efficiently about the fine-grained behavior of online gradient descent."}

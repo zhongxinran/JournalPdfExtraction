@@ -1,0 +1,1 @@
+{"1": "We develop a simple and efficient algorithm for approximating the John Ellipsoid of a symmetric polytope.  Our algorithm is near optimal in the sense that our time complexity matches the current best verification algorithm.  Experimental results suggest that our algorithm significantly outperforms existing algorithms. We also provide the MATLAB code for further research."}
