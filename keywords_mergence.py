@@ -26,4 +26,4 @@ def merge_keywords_in_parent_path(parent_path):
 
 
 if __name__ == '__main__':
-    merge_keywords_in_parent_path("COLT/")
+    merge_keywords_in_parent_path("ECCV/")

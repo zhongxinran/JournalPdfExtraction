@@ -51,6 +51,8 @@ def get_keywords(journal, regex="\nKeywords(.|\n)*\n\n", page_regex="\n\n[0-9]*\
                 keywords_list = keywords.replace(".", "").split("; ")
             elif ". " in keywords:
                 keywords_list = keywords.replace(". ")
+            elif " · " in keywords:
+                keywords_list = keywords.replace(" · ")
             else:
                 keywords_list = [keywords]
             return keywords_list
@@ -102,4 +104,4 @@ def get_all_reference_and_keywords_in_parent_path(parent_path):
 
 
 if __name__ == '__main__':
-    get_all_reference_and_keywords_in_parent_path("COLT/")
+    get_all_reference_and_keywords_in_parent_path("ECCV/")

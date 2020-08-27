@@ -4,7 +4,7 @@ import json
 import pandas as pd
 
 os.chdir("/Users/bytedance/Desktop/JournalPdfExtraction/")
-papers_dir = "./COLT/"
+papers_dir = "./ECCV/"
 if not os.path.exists(papers_dir + "data/"):
     os.mkdir(papers_dir + "data/")
 
@@ -55,5 +55,5 @@ for ind in items:
     # 先后修关系
     pres = pres.append(pd.DataFrame({"pre": "PRE_" + head, "after": head}, index=[items.index(ind)]))
 
-pres.to_csv(papers_dir + "data/COLT_prerequisite.csv", header=True, index=False)
+pres.to_csv(papers_dir + "data/ECCV_prerequisite.csv", header=True, index=False)
 print(pres.shape)
